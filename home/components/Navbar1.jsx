@@ -3,6 +3,7 @@
 import { Button, useMediaQuery } from "@relume_io/relume-ui";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import Link from 'next/link'
 
 const useRelume = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,12 +46,12 @@ export function Navbar1() {
     >
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
-          <a href="#">
+          <Link href="/">
             <img
               src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
               alt="Logo image"
             />
-          </a>
+          </Link>
           <button
             className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
             onClick={useActive.toggleMobileMenu}
@@ -105,12 +106,12 @@ export function Navbar1() {
           transition={{ duration: 0.4 }}
           className="overflow-hidden px-[5%] lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
         >
-          <a
-            href="#"
+          <Link
+            href="/about"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             ABOUT US
-          </a>
+          </Link>
           <a
             href="#"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
