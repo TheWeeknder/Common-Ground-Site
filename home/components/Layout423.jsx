@@ -43,8 +43,8 @@ export function Layout423() {
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
+                src="/assets/craig-mckay-jmURdhtm7Ng-unsplash.jpg"
+                alt="Logo image"
                 className="size-full object-cover"
               />
             </div>
@@ -52,7 +52,7 @@ export function Layout423() {
               <div className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50" />
               <div className="z-10">
                 <h3 className="text-2xl font-bold text-text-alternative md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  Men's Fades
+                  Mens Fades
                 </h3>
                 <div className="lg:hidden">
                   <p className="mt-5 text-text-alternative md:mt-6">
@@ -109,8 +109,8 @@ export function Layout423() {
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 2"
+                src="/assets/craig-mckay-jmURdhtm7Ng-unsplash.jpg"
+                alt="Logo image"
                 className="size-full object-cover"
               />
             </div>
@@ -118,7 +118,7 @@ export function Layout423() {
               <div className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50" />
               <div className="z-10">
                 <h3 className="text-2xl font-bold text-text-alternative md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  Men's Fades
+                  Mens Fades
                 </h3>
                 <div className="lg:hidden">
                   <p className="mt-5 text-text-alternative md:mt-6">
@@ -175,8 +175,8 @@ export function Layout423() {
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 3"
+                src="/assets/craig-mckay-jmURdhtm7Ng-unsplash.jpg"
+                alt="Logo image"
                 className="size-full object-cover"
               />
             </div>
@@ -184,7 +184,7 @@ export function Layout423() {
               <div className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50" />
               <div className="z-10">
                 <h3 className="text-2xl font-bold text-text-alternative md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  Men's Fades
+                  Mens Fades
                 </h3>
                 <div className="lg:hidden">
                   <p className="mt-5 text-text-alternative md:mt-6">

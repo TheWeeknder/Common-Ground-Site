@@ -57,7 +57,17 @@ export function Footer4() {
         <div className="flex flex-col-reverse items-center justify-center justify-items-center pb-4 pt-6 text-sm md:flex-row md:gap-x-6 md:pb-0 md:pt-8">
           <ul className="grid grid-flow-row grid-cols-[max-content] items-center justify-center justify-items-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
             <p className="mt-8 md:mt-0">© 2024 Relume. All rights reserved.</p>
-            <p className="mt-8 md:mt-0">© 2024 Relume. All rights reserved.</p>
+            <p className="mt-8 md:mt-0">
+              Built by{" "}
+              <a
+                href="https://www.linkedin.com/in/jpmiranda103/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                @_jpmiranda
+              </a>
+            </p>
           </ul>
         </div>
       </div>

@@ -13,7 +13,7 @@ export function Contact13() {
             Find us here
           </h2>
           <p className="md:text-md">
-            Walk in or call ahead. We're open six days a week.
+            Walk in or call ahead. We are open six days a week.
           </p>
         </div>
         <div className="grid auto-cols-fr grid-cols-1 gap-x-12 gap-y-12 sm:grid-cols-2 md:gap-x-20 md:gap-y-16 lg:grid-cols-[0.5fr_1fr]">
@@ -23,7 +23,7 @@ export function Contact13() {
                 Hours
               </h3>
               <a className="underline" href="#">
-                hello@relume.io
+                Monday - Friday 
               </a>
             </div>
             <div>

@@ -7,14 +7,8 @@ export function Header78() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container flex flex-col items-center">
-        <div className="rb-12 mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
-          <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">
-            Our Work
-          </h1>
-          <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
-            <Button title="VIEW FULL GALLERY">VIEW FULL GALLERY</Button>
-          </div>
-        </div>
+          {/* deleted the our work h1 title*/}
+          {/* moved the view full gallery button to the bottom of carousel*/}
         <div className="flex w-screen justify-start overflow-hidden">
           <div className="grid shrink-0 grid-cols-1 gap-y-4">
             <div className="grid w-full animate-marquee-top auto-cols-fr grid-cols-2 gap-4 self-center">
@@ -198,7 +192,8 @@ export function Header78() {
               </div>
             </div>
           </div>
-        </div>
+        </div> 
+
       </div>
     </section>
   );
