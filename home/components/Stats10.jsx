@@ -6,9 +6,10 @@ export function Stats10() {
   return (
     <section id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container relative z-10">
+        {/* moved stats title*/}
         <div className="mb-12 max-w-lg md:mb-18 lg:mb-20">
-          <h3 className="text-4xl font-bold leading-[1.2] text-text-alternative md:text-5xl lg:text-6xl">
-            The numbers speak for themselves
+          <h3 className="text-5xl font-bold leading-[1.2] text-text-alternative md:text-7xl lg:text-9xl">
+            HOURS
           </h3>
         </div>
         <div className="grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-8 lg:gap-x-12 lg:gap-y-16">
@@ -17,7 +18,7 @@ export function Stats10() {
               7
             </p>
             <h3 className="text-md font-bold leading-[1.4] text-text-alternative md:text-xl">
-              Expert barbers
+              EXPERTS
             </h3>
           </div>
           <div className="border-l-2 border-border-alternative pl-8">
@@ -25,7 +26,7 @@ export function Stats10() {
               30
             </p>
             <h3 className="text-md font-bold leading-[1.4] text-text-alternative md:text-xl">
-              Years of combined Experience
+              YEARS COMBINED EXPERIENCE
             </h3>
           </div>
           <div className="border-l-2 border-border-alternative pl-8">
@@ -33,14 +34,14 @@ export function Stats10() {
               2000+
             </p>
             <h3 className="text-md font-bold leading-[1.4] text-text-alternative md:text-xl">
-              Fades completed
+              FADES DONE
             </h3>
           </div>
         </div>
       </div>
       <div className="absolute inset-0 z-0">
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          src="assets/nate-johnston-tgPrIYnW3g4-unsplash.jpg"
           className="size-full object-cover"
           alt="Relume placeholder image"
         />

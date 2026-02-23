@@ -193,7 +193,6 @@ export function Header78() {
             </div>
           </div>
         </div> 
-
       </div>
     </section>
   );

@@ -30,7 +30,7 @@ export function Layout423() {
       <div className="container">
         <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
           <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-            Main Services
+            MAIN SERVICES
           </h2>
         </div>
         <div className="flex flex-col justify-between gap-6 md:gap-8 lg:flex-row">
@@ -43,7 +43,7 @@ export function Layout423() {
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="/assets/craig-mckay-jmURdhtm7Ng-unsplash.jpg"
+                src="/assets/mitchell-orr-xO8OpsasyZA-unsplash.jpg"
                 alt="Logo image"
                 className="size-full object-cover"
               />
@@ -52,7 +52,7 @@ export function Layout423() {
               <div className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50" />
               <div className="z-10">
                 <h3 className="text-2xl font-bold text-text-alternative md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  Mens Fades
+                  TAPERS
                 </h3>
                 <div className="lg:hidden">
                   <p className="mt-5 text-text-alternative md:mt-6">
@@ -109,7 +109,7 @@ export function Layout423() {
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="/assets/craig-mckay-jmURdhtm7Ng-unsplash.jpg"
+                src="assets/nate-johnston-tgPrIYnW3g4-unsplash.jpg"
                 alt="Logo image"
                 className="size-full object-cover"
               />
@@ -118,7 +118,7 @@ export function Layout423() {
               <div className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50" />
               <div className="z-10">
                 <h3 className="text-2xl font-bold text-text-alternative md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  Mens Fades
+                  DROPS
                 </h3>
                 <div className="lg:hidden">
                   <p className="mt-5 text-text-alternative md:mt-6">
@@ -175,7 +175,7 @@ export function Layout423() {
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
               <div className="absolute inset-0 bg-black/50" />
               <img
-                src="/assets/craig-mckay-jmURdhtm7Ng-unsplash.jpg"
+                src="assets/mohamed-b-SHA-8AjZOeY-unsplash.jpg"
                 alt="Logo image"
                 className="size-full object-cover"
               />
@@ -184,7 +184,7 @@ export function Layout423() {
               <div className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50" />
               <div className="z-10">
                 <h3 className="text-2xl font-bold text-text-alternative md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  Mens Fades
+                  CUSTOMS
                 </h3>
                 <div className="lg:hidden">
                   <p className="mt-5 text-text-alternative md:mt-6">

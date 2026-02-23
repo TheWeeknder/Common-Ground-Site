@@ -9,7 +9,7 @@ export function Layout1() {
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
             <h1 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              About Us
+              ABOUT US
             </h1>
             <p className="md:text-md">
               At Common Ground, we believe a great haircut is more than just a
@@ -27,7 +27,7 @@ export function Layout1() {
           </div>
           <div>
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src="assets/chaps-co-BX8OTlmHOaI-unsplash.jpg"
               className="w-full object-cover"
               alt="Relume placeholder image"
             />

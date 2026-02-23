@@ -15,7 +15,7 @@ export function Header5() {
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
               <Button title="BOOK">BOOK</Button>
               <Button title="VIEW SERVICES" variant="secondary-alt">
-                VIEW SERVICES
+                PORTFOLIO
               </Button>
             </div>
           </div>
@@ -23,7 +23,7 @@ export function Header5() {
       </div>
       <div className="absolute inset-0 z-0">
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          src="/assets/chaps-co-chTK1JJfok0-unsplash.jpg"
           className="size-full object-cover"
           alt="Relume placeholder image"
         />
