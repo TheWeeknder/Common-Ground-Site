@@ -7,11 +7,6 @@ export function Stats10() {
     <section id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container relative z-10">
         {/* moved stats title*/}
-        <div className="mb-12 max-w-lg md:mb-18 lg:mb-20">
-          <h3 className="text-5xl font-bold leading-[1.2] text-text-alternative md:text-7xl lg:text-9xl">
-            HOURS
-          </h3>
-        </div>
         <div className="grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-8 lg:gap-x-12 lg:gap-y-16">
           <div className="border-l-2 border-border-alternative pl-8">
             <p className="mb-2 text-10xl font-bold leading-[1.3] text-text-alternative md:text-[4rem] lg:text-[5rem]">
