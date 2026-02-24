@@ -11,7 +11,7 @@ export function Layout1() {
             <h1 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
               ABOUT US
             </h1>
-            <p className="md:text-md">
+            <p className="md:text-md text-lg/7">
               At Common Ground, we believe a great haircut is more than just a
               service, it's about building confidence and creating a space where
               everyone belongs. No matter your background or style, you walk in
