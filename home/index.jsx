@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import React from "react";
 import { Navbar1 } from "./components/Navbar1";
 import { Header5 } from "./components/Header5";

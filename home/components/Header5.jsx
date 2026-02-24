@@ -13,8 +13,8 @@ export function Header5() {
               Building Confidence on Common Ground
             </h1>
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-              <Button title="BOOK">BOOK</Button>
-              <Button title="VIEW SERVICES" variant="secondary-alt">
+              <Button className="px-14 py-4 text-lg hover:bg-black hover:text-white hover:scale-105 hover:border-white" title="BOOK">BOOK NOW</Button>
+              <Button className="px-14 py-4 text-lg hover:bg-white hover:text-black hover:scale-105" title="VIEW SERVICES" variant="secondary-alt">
                 PORTFOLIO
               </Button>
             </div>
@@ -30,5 +30,6 @@ export function Header5() {
         <div className="absolute inset-0 bg-black/50" />
       </div>
     </section>
+    
   );
 }
