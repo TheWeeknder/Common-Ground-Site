@@ -8,8 +8,8 @@ export function Loader() {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    const liftTimer = setTimeout(() => setLift(true), 1500);
-    const hideTimer = setTimeout(() => setHidden(true), 2500);
+    const liftTimer = setTimeout(() => setLift(true), 700);
+    const hideTimer = setTimeout(() => setHidden(true), 1700);
 
     return () => {
       clearTimeout(liftTimer);

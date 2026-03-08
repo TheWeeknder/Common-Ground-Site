@@ -5,8 +5,8 @@ import React from "react";
 
 export function Header78() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container flex flex-col items-center">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-900">
+      <div className="container flex flex-col items-center ">
           {/* deleted the our work h1 title*/}
           {/* moved the view full gallery button to the bottom of carousel*/}
         <div className="flex w-screen justify-start overflow-hidden">

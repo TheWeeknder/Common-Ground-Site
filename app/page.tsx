@@ -1,5 +1,4 @@
-import { Navbar1 } from "@/home/components/Navbar1";
-import { Header5 } from "@/home/components/Header5";
+import { Hero } from "@/home/components/Header5";
 import { Header78 } from "@/home/components/Header78";
 import { Layout1 } from "@/home/components/Layout1";
 import { Layout423 } from "@/home/components/Layout423";
@@ -14,8 +13,7 @@ export default function Page() {
   return (
     <>
       <Loader />
-      <Navbar1 />
-      <Header5 />
+      <Hero />
       <Header78 />
       <Layout1 />
       <Stats10B />

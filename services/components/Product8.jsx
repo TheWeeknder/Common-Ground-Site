@@ -33,7 +33,6 @@ export function Product8() {
                 <h3 className="font-semibold">Classic Fade</h3>
                 <div className="text-sm">Professional</div>
               </div>
-              <div className="text-md font-semibold md:text-lg">$85</div>
             </a>
             <Button
               variant="secondary"

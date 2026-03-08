@@ -106,30 +106,30 @@ export function Navbar1() {
           transition={{ duration: 0.4 }}
           className="overflow-hidden px-[5%] lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
         >
-          <a
-            href="#"
+          <Link
+            href="/about"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             ABOUT US
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/services"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             SERVICES
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/gallery"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             GALLERY
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/faqs"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             FAQs
-          </a>
+          </Link>
           <div className="mt-6 flex flex-col items-center gap-4 lg:ml-4 lg:mt-0 lg:flex-row">
             <Button title="BOOK" size="sm" className="w-full">
               BOOK
