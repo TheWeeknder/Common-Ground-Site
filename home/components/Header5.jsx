@@ -99,15 +99,15 @@ export function Hero() {
       {/* Hero Content */}
       <div className="relative z-20 min-h-screen flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          {/* Gold Accent Line */}
-          <div className="w-20 h-1 bg-[#D4AF37] mb-8"></div>
+          {/* Gold Accent Line
+          <div className="w-20 h-1 bg-[#D4AF37] mb-8"></div> */}
           
-          <h1 className="text-6xl md:text-8xl lg:text-9xl mb-6 leading-[1.05] font-serif font-normal text-white" style={{ fontFamily: 'var(--font-serif)' }}>
-            Premium Cuts.<br />
-            Modern Style.
+          <h1 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="text-center lg:text-left text-5xl sm:text-7xl md:text-9xl lg:text-[7.8rem] mb-6 leading-[1.0] font-serif font-normal text-white">
+            One Standard.<br />
+            Common Ground.
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-xl leading-relaxed">
+          <p className="text-center lg:text-left text-base sm:text-lg md:text-2xl text-gray-300 mb-12 max-w-2xl leading-relaxed">
             Experience the art of traditional barbering with contemporary precision. Where craftsmanship meets luxury.
           </p>
           
@@ -124,8 +124,8 @@ export function Hero() {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white">
-        <span className="text-xs tracking-widest text-gray-400">SCROLL</span>
-        <div className="w-px h-16 bg-gradient-to-b from-amber-400 to-transparent" />
+        <span className="text-xs tracking-widest text-gray-300">SCROLL</span>
+        <div className="w-px h-18 bg-gradient-to-b from-[#D4AF37] to-transparent" />
       </div>
     </div>
   );
