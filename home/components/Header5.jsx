@@ -9,7 +9,7 @@ export function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative h-screen overflow-hidden"> 
+    <div className="relative min-h-screen overflow-hidden"> 
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -57,38 +57,47 @@ export function Hero() {
         </div>
 
         {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-lg py-8 px-6 z-50 text-white">
-            <div className="flex flex-col gap-2">
-              {[
-                { href: "/about", label: "ABOUT US" },
-                { href: "/services", label: "SERVICES" },
-                { href: "/gallery", label: "GALLERY" },
-                { href: "/faqs", label: "FAQs" },
-              ].map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-base tracking-widest hover:text-amber-400 transition-colors py-3 border-b border-white/10"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {label}
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, x: "100%" }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: "100%" }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="fixed inset-0 z-50 bg-black flex flex-col px-8 py-10"
+            >
+              <div className="flex justify-between items-center mb-16">
+                <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+                  <img src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg" alt="Logo" className="h-10" />
                 </Link>
-              ))}
-              <Link
-                href="/book"
-                className="mt-4 bg-amber-400 text-black text-center px-6 py-4 text-sm tracking-widest hover:bg-amber-300 transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
+                <button onClick={() => setMobileMenuOpen(false)} className="text-white p-2">
+                  <X className="w-8 h-8" />
+                </button>
+              </div>
+              <div className="flex flex-col gap-2 flex-1">
+                {[
+                  { href: "/about", label: "ABOUT US" },
+                  { href: "/services", label: "SERVICES" },
+                  { href: "/gallery", label: "GALLERY" },
+                  { href: "/faqs", label: "FAQs" },
+                ].map(({ href, label }, i) => (
+                  <motion.div key={href} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.07 + 0.1 }}>
+                    <Link href={href} className="block text-4xl font-light text-white tracking-widest py-5 border-b border-white/10 hover:text-amber-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                      {label}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+              <Link href="/book" className="bg-amber-400 text-black text-center py-5 text-base tracking-widest font-semibold hover:bg-amber-300 transition-colors" onClick={() => setMobileMenuOpen(false)}>
                 BOOK NOW
               </Link>
-            </div>
-          </div>
-        )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
 
       {/* Hero Content */}
-      <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
+      <div className="relative z-20 min-h-screen flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
         <div className="max-w-3xl">
           {/* Gold Accent Line */}
           <div className="w-20 h-1 bg-[#D4AF37] mb-8"></div>
