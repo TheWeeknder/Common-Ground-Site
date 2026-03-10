@@ -102,7 +102,7 @@ export function Hero() {
           {/* Gold Accent Line
           <div className="w-20 h-1 bg-[#D4AF37] mb-8"></div> */}
           
-          <h1 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="text-center lg:text-left text-5xl sm:text-7xl md:text-9xl lg:text-[6rem] xl:text-[7.8rem] mb-6 leading-[1.0] font-serif font-normal text-white">
+          <h1 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="text-center lg:text-left text-5xl sm:text-6xl md:text-8xl lg:text-[5rem] xl:text-[6.8rem] mb-6 leading-[1.0] font-serif font-normal text-white">
             One Standard.<br />
             Common Ground.
           </h1>
