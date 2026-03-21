@@ -88,7 +88,7 @@ export function Hero() {
                   </motion.div>
                 ))}
               </div>
-              <Link href="/book" className="bg-amber-400 text-black text-center py-5 text-sm tracking-widest font-semibold hover:bg-amber-300 transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/book" className="bg-amber-400 text-black text-center py-5 text-md tracking-widest font-semibold hover:bg-amber-300 transition-colors" onClick={() => setMobileMenuOpen(false)}>
                 BOOK NOW
               </Link>
             </motion.div>
@@ -109,10 +109,10 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6">
-            <button className="bg-[#D4AF37] text-sm text-black px-8 py-4 hover:bg-[#c4a02e] active:bg-[#b39728] transition-all duration-300 tracking-widest touch-manipulation min-h-[48px]">
+            <button className="bg-[#D4AF37] text-sm text-black px-8 py-4 hover:bg-[#c4a02e] active:bg-[#b39728] transition-all duration-300 tracking-widest touch-manipulation min-h-[68px] font-medium">
               BOOK APPOINTMENT
             </button>
-            <button className="text-white text-sm border-2 border-white px-8 py-4 hover:bg-white hover:text-black active:bg-gray-200 transition-all duration-300 tracking-widest touch-manipulation min-h-[48px]">
+            <button className="text-white text-sm border-2 border-white px-8 py-4 hover:bg-white hover:text-black active:bg-gray-200 transition-all duration-300 tracking-widest touch-manipulation min-h-[68px] font-medium">
               VIEW SERVICES
             </button>
           </div>
