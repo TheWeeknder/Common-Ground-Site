@@ -19,7 +19,6 @@ export default function Page() {
       <Stats10B />
       <Layout423 />
       <Layout141 />
-      <Stats10 />
       <Contact13 />
       <Footer4 />
     </>

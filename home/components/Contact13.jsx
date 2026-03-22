@@ -11,14 +11,11 @@ export function Contact13() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
+
         <div className="rb-12 mb-12 max-w-lg md:mb-18 lg:mb-20">
-          <p className="mb-3 font-semibold md:mb-4">Visit</p>
           <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-            Find us
+            LOCATION AND HOURS
           </h2>
-          <p className="md:text-md">
-            Stop by and see what Common Ground is all about.
-          </p>
         </div>
         <div className="grid auto-cols-fr grid-cols-1 gap-x-12 gap-y-12 md:grid-cols-[0.5fr_1fr] md:gap-x-20 md:gap-y-16">
           <div className="grid auto-cols-fr grid-cols-1 gap-x-4 gap-y-10">
@@ -27,24 +24,18 @@ export function Contact13() {
                 <BiEnvelope className="size-8" />
               </div>
               <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">
-                Email
+                HOURS
               </h3>
-              <p className="mb-2">Send us a message</p>
-              <a className="underline" href="#">
-                hello@relume.io
-              </a>
-            </div>
-            <div>
-              <div className="mb-3 md:mb-4">
-                <BiPhone className="size-8" />
-              </div>
-              <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">
-                Phone
-              </h3>
-              <p className="mb-2">Call us anytime</p>
-              <a className="underline" href="#">
-                +1 (555) 123-4567
-              </a>
+              <p className="mb-2">Monday: 9AM - 5PM</p>
+              <p className="mb-2">Tuesday: 9AM - 5PM</p>
+              <p className="mb-2">Wednesday: 9AM - 5PM</p>
+              <p className="mb-2">Thursday: 9AM - 5PM</p>
+              <p className="mb-2">Friday: 9AM - 5PM</p>
+              <p className="mb-2 font-bold">Saturday: 9AM - 5PM</p>
+              <p className="mb-2 font-bold">Sunday: 9AM - 5PM</p>
+              <br></br>
+              <p className="mb-2 font-bold">Holiday Hours May Vary.</p>
+
             </div>
             <div>
               <div className="mb-3 md:mb-4">
