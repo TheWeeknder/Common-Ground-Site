@@ -23,7 +23,7 @@ export function Contact13() {
               <div className="mb-3 md:mb-4">
                 <BiEnvelope className="size-8" />
               </div>
-              <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">
+              <h3 className="mb-2 text-lg font-bold leading-[1.4] md:text-5xl">
                 HOURS
               </h3>
               <p className="mb-2">Monday: 9AM - 5PM</p>
@@ -41,8 +41,8 @@ export function Contact13() {
               <div className="mb-3 md:mb-4">
                 <BiMap className="size-8" />
               </div>
-              <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">
-                Office
+              <h3 className="mb-2 text-lg font-bold leading-[1.4] md:text-5xl">
+                ADDRESS
               </h3>
               <p className="mb-2">247 King Street, Sydney NSW 2000</p>
               <div className="mt-5 md:mt-6">
