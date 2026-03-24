@@ -35,9 +35,9 @@ export const FadingParagraph = (props: FadingParagraphProps) => {
         <p className="mb-3 font-semibold md:mb-4">{tagline}</p>
         <h1 ref={headingRef} className="text-5xl font-bold md:text-7xl lg:text-8xl">
           {words.map((word, index) => {
-            const start = index * 0.025;
-            const end = start + 0.025;
-            const opacity = useTransform(scrollYProgress, [start, end], [0.10, 1]);
+            const start = index * 0.03;
+            const end = start + 0.05;
+            const opacity = useTransform(scrollYProgress, [start, end], [0.25, 1]);
             return (
               <React.Fragment key={index}>
                 <motion.span className="inline-block" style={{ opacity } as MotionStyle}>
