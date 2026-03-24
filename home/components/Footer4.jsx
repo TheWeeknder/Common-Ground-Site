@@ -65,7 +65,7 @@ export function Footer4() {
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                @_jpmiranda
+                JPM
               </a>
             </p>
           </ul>

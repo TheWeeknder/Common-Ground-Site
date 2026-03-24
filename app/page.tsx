@@ -8,13 +8,16 @@ import { Stats10B } from "@/home/components/Stats10B";
 import { Contact13 } from "@/home/components/Contact13";
 import { Footer4 } from "@/home/components/Footer4";
 import { Loader } from "@/home/components/Loader";
-
+import { StatementBanner } from "@/home/components/StatementBanner";
+import { FadingParagraph } from "@/home/components/FadingParagraph";
 export default function Page() {
   return (
     <>
       <Loader />
       <Hero />
       <Header78 />
+      <FadingParagraph />
+      <StatementBanner />
       <Layout1 />
       <Stats10B />
       <Layout423 />
