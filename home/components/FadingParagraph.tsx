@@ -9,14 +9,13 @@ import { RxChevronRight } from "react-icons/rx";
 type Props = {
   tagline: string;
   heading: string;
-  buttons: ButtonProps[];
 };
 
 export type FadingParagraphProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const FadingParagraph = (props: FadingParagraphProps) => {
-  const { tagline, heading, buttons } = {
-    ...Layout484Defaults,
+  const { tagline, heading } = {
+    ...FadingParagraphDefaults,
     ...props,
   };
 
@@ -48,29 +47,13 @@ export const FadingParagraph = (props: FadingParagraphProps) => {
             );
           })}
         </h1>
-        <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-          {buttons.map((button, index) => (
-            <Button key={index} {...button}>
-              {button.title}
-            </Button>
-          ))}
-        </div>
       </div>
     </section>
   );
 };
 
-export const Layout484Defaults: Props = {
-  tagline: "Tagline",
+export const FadingParagraphDefaults: Props = {
+  tagline: "",
   heading:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
-  buttons: [
-    { title: "Button", variant: "secondary" },
-    {
-      title: "Button",
-      variant: "link",
-      size: "link",
-      iconRight: <RxChevronRight />,
-    },
-  ],
 };

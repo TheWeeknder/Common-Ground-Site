@@ -27,7 +27,6 @@ export function StatementBanner() {
       id="relume"
       ref={useAnimations.sectionRef}
       className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28"
-      ref={useAnimations.sectionRef}
     >
       <div className="flex flex-col whitespace-nowrap">
         <motion.h1
