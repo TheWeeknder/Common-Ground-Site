@@ -3,7 +3,7 @@
 import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
 import React, { useRef } from "react";
-import { motion, MotionStyle, useScroll, useTransform } from "framer-motion";
+import { motion, MotionStyle, useScroll, useTransform, type MotionValue } from "framer-motion";
 import { RxChevronRight } from "react-icons/rx";
 
 type Props = {
@@ -13,7 +13,7 @@ type Props = {
 
 type WordProps = {
   word: string;
-  scrollYProgress: unknown;
+  scrollYProgress: MotionValue<number>;
   index: number;
 };
 

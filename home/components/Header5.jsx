@@ -99,7 +99,7 @@ export function Hero() {
       {/* Hero Content */}
       <div className="relative z-20 min-h-screen flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <h1 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="text-center lg:text-left text-3xl sm:text-4xl md:text-5xl lg:text-[3.2rem] xl:text-[4.5rem] mb-6 leading-[1.0] font-serif font-normal text-white">
+          <h1 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="text-center lg:text-center text-3xl sm:text-4xl md:text-5xl lg:text-[3.2rem] xl:text-[4.5rem] mb-6 leading-[1.0] font-serif font-normal text-white">
             COMMON GROUND<br />
             BARBERSHOP
           </h1>
@@ -108,7 +108,7 @@ export function Hero() {
             Experience the art of traditional barbering with contemporary precision. Where craftsmanship meets luxury.
           </p> */}
           
-          <div className="flex flex-col sm:flex-row gap-6">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="bg-[#D4AF37] text-sm text-black px-8 py-4 hover:bg-[#c4a02e] active:bg-[#b39728] transition-all duration-300 tracking-widest touch-manipulation min-h-[68px] font-medium">
               BOOK APPOINTMENT
             </button>
