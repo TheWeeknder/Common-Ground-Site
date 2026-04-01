@@ -17,9 +17,9 @@ export default function Page() {
       <Hero />
       <Header78 />
       <FadingParagraph />
-      <StatementBanner />
-      <Layout1 />
-      <Stats10B />
+      {/* <StatementBanner /> */}
+      {/* <Layout1 /> */}
+      {/* <Stats10B /> */}
       <Layout423 />
       <Layout141 />
       <Contact13 />
