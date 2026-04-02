@@ -26,8 +26,8 @@ const useRelume = () => {
 export function Layout423() {
   const hoverState = useRelume();
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 ">
-      <div className="container">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-50">
+      <div className="container ">
         <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
           <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
             MAIN SERVICES
@@ -55,9 +55,9 @@ export function Layout423() {
                   TAPERS
                 </h3>
                 <div className="lg:hidden">
-                  <p className="mt-5 text-text-alternative md:mt-6">
+                  {/* <p className="mt-5 text-text-alternative md:mt-6">
                     Clean lines and sharp fades tailored to your style.
-                  </p>
+                  </p> */}
                   <div className="mt-6 md:mt-8">
                     <Button
                       variant="link"
@@ -82,10 +82,10 @@ export function Layout423() {
                   exit="hidden"
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
-                  <p className="mt-5 text-text-alternative md:mt-6">
+                  {/* <p className="mt-5 text-text-alternative md:mt-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse varius enim in eros elementum tristique.
-                  </p>
+                  </p> */}
                   <div className="mt-6 md:mt-8">
                     <Button
                       variant="link"
@@ -121,9 +121,9 @@ export function Layout423() {
                   DROPS
                 </h3>
                 <div className="lg:hidden">
-                  <p className="mt-5 text-text-alternative md:mt-6">
+                  {/* <p className="mt-5 text-text-alternative md:mt-6">
                     Clean lines and sharp fades tailored to your style.
-                  </p>
+                  </p> */}
                   <div className="mt-6 md:mt-8">
                     <Button
                       variant="link"
@@ -148,10 +148,10 @@ export function Layout423() {
                   exit="hidden"
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
-                  <p className="mt-5 text-text-alternative md:mt-6">
+                  {/* <p className="mt-5 text-text-alternative md:mt-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse varius enim in eros elementum tristique.
-                  </p>
+                  </p> */}
                   <div className="mt-6 md:mt-8">
                     <Button
                       variant="link"
@@ -187,9 +187,9 @@ export function Layout423() {
                   CUSTOMS
                 </h3>
                 <div className="lg:hidden">
-                  <p className="mt-5 text-text-alternative md:mt-6">
+                  {/* <p className="mt-5 text-text-alternative md:mt-6">
                     Clean lines and sharp fades tailored to your style.
-                  </p>
+                  </p> */}
                   <div className="mt-6 md:mt-8">
                     <Button
                       variant="link"
@@ -214,10 +214,10 @@ export function Layout423() {
                   exit="hidden"
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
-                  <p className="mt-5 text-text-alternative md:mt-6">
+                  {/* <p className="mt-5 text-text-alternative md:mt-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse varius enim in eros elementum tristique.
-                  </p>
+                  </p> */}
                   <div className="mt-6 md:mt-8">
                     <Button
                       variant="link"

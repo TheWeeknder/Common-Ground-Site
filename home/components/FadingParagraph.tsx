@@ -19,7 +19,7 @@ type WordProps = {
 
 const Word = ({ word, scrollYProgress, index }: WordProps) => {
   const start = index * 0.03;
-  const opacity = useTransform(scrollYProgress, [start, start + 0.05], [0.25, 1]);
+  const opacity = useTransform(scrollYProgress, [start, start + 0.05, 1], [0.25, 1, 1]);
   return (
     <motion.span className="inline-block" style={{ opacity } as MotionStyle}>
       {word}
@@ -45,7 +45,7 @@ export const FadingParagraph = (props: FadingParagraphProps) => {
   const words = heading.split(" ");
 
   return (
-    <section id="relume" className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28">
+    <section id="relume" className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-50">
       <div className="container max-w-5xl">
         <p className="mb-3 font-semibold md:mb-4">{tagline}</p>
         <h1 ref={headingRef} className="text-7xl font-bold md:text-9xl lg:text-10xl">

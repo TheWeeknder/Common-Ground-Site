@@ -9,7 +9,7 @@ import { RxChevronRight } from "react-icons/rx";
 
 export function Contact13() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-50">
       <div className="container">
 
         <div className="rb-12 mb-12 max-w-lg md:mb-18 lg:mb-20">
@@ -57,13 +57,13 @@ export function Contact13() {
               </div>
             </div>
           </div>
-          <a href="#" className="justify-self-end md:w-[321.6px] lg:w-auto">
-            <img
-              src="/assets/annie-spratt-AFB6S2kibuk-unsplash.jpg"
-              alt="Relume placeholder map image"
-              className="size-full h-[400px] object-cover md:h-[516px]"
-            />
-          </a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15376.520811126347!2d-113.4940055298092!3d53.46006675465727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01f25e5e14e15%3A0x679d5a9dd9984630!2sT%26T%20Supermarket!5e0!3m2!1sen!2sus!4v1775167006578!5m2!1sen!2sus"
+            className="w-full h-[600px] rounded-lg border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
     </section>
