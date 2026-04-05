@@ -1,4 +1,4 @@
-import { Hero } from "@/home/components/Header5";
+import { Hero } from "@/home/components/Hero";
 import { Header78 } from "@/home/components/Header78";
 import { Layout1 } from "@/home/components/Layout1";
 import { Layout423 } from "@/home/components/Layout423";

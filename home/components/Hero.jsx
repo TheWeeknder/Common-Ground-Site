@@ -1,24 +1,35 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import React, { useState } from "react";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 export function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const heroRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"],
+  });
+
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "60%"]);
 
   return (
-    <div className="relative min-h-screen overflow-hidden"> 
+    <div ref={heroRef} className="relative min-h-screen overflow-hidden">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0 ">
+      <motion.div
+        style={{ y: bgY }}
+        className="absolute inset-0 z-0 scale-110"
+      >
         <img
           src="/assets/chaps-co-chTK1JJfok0-unsplash.jpg"
           alt="Barber cutting hair"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90" />
-      </div>
+      </motion.div>
 
       {/* Navigation */}
       <nav className="absolute top-0 left-0 right-0 z-30 px-6 md:px-12 py-8">
