@@ -13,7 +13,7 @@ export function Contact13() {
       <div className="container">
 
         <div className="rb-12 mb-12 max-w-lg md:mb-18 lg:mb-20">
-          <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+          <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl ">
             LOCATION AND HOURS
           </h2>
         </div>

@@ -26,7 +26,7 @@ export function Hero() {
           {/* Logo */}
           <Link href="/">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+              src="/placeholderlogoforhero.svg"
               alt="Logo"
               className="h-10"
             />
@@ -68,7 +68,7 @@ export function Hero() {
             >
               <div className="flex justify-between items-center mb-16">
                 <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-                  <img src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg" alt="Logo" className="h-10" />
+                  <img src="/logoipsum-274.svg" alt="Logo" className="h-10" />
                 </Link>
                 <button onClick={() => setMobileMenuOpen(false)} className="text-white p-2">
                   <X className="w-8 h-8" />

@@ -21,12 +21,12 @@ export function Loader() {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-background transition-transform duration-1000 ease-in-out ${
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-neutral-white transition-transform duration-1000 ease-in-out ${
         lift ? "-translate-y-full" : "translate-y-0"
       }`}
     >
       <img
-        src="/your-logo.png"
+        src="/placeholderlogoforloader.svg"
         alt="PLACE LOGO HERE"
         className="w-36 animate-fade-in"
       />
