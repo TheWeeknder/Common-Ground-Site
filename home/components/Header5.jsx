@@ -99,7 +99,7 @@ export function Hero() {
       {/* Hero Content */}
       <div className="relative z-20 min-h-screen flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <h1 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="text-center lg:text-center text-5xl sm:text-7xl md:text-8xl lg:text-[3.2rem] xl:text-[4.5rem] mb-6 leading-[1.0] font-serif font-normal text-white">
+          <h1 className="font-serif font-medium text-center lg:text-center text-5xl sm:text-7xl md:text-8xl lg:text-[4.2rem] xl:text-[5.5rem] mb-6 leading-[1.0] text-white">
             COMMON GROUND<br />
             BARBERSHOP
           </h1>
@@ -112,9 +112,9 @@ export function Hero() {
             <button className="bg-[#D4AF37] text-xs sm:text-sm text-black px-5 py-3 sm:px-8 sm:py-4 hover:bg-[#c4a02e] active:bg-[#b39728] transition-all duration-300 tracking-widest touch-manipulation min-h-[44px] sm:min-h-[68px] font-medium w-fit mx-auto sm:mx-0">
               BOOK APPOINTMENT
             </button>
-            <button className="text-white text-xs sm:text-sm border-2 border-white px-5 py-3 sm:px-8 sm:py-4 hover:bg-white hover:text-black active:bg-gray-200 transition-all duration-300 tracking-widest touch-manipulation min-h-[44px] sm:min-h-[68px] font-medium w-fit mx-auto sm:mx-0">
+            {/* <button className="text-white text-xs sm:text-sm border-2 border-white px-5 py-3 sm:px-8 sm:py-4 hover:bg-white hover:text-black active:bg-gray-200 transition-all duration-300 tracking-widest touch-manipulation min-h-[44px] sm:min-h-[68px] font-medium w-fit mx-auto sm:mx-0">
               VIEW SERVICES
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

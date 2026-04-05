@@ -26,10 +26,10 @@ const useRelume = () => {
 export function Layout423() {
   const hoverState = useRelume();
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-50">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-900">
       <div className="container ">
         <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
-          <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+          <h2 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-neutral-white">
             MAIN SERVICES
           </h2>
         </div>
@@ -52,7 +52,7 @@ export function Layout423() {
               <div className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50" />
               <div className="z-10">
                 <h3 className="text-2xl font-bold text-text-alternative md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  TAPERS
+                  Haircuts & Styling
                 </h3>
                 <div className="lg:hidden">
                   {/* <p className="mt-5 text-text-alternative md:mt-6">
@@ -118,7 +118,7 @@ export function Layout423() {
               <div className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50" />
               <div className="z-10">
                 <h3 className="text-2xl font-bold text-text-alternative md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  DROPS
+                  Beard & Shaving
                 </h3>
                 <div className="lg:hidden">
                   {/* <p className="mt-5 text-text-alternative md:mt-6">
@@ -184,7 +184,7 @@ export function Layout423() {
               <div className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50" />
               <div className="z-10">
                 <h3 className="text-2xl font-bold text-text-alternative md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  CUSTOMS
+                  Facial & Skin Care
                 </h3>
                 <div className="lg:hidden">
                   {/* <p className="mt-5 text-text-alternative md:mt-6">

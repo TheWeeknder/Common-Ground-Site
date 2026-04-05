@@ -48,7 +48,7 @@ export const FadingParagraph = (props: FadingParagraphProps) => {
     <section id="relume" className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-50">
       <div className="container max-w-5xl">
         <p className="mb-3 font-semibold md:mb-4">{tagline}</p>
-        <h1 ref={headingRef} className="text-7xl font-bold md:text-9xl lg:text-10xl">
+        <h1 ref={headingRef} className="font-geist text-7xl font-bold md:text-9xl lg:text-10xl">
           {words.map((word, index) => (
             <React.Fragment key={index}>
               <Word word={word} scrollYProgress={scrollYProgress} index={index} />
