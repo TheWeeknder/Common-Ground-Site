@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <div className="relative min-h-screen overflow-hidden"> 
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 ">
         <img
           src="/assets/chaps-co-chTK1JJfok0-unsplash.jpg"
           alt="Barber cutting hair"

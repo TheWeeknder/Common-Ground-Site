@@ -21,13 +21,13 @@ export function Stats10B() {
           </button>
         </div>
       </div>
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 ">
         <img
           src="assets/chaps-co-BX8OTlmHOaI-unsplash.jpg"
           className="size-full object-cover"
           alt="Relume placeholder image"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
       </div>
     </section>
   );
