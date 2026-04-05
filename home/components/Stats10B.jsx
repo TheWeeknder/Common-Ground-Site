@@ -6,12 +6,9 @@ export function Stats10B() {
   return (
     <section
       id="relume"
-      className="relative px-[5%] py-16 md:py-24 lg:py-28"
+      className="relative px-[5%] py-16 md:py-24 lg:py-28 bg-cover bg-center bg-scroll md:bg-fixed"
       style={{
         backgroundImage: `url('assets/chaps-co-BX8OTlmHOaI-unsplash.jpg')`,
-        backgroundAttachment: "fixed",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
