@@ -16,7 +16,7 @@ export function Footer4() {
         <div className="grid grid-cols-1 items-center justify-center justify-items-center gap-x-[4vw] gap-y-12 pb-12 md:pb-18 lg:grid-cols-[0.25fr_1fr_0.25fr] lg:justify-between lg:gap-y-4 lg:pb-20">
           <a href="#" className="lg:justify-self-start">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+              src="/placeholderlogoforhero.svg"
               alt="Logo image"
               className="inline-block"
             />
