@@ -1,6 +1,6 @@
 import { Hero } from "@/home/components/Hero";
 import { Header78 } from "@/home/components/Header78";
-import { Layout1 } from "@/home/components/Layout1";
+import { Testimonials } from "@/home/components/Layout1";
 import { Layout423 } from "@/home/components/Layout423";
 import { Layout141 } from "@/home/components/Layout141";
 import { Stats10 } from "@/home/components/Stats10";
@@ -17,7 +17,7 @@ export default function Page() {
       <Header78 />
       <FadingParagraph />
       {/* <StatementBanner /> */}
-      {/* <Layout1 /> */}
+      <Testimonials />
       <Layout423 />
       <Stats10B />
       <Layout141 />
