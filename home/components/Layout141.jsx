@@ -10,8 +10,9 @@ export function Layout141() {
         <div className="flex flex-col items-center">
           <div className="rb-12 mb-12 text-center md:mb-18 lg:mb-20">
             <div className="w-full max-w-lg">
+              <p className="text-md tracking-widest text-white">SKILLED BARBERS AT YOUR SERVICE</p>
               <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-white ">
-                THE EXPERTS
+                MEET THE TEAM
               </h2>
             </div>
           </div>

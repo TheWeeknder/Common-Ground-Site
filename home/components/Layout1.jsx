@@ -39,10 +39,10 @@ export function Testimonials() {
     <section id="relume" className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-50">
       <div className="container">
         <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
-          <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-            What men say
+          <p className="text-md tracking-widest text-black">TESTIMONIALS</p>
+          <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-black ">
+            HEAR FROM OUR LOYAL CLIENTS
           </h2>
-          <p className="md:text-md">Real words from real customers</p>
         </div>
       </div>
 

@@ -17,10 +17,10 @@ export default function Page() {
       <Header78 />
       <FadingParagraph />
       {/* <StatementBanner /> */}
-      <Testimonials />
       <Layout423 />
       <Stats10B />
       <Layout141 />
+      <Testimonials />
       <Contact13 />
       <Footer4 />
     </>

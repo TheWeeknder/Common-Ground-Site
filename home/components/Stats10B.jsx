@@ -13,6 +13,7 @@ export function Stats10B() {
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
       <div className="container relative z-10 max-w-lg text-center">
+        <p className="text-md tracking-widest text-gray-300">BOOK WITH US NOW</p>
         <h2 className="rb-5 mb-5 text-5xl font-bold text-text-alternative md:mb-6 md:text-7xl lg:text-8xl">
           ELEVATE YOUR STYLE WITH US
         </h2>
