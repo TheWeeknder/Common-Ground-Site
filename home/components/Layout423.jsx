@@ -29,8 +29,9 @@ export function Layout423() {
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-900">
       <div className="container ">
         <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
+          <p className="text-md tracking-widest text-black">MAIN SERVICES</p>
           <h2 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-neutral-white">
-            MAIN SERVICES
+            WHAT WE OFFER
           </h2>
         </div>
         <div className="flex flex-col justify-between gap-6 md:gap-8 lg:flex-row">
