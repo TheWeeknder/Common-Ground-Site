@@ -18,9 +18,9 @@ export default function Page() {
       <FadingParagraph />
       {/* <StatementBanner /> */}
       <Layout423 />
-      <Cta31 />
       <Stats10B />
       <Layout141 />
+      {/* <Cta31 /> */}
       <Testimonials />
       <Contact13 />
       <Footer4 />
