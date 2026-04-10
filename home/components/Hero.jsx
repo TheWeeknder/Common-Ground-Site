@@ -49,10 +49,20 @@ export function Hero() {
             <Link href="/services" className="text-sm tracking-widest hover:text-amber-400 transition-colors">SERVICES</Link>
             <Link href="/gallery" className="text-sm tracking-widest hover:text-amber-400 transition-colors">GALLERY</Link>
             <Link href="/faqs" className="text-sm tracking-widest hover:text-amber-400 transition-colors">FAQs</Link>
-            <Link
+            <Link 
               href="/book"
-              className="bg-amber-400 text-black px-6 py-2.5 text-sm tracking-widest hover:bg-amber-300 transition-colors duration-300"
-            >
+              className="
+              relative top-0
+              bg-[#D4AF37] text-[#1a1206] text-xs sm:text-sm
+              px-7 py-3.5
+              font-bold tracking-[0.12em] rounded-[10px]
+              shadow-[0_4px_0_#8f6e10]
+              hover:bg-[#e0bc45] hover:shadow-[0_6px_0_#8f6e10] hover:-top-0.5
+              active:shadow-[0_1px_0_#8f6e10] active:top-1
+              transition-all duration-[120ms]
+              touch-manipulation
+              w-fit mx-auto sm:mx-0
+            ">
               BOOK NOW
             </Link>
           </div>
@@ -120,7 +130,18 @@ export function Hero() {
           </p> */}
           
           <div className="flex flex-row sm:flex-row gap-6 justify-center">
-            <button className="bg-[#D4AF37] text-xs sm:text-sm text-black px-5 py-3 sm:px-8 sm:py-4 hover:bg-[#c4a02e] active:bg-[#b39728] transition-all duration-300 tracking-widest touch-manipulation min-h-[44px] sm:min-h-[68px] font-medium w-fit mx-auto sm:mx-0">
+            <button className="
+              relative top-0
+              bg-[#D4AF37] text-[#1a1206] text-xs sm:text-sm
+              px-8 py-4 sm:px-10 sm:py-[18px]
+              font-bold tracking-[0.12em] rounded-[14px]
+              shadow-[0_5px_0_#8f6e10]
+              hover:bg-[#e0bc45] hover:shadow-[0_7px_0_#8f6e10] hover:-top-0.5
+              active:shadow-[0_1px_0_#8f6e10] active:top-1
+              transition-all duration-[120ms]
+              touch-manipulation min-h-[44px] sm:min-h-[68px]
+              w-fit mx-auto sm:mx-0
+            ">
               BOOK APPOINTMENT
             </button>
             {/* <button className="text-white text-xs sm:text-sm border-2 border-white px-5 py-3 sm:px-8 sm:py-4 hover:bg-white hover:text-black active:bg-gray-200 transition-all duration-300 tracking-widest touch-manipulation min-h-[44px] sm:min-h-[68px] font-medium w-fit mx-auto sm:mx-0">
