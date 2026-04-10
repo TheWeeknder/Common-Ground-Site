@@ -3,7 +3,7 @@ import { Header78 } from "@/home/components/Header78";
 import { Testimonials } from "@/home/components/Layout1";
 import { Layout423 } from "@/home/components/Layout423";
 import { Layout141 } from "@/home/components/Layout141";
-import Stats10 from "@/home/components/Stats10";
+import { Cta31 } from "@/home/components/Cta31";
 import { Stats10B } from "@/home/components/Stats10B"; 
 import { Contact13 } from "@/home/components/Contact13";
 import { Footer4 } from "@/home/components/Footer4";
@@ -18,7 +18,7 @@ export default function Page() {
       <FadingParagraph />
       {/* <StatementBanner /> */}
       <Layout423 />
-      {/* <Stats10 /> */}
+      <Cta31 />
       <Stats10B />
       <Layout141 />
       <Testimonials />
