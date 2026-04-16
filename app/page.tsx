@@ -9,11 +9,22 @@ import { LocationHours } from "@/home/components/LocationHours";
 import { Footer } from "@/home/components/Footer";
 import { Loader } from "@/home/components/Loader";
 import { FadingParagraph } from "@/home/components/FadingParagraph";
+import CurvedLoop from '@/home/components/CurvedLoop';
+import CurvedLoop2 from '@/home/components/CurvedLoop2';
+
+
 export default function Page() {
   return (
     <>
       <Loader />
       <Hero />
+      <CurvedLoop
+        marqueeText="Common ✦ Ground ✦ Barbershop ✦"
+        speed={6}
+        curveAmount={0}
+        direction="right"
+        interactive
+      />
       <Carousel />
       <FadingParagraph />
       {/* <StatementBanner /> */}
@@ -23,6 +34,13 @@ export default function Page() {
       {/* <Cta31 /> */}
       <Testimonials />
       <LocationHours /> 
+      <CurvedLoop2
+        marqueeText="Common ✦ Ground ✦ Barbershop ✦"
+        speed={6}
+        curveAmount={250}
+        direction="right"
+        interactive
+      />
       <Footer />
     </>
   );
