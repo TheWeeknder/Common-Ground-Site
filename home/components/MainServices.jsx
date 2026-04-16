@@ -26,11 +26,22 @@ const useRelume = () => {
 export function MainServices() {
   const hoverState = useRelume();
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-900">
-      <div className="container">
+    // 1. Changed bg to zinc-950 and added relative/overflow-hidden
+    <section id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-950 overflow-hidden">
+      
+      {/* --- NEW BACKGROUND ELEMENTS --- */}
+      {/* 2. Subtle Background Gradient to pure black */}
+      <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/80 to-black pointer-events-none" />
+      
+      {/* 3. The Ambient Glow (Warm Amber) */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[80%] max-w-[800px] h-[400px] bg-amber-700/10 blur-[120px] rounded-full pointer-events-none" />
+      {/* ------------------------------- */}
+
+      {/* 4. Added relative and z-10 to the container to sit above the glow */}
+      <div className="container relative z-10">
         <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
-          <p className="text-md tracking-widest text-white">MAIN SERVICES</p>
-          <h2 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-neutral-white text-white">
+          <p className="text-md tracking-widest text-zinc-400">MAIN SERVICES</p>
+          <h2 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-white">
             WHAT WE OFFER
           </h2>
         </div>
