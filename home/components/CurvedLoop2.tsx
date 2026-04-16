@@ -17,15 +17,21 @@ interface CurvedLoopProps {
   curveAmount?: number;
   direction?: "left" | "right";
   interactive?: boolean;
+  bend?: "up" | "down";
+  bgClassName?: string;
+  textColor?: string;
 }
 
-const CurvedLoop2: FC<CurvedLoopProps> = ({
+const CurvedLoop: FC<CurvedLoopProps> = ({
   marqueeText = "",
   speed = 2,
   className,
-  curveAmount = 60,
+  curveAmount = 50,
   direction = "left",
   interactive = true,
+  bend = "down",
+  bgClassName = "bg-white",
+  textColor = "black",
 }) => {
   const text = useMemo(() => {
     const hasTrailing = /\s|\u00A0$/.test(marqueeText);
@@ -38,20 +44,45 @@ const CurvedLoop2: FC<CurvedLoopProps> = ({
   const [spacing, setSpacing] = useState(0);
   const [offset, setOffset] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const uid = useId();
   const pathId = `curve-${uid}`;
-  const pathD = `M-600,245 Q720,${145 + curveAmount} 2000,245`;
 
   const dragRef = useRef(false);
   const lastXRef = useRef(0);
   const dirRef = useRef<"left" | "right">(direction);
   const velRef = useRef(0);
 
+  useEffect(() => {
+    const update = () => setIsMobile(window.innerWidth < 768);
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  useEffect(() => {
+    dirRef.current = direction;
+  }, [direction]);
+
+  const textSize = isMobile ? 64 : 180;
+
+  const baseY = bend === "up" ? (isMobile ? 120 : 140) : isMobile ? 90 : 90;
+  const controlY =
+    bend === "up" ? baseY - curveAmount : baseY + curveAmount;
+
+  const startX = isMobile ? -120 : -600;
+  const midX = isMobile ? 195 : 720;
+  const endX = isMobile ? 510 : 2040;
+
+  const pathD = `M${startX},${baseY} Q${midX},${controlY} ${endX},${baseY}`;
+
   const totalText =
     spacing > 0
-      ? Array(Math.ceil(5000 / spacing) + 4).fill(text).join("")
-      : text.repeat(40);
+      ? Array(Math.ceil((isMobile ? 2600 : 5000) / spacing) + 4)
+          .fill(text)
+          .join("")
+      : text.repeat(isMobile ? 20 : 40);
 
   useEffect(() => {
     if (measureRef.current) {
@@ -61,11 +92,7 @@ const CurvedLoop2: FC<CurvedLoopProps> = ({
         setOffset(-len);
       }
     }
-  }, [text]);
-
-  useEffect(() => {
-    dirRef.current = direction;
-  }, [direction]);
+  }, [text, textSize, isMobile]);
 
   useEffect(() => {
     if (!spacing || !textPathRef.current) return;
@@ -129,7 +156,7 @@ const CurvedLoop2: FC<CurvedLoopProps> = ({
 
   return (
     <section
-      className="w-full overflow-hidden bg-zinc-50 py-16"
+      className={`w-full overflow-hidden pt-6 md:pt-10 lg:pt-32 ${bgClassName}`}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={endDrag}
@@ -138,9 +165,9 @@ const CurvedLoop2: FC<CurvedLoopProps> = ({
       style={{ cursor: interactive ? (isDragging ? "grabbing" : "grab") : "auto" }}
     >
       <svg
-        viewBox="0 0 1440 320"
-        className="block w-full h-[260px] overflow-visible"
-        
+        viewBox={isMobile ? "0 55 390 90" : "0 40 1440 180"}
+        className="block w-full h-[72px] md:h-[140px] overflow-visible"
+        preserveAspectRatio="xMidYMid meet"
       >
         <defs>
           <path id={pathId} d={pathD} fill="none" />
@@ -150,7 +177,7 @@ const CurvedLoop2: FC<CurvedLoopProps> = ({
           ref={measureRef}
           xmlSpace="preserve"
           fill="transparent"
-          fontSize="180"
+          fontSize={textSize}
           fontWeight="700"
           style={{ pointerEvents: "none" }}
         >
@@ -159,10 +186,10 @@ const CurvedLoop2: FC<CurvedLoopProps> = ({
 
         <text
           xmlSpace="preserve"
-          fill="black"
-          fontSize="150"
+          fill={textColor}
+          fontSize={textSize}
           fontWeight="700"
-          letterSpacing="1"
+          letterSpacing={isMobile ? "0" : "1"}
           className={className ?? ""}
         >
           <textPath
@@ -179,4 +206,4 @@ const CurvedLoop2: FC<CurvedLoopProps> = ({
   );
 };
 
-export default CurvedLoop2;
+export default CurvedLoop;

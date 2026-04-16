@@ -18,13 +18,15 @@ export default function Page() {
     <>
       <Loader />
       <Hero />
-      <CurvedLoop
+      {/* <CurvedLoop
         marqueeText="Common ✦ Ground ✦ Barbershop ✦"
-        speed={6}
+        speed={2}
         curveAmount={0}
-        direction="right"
-        interactive
-      />
+        direction="left"
+        bend="up"
+        bgClassName="bg-zinc-900"
+        textColor="white"
+      /> */}
       <Carousel />
       <FadingParagraph />
       {/* <StatementBanner /> */}
@@ -36,10 +38,12 @@ export default function Page() {
       <LocationHours /> 
       <CurvedLoop2
         marqueeText="Common ✦ Ground ✦ Barbershop ✦"
-        speed={6}
-        curveAmount={250}
+        speed={2}
+        curveAmount={0}
         direction="right"
-        interactive
+        bend="down"
+        bgClassName="bg-zinc-50"
+        textColor="black"
       />
       <Footer />
     </>
