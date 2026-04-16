@@ -118,7 +118,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
     return () => cancelAnimationFrame(frame);
   }, [spacing, speed, offset]);
 
-  const onPointerDown = (e: PointerEvent<HTMLDivElement>) => {
+  const onPointerDown = (e: PointerEvent<HTMLElement>) => {
     if (!interactive) return;
     dragRef.current = true;
     setIsDragging(true);
@@ -127,7 +127,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
     e.currentTarget.setPointerCapture(e.pointerId);
   };
 
-  const onPointerMove = (e: PointerEvent<HTMLDivElement>) => {
+  const onPointerMove = (e: PointerEvent<HTMLElement>) => {
     if (!interactive || !dragRef.current || !textPathRef.current || spacing <= 0) return;
 
     const dx = e.clientX - lastXRef.current;
@@ -143,7 +143,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
     setOffset(next);
   };
 
-  const endDrag = (e?: PointerEvent<HTMLDivElement>) => {
+  const endDrag = (e?: PointerEvent<HTMLElement>) => {
     if (!interactive) return;
     dragRef.current = false;
     setIsDragging(false);
