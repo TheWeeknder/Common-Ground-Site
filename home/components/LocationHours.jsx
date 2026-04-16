@@ -7,7 +7,7 @@ import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 import { RxChevronRight } from "react-icons/rx";
 
 
-export function Contact13() {
+export function LocationHours() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-50">
       <div className="container">

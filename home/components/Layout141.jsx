@@ -23,22 +23,22 @@ export function Layout141() {
               alt="Relume placeholder image"
             />
           </div>
-              <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
-                <button className="
-                  relative top-0
-                  bg-[#ffde71] text-[#1a1206] text-xs sm:text-sm
-                  px-8 py-4 sm:px-10 sm:py-[18px]
-                  font-bold tracking-[0.12em] rounded-[14px]
-                  shadow-[0_5px_0_#8f6e10]
-                  hover:bg-[#e0bc45] hover:shadow-[0_7px_0_#8f6e10] hover:-top-0.5
-                  active:shadow-[0_1px_0_#8f6e10] active:top-1
-                  transition-all duration-[120ms]
-                  touch-manipulation min-h-[44px] sm:min-h-[68px]
-                  w-fit mx-auto sm:mx-0
-                ">
-                  VIEW BARBERS
-                </button> 
-              </div>
+            <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
+              <button className="
+                relative top-0
+                bg-[#ffde71] text-[#1a1206] text-xs sm:text-sm
+                px-8 py-4 sm:px-10 sm:py-[18px]
+                font-bold tracking-[0.12em] rounded-[14px]
+                shadow-[0_5px_0_#8f6e10]
+                hover:bg-[#e0bc45] hover:shadow-[0_7px_0_#8f6e10] hover:-top-0.5
+                active:shadow-[0_1px_0_#8f6e10] active:top-1
+                transition-all duration-[120ms]
+                touch-manipulation min-h-[44px] sm:min-h-[68px]
+                w-fit mx-auto sm:mx-0
+              ">
+                VIEW BARBERS
+              </button> 
+            </div>
         </div>
       </div>
     </section>

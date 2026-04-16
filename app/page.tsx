@@ -5,8 +5,8 @@ import { Layout423 } from "@/home/components/Layout423";
 import { Layout141 } from "@/home/components/Layout141";
 import { Cta31 } from "@/home/components/Cta31";
 import { Stats10B } from "@/home/components/Stats10B"; 
-import { Contact13 } from "@/home/components/Contact13";
-import { Footer4 } from "@/home/components/Footer4";
+import { LocationHours } from "@/home/components/LocationHours";
+import { Footer } from "@/home/components/Footer";
 import { Loader } from "@/home/components/Loader";
 import { FadingParagraph } from "@/home/components/FadingParagraph";
 export default function Page() {
@@ -22,8 +22,8 @@ export default function Page() {
       <Layout141 />
       {/* <Cta31 /> */}
       <Testimonials />
-      <Contact13 />
-      <Footer4 />
+      <LocationHours /> 
+      <Footer />
     </>
   );
 }
