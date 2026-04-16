@@ -3,7 +3,7 @@
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
 
-export function Header78() {
+export function Carousel() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-900">
       <div className="container flex flex-col items-center ">

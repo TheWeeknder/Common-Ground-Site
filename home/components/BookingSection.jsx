@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export function Stats10B() {
+export function BookingSection() {
   return (
     <section
       id="relume"

@@ -23,7 +23,7 @@ const useRelume = () => {
   };
 };
 
-export function Layout423() {
+export function MainServices() {
   const hoverState = useRelume();
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-900">

@@ -1,10 +1,10 @@
 import { Hero } from "@/home/components/Hero";
-import { Header78 } from "@/home/components/Header78";
-import { Testimonials } from "@/home/components/Layout1";
-import { Layout423 } from "@/home/components/Layout423";
-import { Layout141 } from "@/home/components/Layout141";
+import { Carousel } from "@/home/components/Carousel";
+import { Testimonials } from "@/home/components/Testimonials";
+import { MainServices } from "@/home/components/MainServices";
+import { Team } from "@/home/components/Team";
 import { Cta31 } from "@/home/components/Cta31";
-import { Stats10B } from "@/home/components/Stats10B"; 
+import { BookingSection } from "@/home/components/BookingSection"; 
 import { LocationHours } from "@/home/components/LocationHours";
 import { Footer } from "@/home/components/Footer";
 import { Loader } from "@/home/components/Loader";
@@ -14,12 +14,12 @@ export default function Page() {
     <>
       <Loader />
       <Hero />
-      <Header78 />
+      <Carousel />
       <FadingParagraph />
       {/* <StatementBanner /> */}
-      <Layout423 />
-      <Stats10B />
-      <Layout141 />
+      <MainServices />
+      <BookingSection />
+      <Team />
       {/* <Cta31 /> */}
       <Testimonials />
       <LocationHours /> 
