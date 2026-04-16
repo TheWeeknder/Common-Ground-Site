@@ -5,7 +5,7 @@ import React from "react";
 
 export function Carousel() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-900">
+    <section id="relume" className="px-[5%] pb-16 md:pb-24 bg-zinc-900">
       <div className="container flex flex-col items-center ">
           {/* deleted the our work h1 title*/}
           {/* moved the view full gallery button to the bottom of carousel*/}

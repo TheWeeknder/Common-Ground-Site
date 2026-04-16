@@ -27,6 +27,15 @@ export default function Page() {
         bgClassName="bg-zinc-900"
         textColor="white"
       /> */}
+      <CurvedLoop2
+        marqueeText="GOOD VIBES ✦ GREAT BARBERS ✦ GREATER CUTS ✦"
+        speed={2}
+        curveAmount={0}
+        direction="left"
+        bend="down"
+        bgClassName="bg-zinc-900"
+        textColor="white"
+      />
       <Carousel />
       <FadingParagraph />
       {/* <StatementBanner /> */}
@@ -36,15 +45,6 @@ export default function Page() {
       {/* <Cta31 /> */}
       <Testimonials />
       <LocationHours /> 
-      <CurvedLoop2
-        marqueeText="Common ✦ Ground ✦ Barbershop ✦"
-        speed={2}
-        curveAmount={0}
-        direction="right"
-        bend="down"
-        bgClassName="bg-zinc-50"
-        textColor="black"
-      />
       <Footer />
     </>
   );

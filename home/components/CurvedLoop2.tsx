@@ -156,7 +156,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
 
   return (
     <section
-      className={`w-full overflow-hidden pt-6 md:pt-10 lg:pt-32 ${bgClassName}`}
+      className={`w-full overflow-hidden pt-12 md:pt-14 lg:pt-32 ${bgClassName}`}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={endDrag}
