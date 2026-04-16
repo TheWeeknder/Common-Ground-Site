@@ -34,7 +34,7 @@ export function MainServices() {
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/80 to-black pointer-events-none" />
       
       {/* 3. The Ambient Glow (Warm Amber) */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[80%] max-w-[800px] h-[400px] bg-amber-700/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[80%] max-w-[800px] h-[400px] bg-gray-700/10 blur-[120px] rounded-full pointer-events-none" />
       {/* ------------------------------- */}
 
       {/* 4. Added relative and z-10 to the container to sit above the glow */}
