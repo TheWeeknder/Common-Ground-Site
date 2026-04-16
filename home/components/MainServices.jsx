@@ -39,11 +39,22 @@ export function MainServices() {
 
       {/* 4. Added relative and z-10 to the container to sit above the glow */}
       <div className="container relative z-10">
-        <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
-          <p className="text-md tracking-widest text-zinc-400">MAIN SERVICES</p>
-          <h2 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-white">
+        <div className="mx-auto mb-12 w-full max-w-2xl text-center md:mb-18 lg:mb-20">
+          {/* Tagline: Muted, spaced out, and elegant */}
+          <p className="text-sm font-semibold tracking-[0.3em] text-white uppercase mb-3 ">
+            MAIN SERVICES
+          </p>
+          {/* Headline: Gold Metallic Gradient */}
+          <h2 
+            style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} 
+            className="rb-5 mb-5 text-6xl font-bold md:mb-6 md:text-8xl lg:text-9xl 
+                      bg-gradient-to-b from-[#cecece] via-[#b1b0b0] to-[#cbcbca] 
+                      bg-clip-text text-transparent"
+          >
             WHAT WE OFFER
           </h2>
+          {/* Optional: Add a small decorative gold line for extra "class" */}
+          <div className="mx-auto h-[1px] w-24 bg-gradient-to-r from-transparent via-[#cecece] to-transparent" />
         </div>
         <div className="flex flex-col justify-between gap-6 md:gap-8 lg:flex-row">
           
