@@ -39,7 +39,7 @@ export default function Page() {
       />
       <Carousel />
       <FadingParagraph />
-      <StatementBanner />
+      {/* <StatementBanner /> */}
       <MainServices />
       <BookingSection />
       <Team />
