@@ -31,7 +31,7 @@ const Carousel = ({ className }: Hero234Props) => {
   return (
     <section
       className={cn(
-        "relative min-h-screen overflow-hidden bg-background",
+        "relative min-h-screen overflow-hidden bg-zinc-50",
         className,
       )}
     >
