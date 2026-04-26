@@ -72,10 +72,10 @@ const Carousel = ({ className }: Hero234Props) => {
       </div>
 
       {/* Left side masks */}
-      <div className="absolute top-0 left-0 z-10 h-full w-[160px] bg-gradient-to-r from-background to-transparent md:w-[200px]" />
+      <div className="absolute top-0 left-0 z-10 h-full w-[80px] bg-gradient-to-r from-background to-transparent md:w-[200px]" />
 
       {/* Right side masks */}
-      <div className="absolute top-0 right-0 z-10 h-full w-[160px] bg-gradient-to-l from-background to-transparent md:w-[200px]" />
+      <div className="absolute top-0 right-0 z-10 h-full w-[80px] bg-gradient-to-l from-background to-transparent md:w-[200px]" />
 
       {/* <div className="relative z-20 flex min-h-screen items-center justify-center">
         <motion.div
