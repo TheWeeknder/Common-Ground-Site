@@ -28,7 +28,7 @@ export default function Page() {
         bgClassName="bg-zinc-900"
         textColor="white"
       /> */}
-      <CurvedLoop2
+      {/* <CurvedLoop2
         marqueeText="GOOD VIBES ✦ GREAT BARBERS ✦ GREATER CUTS ✦"
         speed={2}
         curveAmount={0}
@@ -36,7 +36,7 @@ export default function Page() {
         bend="down"
         bgClassName="bg-zinc-900"
         textColor="white"
-      />
+      /> */}
       <Carousel />
       <FadingParagraph />
       {/* <StatementBanner /> */}
