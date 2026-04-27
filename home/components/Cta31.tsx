@@ -12,40 +12,40 @@ import { cn } from "@/lib/utils";
 
 const projects = [
   {
-    title: "Red Susano",
-    img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9jsQcDsxyqA-unsplash.jpg",
+    title: "Person 1",
+    img: "/assets/person1.jpg",
     year: "@instagram",
-    type: "",
+    type: "Co-Founder & Barber",
   },
   {
-    title: "Colorful Urban Living",
-    img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw17.jpeg",
-    year: "2025",
-    type: "Urban Design",
+    title: "Person 2",
+    img: "/assets/person2.jpg",
+    year: "@instagram",
+    type: "Barber & Hairstylist",
   },
   {
-    title: "Minimalist Home Retreat",
-    img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw12.jpeg",
-    year: "2025",
-    type: "Interior",
+    title: "Person 3",
+    img: "/assets/person3.jpg",
+    year: "@instagram",
+    type: "Barber",
   },
   {
-    title: "Rustic Cabin Glow",
-    img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw13.jpeg",
-    year: "2025",
-    type: "Product Design",
+    title: "Person 4",
+    img: "/assets/person4.jpg",
+    year: "@instagram",
+    type: "Barber",
   },
   {
-    title: "Luxury Concrete Box",
-    img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw14.jpeg",
-    year: "2025",
-    type: "Residential",
+    title: "Person 5",
+    img: "/assets/person5.jpg",
+    year: "@instagram",
+    type: "Barber",
   },
   {
-    title: "Glasshouse in Nature",
-    img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw16.jpeg",
-    year: "2025",
-    type: "Sustainable Design",
+    title: "Person 6",
+    img: "/assets/person6.jpg",
+    year: "@instagram",
+    type: "Barber",
   },
 ];
 
@@ -97,7 +97,7 @@ const Cta31 = ({ className }: Projects12Props) => {
   }, []);
 
   return (
-    <section className={cn("py-20 px-[5%]", className)}>
+    <section className={cn("py-20 px-[5%] bg-zinc-50", className)}>
       <div className="container">
         <div className="rb-12 mb-12 text-center md:mb-18 lg:mb-20">
           <div className="w-full max-w-lg mx-auto">
