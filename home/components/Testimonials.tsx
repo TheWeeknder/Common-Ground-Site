@@ -15,7 +15,7 @@ const testimonials = [
 const TestimonialCard = ({ quote, name, title }: { quote: string; name: string; title: string }) => (
   <div className="flex w-[320px] shrink-0 flex-col items-start justify-between border border-border-primary p-6 mx-4">
     <div className="mb-5 flex">
-      {[...Array(5)].map((_, i) => <BiSolidStar key={i} className="size-6" />)}
+      {[...Array(5)].map((_, i) => <BiSolidStar key={i} className="size-6 text-yellow-300" />)}
     </div>
     <p className="md:text-md">&ldquo;{quote}&rdquo;</p>
     <div className="mt-5 flex items-center gap-4">
