@@ -56,17 +56,17 @@ export function MainServices() {
           {/* Optional: Add a small decorative gold line for extra "class" */}
           <div className="mx-auto h-[1px] w-24 bg-gradient-to-r from-transparent via-[#cecece] to-transparent" />
         </div>
-        <div className="flex flex-col justify-between gap-6 md:gap-8 lg:flex-row">
+        <div className="flex flex-col justify-between gap-6 md:gap-8 lg:flex-row ">
           
           {/* Service 1: Haircuts */}
           <a
             href="#"
-            className="relative flex w-full flex-col overflow-hidden lg:h-full lg:w-1/2 lg:transition-all lg:duration-200 lg:hover:w-[70%]"
+            className="relative rounded-lg flex w-full flex-col overflow-hidden lg:h-full lg:w-1/2 lg:transition-all lg:duration-200 lg:hover:w-[70%]"
             onMouseOver={hoverState.handleMouseEnter(0)}
             onMouseLeave={hoverState.handleMouseLeave}
           >
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
-              <div className="absolute inset-0 bg-black/50" />
+              <div className="absolute inset-0 bg-black/30" />
               <img
                 src="/assets/mitchell-orr-xO8OpsasyZA-unsplash.jpg"
                 alt="Haircut service"
@@ -130,12 +130,12 @@ export function MainServices() {
           {/* Service 2: Beard & Shaving */}
           <a
             href="#"
-            className="relative flex w-full flex-col overflow-hidden lg:h-full lg:w-1/2 lg:transition-all lg:duration-200 lg:hover:w-[70%]"
+            className="relative rounded-lg marker:flex w-full flex-col overflow-hidden lg:h-full lg:w-1/2 lg:transition-all lg:duration-200 lg:hover:w-[70%]"
             onMouseOver={hoverState.handleMouseEnter(1)}
             onMouseLeave={hoverState.handleMouseLeave}
           >
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
-              <div className="absolute inset-0 bg-black/50" />
+              <div className="absolute inset-0 bg-black/30" />
               <img
                 src="assets/nate-johnston-tgPrIYnW3g4-unsplash.jpg"
                 alt="Beard trimming service"
@@ -199,12 +199,12 @@ export function MainServices() {
           {/* Service 3: Facial & Skin Care */}
           <a
             href="#"
-            className="relative flex w-full flex-col overflow-hidden lg:h-full lg:w-1/2 lg:transition-all lg:duration-200 lg:hover:w-[70%]"
+            className="relative rounded-lg flex w-full flex-col overflow-hidden lg:h-full lg:w-1/2 lg:transition-all lg:duration-200 lg:hover:w-[70%]"
             onMouseOver={hoverState.handleMouseEnter(2)}
             onMouseLeave={hoverState.handleMouseLeave}
           >
             <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
-              <div className="absolute inset-0 bg-black/50" />
+              <div className="absolute inset-0 bg-black/30" />
               <img
                 src="assets/mohamed-b-SHA-8AjZOeY-unsplash.jpg"
                 alt="Facial service"

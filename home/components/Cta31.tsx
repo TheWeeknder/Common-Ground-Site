@@ -12,10 +12,10 @@ import { cn } from "@/lib/utils";
 
 const projects = [
   {
-    title: "Modern Concrete Pavilion",
+    title: "Red Susano",
     img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9jsQcDsxyqA-unsplash.jpg",
-    year: "2025",
-    type: "Architecture",
+    year: "@instagram",
+    type: "",
   },
   {
     title: "Colorful Urban Living",
