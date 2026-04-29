@@ -36,7 +36,7 @@ export function PageHeader({ title, subtitle }) {
           <div className="hidden lg:flex gap-10 items-center text-white">
             <Link href="/about" className="text-sm tracking-widest hover:text-amber-400 transition-colors">ABOUT US</Link>
             <Link href="/services" className="text-sm tracking-widest hover:text-amber-400 transition-colors">SERVICES</Link>
-            <Link href="/gallery" className="text-sm tracking-widest hover:text-amber-400 transition-colors">GALLERY</Link>
+            <Link href="/gallery" className="text-sm tracking-widest hover:text-amber-400 transition-colors">PORTFOLIO</Link>
             <Link href="/faqs" className="text-sm tracking-widest hover:text-amber-400 transition-colors">FAQs</Link>
             <Link
               href="/book"
