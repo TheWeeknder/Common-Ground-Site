@@ -67,16 +67,27 @@ export function Faq7() {
             </p>
           </div>
         </div>
-        <div className="mx-auto mt-12 max-w-md text-center md:mt-18 lg:mt-20">
+        {/* <div className="mx-auto mt-12 max-w-md text-center md:mt-18 lg:mt-20">
           <p className="md:text-md">
             Reach out directly or schedule your next visit.
           </p>
           <div className="mt-6 md:mt-8">
-            <Button title="Contact" variant="secondary">
-              Contact
-            </Button>
+            <button className="
+              relative top-0
+              bg-transparent text-black text-xs sm:text-sm
+              px-8 py-4 sm:px-10 sm:py-[18px]
+              font-bold tracking-[0.12em] rounded-full
+              border-2 border-[#ffe590]
+              hover:bg-white/5
+              active:scale-[0.98]
+              transition-all duration-[120ms]
+              touch-manipulation min-h-[44px] sm:min-h-[68px]
+              w-fit mx-auto sm:mx-0
+            ">
+              BOOK APPOINTMENT
+            </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
