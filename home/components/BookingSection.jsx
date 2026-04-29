@@ -20,12 +20,12 @@ export function BookingSection() {
         <div className="mt-6 flex flex-wrap items-center justify-center gap-4 md:mt-8">
           <button className="
             relative top-0
-            bg-[#D4AF37] text-[#1a1206] text-xs sm:text-sm
+            bg-transparent text-white text-xs sm:text-sm
             px-8 py-4 sm:px-10 sm:py-[18px]
-            font-bold tracking-[0.12em] rounded-[14px]
-            shadow-[0_5px_0_#8f6e10]
-            hover:bg-[#e0bc45] hover:shadow-[0_7px_0_#8f6e10] hover:-top-0.5
-            active:shadow-[0_1px_0_#8f6e10] active:top-1
+            font-bold tracking-[0.12em] rounded-full
+            border-2 border-[#ffe590]
+            hover:bg-white/5
+            active:scale-[0.98]
             transition-all duration-[120ms]
             touch-manipulation min-h-[44px] sm:min-h-[68px]
             w-fit mx-auto sm:mx-0
