@@ -120,11 +120,12 @@ export function Hero() {
       {/* Hero Content */}
       <div className="relative z-20 min-h-screen flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <h1 className="font-serif font-medium text-center lg:text-center text-5xl sm:text-7xl md:text-8xl lg:text-[4.2rem] xl:text-[5.5rem] mb-6 leading-[1.0] text-white">
-            COMMON GROUND<br />
-            BARBERSHOP
+          <h1 className="font-serif font-medium text-center lg:text-center text-5xl sm:text-7xl md:text-8xl lg:text-[4.2rem] xl:text-[6.5rem] mb-1 leading-[1.0] text-white">
+            COMMON GROUND
           </h1>
-          
+          <p className="font-serif font-medium text-center lg:text-center text-lg sm:text-2xl md:text-3xl lg:text-[1.2rem] xl:text-[2.5rem] mb-8 sm:mb-10 md:mb-12 leading-[1.0] text-white">
+            BARBERSHOP
+          </p>
           {/* <p className="text-center lg:text-left text-base sm:text-lg md:text-2xl text-gray-300 mb-12 max-w-2xl leading-relaxed">
             Experience the art of traditional barbering with contemporary precision. Where craftsmanship meets luxury.
           </p> */}
@@ -132,12 +133,12 @@ export function Hero() {
           <div className="flex flex-row sm:flex-row gap-6 justify-center">
             <button className="
               relative top-0
-              bg-[#D4AF37] text-[#1a1206] text-xs sm:text-sm
+              bg-transparent text-white text-xs sm:text-sm
               px-8 py-4 sm:px-10 sm:py-[18px]
-              font-bold tracking-[0.12em] rounded-[14px]
-              shadow-[0_5px_0_#8f6e10]
-              hover:bg-[#e0bc45] hover:shadow-[0_7px_0_#8f6e10] hover:-top-0.5
-              active:shadow-[0_1px_0_#8f6e10] active:top-1
+              font-bold tracking-[0.12em] rounded-full
+              border-2 border-[#ffe590]
+              hover:bg-white/5
+              active:scale-[0.98]
               transition-all duration-[120ms]
               touch-manipulation min-h-[44px] sm:min-h-[68px]
               w-fit mx-auto sm:mx-0

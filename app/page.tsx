@@ -42,7 +42,7 @@ export default function Page() {
       {/* <StatementBanner /> */}
       <MainServices />
       <BookingSection />
-      <Team />
+      {/* <Team /> */}
       <Cta31 />
       <Testimonials />
       <LocationHours /> 

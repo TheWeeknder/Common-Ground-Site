@@ -48,7 +48,7 @@ export function MainServices() {
           <h2 
             style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} 
             className="rb-5 mb-5 text-6xl font-bold md:mb-6 md:text-8xl lg:text-9xl 
-                      bg-gradient-to-b from-[#cecece] via-[#b1b0b0] to-[#cbcbca] 
+                      bg-gradient-to-b from-[#ffffff] via-[#ffffff] to-[#ffffff] 
                       bg-clip-text text-transparent"
           >
             WHAT WE OFFER
