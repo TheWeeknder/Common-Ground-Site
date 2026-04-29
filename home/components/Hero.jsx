@@ -47,7 +47,7 @@ export function Hero() {
           <div className="hidden lg:flex gap-10 items-center text-white">
             <Link href="/about" className="text-sm tracking-widest hover:text-amber-400 transition-colors">ABOUT US</Link>
             <Link href="/services" className="text-sm tracking-widest hover:text-amber-400 transition-colors">SERVICES</Link>
-            <Link href="/gallery" className="text-sm tracking-widest hover:text-amber-400 transition-colors">GALLERY</Link>
+            <Link href="/gallery" className="text-sm tracking-widest hover:text-amber-400 transition-colors">PORTFOLIO</Link>
             <Link href="/faqs" className="text-sm tracking-widest hover:text-amber-400 transition-colors">FAQs</Link>
             <Link 
               href="/book"
@@ -99,7 +99,7 @@ export function Hero() {
                 {[
                   { href: "/about", label: "ABOUT US" },
                   { href: "/services", label: "SERVICES" },
-                  { href: "/gallery", label: "GALLERY" },
+                  { href: "/gallery", label: "PORTFOLIO" },
                   { href: "/faqs", label: "FAQs" },
                 ].map(({ href, label }, i) => (
                   <motion.div key={href} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.07 + 0.1 }}>
@@ -109,7 +109,20 @@ export function Hero() {
                   </motion.div>
                 ))}
               </div>
-              <Link href="/book" className="bg-amber-400 text-black text-center py-5 text-md tracking-widest font-semibold hover:bg-amber-300 transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              <Link 
+                href="/book" 
+                className="
+                bg-transparent text-white text-sm
+                py-4 text-center
+                font-bold tracking-[0.12em] rounded-full
+                border-2 border-[#ffe590]
+                hover:bg-white/5
+                active:scale-[0.98]
+                transition-all duration-[120ms]
+                w-full
+                " 
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 BOOK NOW
               </Link>
             </motion.div>
