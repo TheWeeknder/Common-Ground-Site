@@ -7,7 +7,7 @@ export default function FaqsPage() {
   return (
     <>
       <PageHeader title="ABOUT US" subtitle="Our story & team" />
-      <Faq7 />
+      <Faq7/>
       <Cta31 />
       <Footer4 />
     </>

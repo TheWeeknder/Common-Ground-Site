@@ -7,22 +7,22 @@ export function Faq7() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container w-full max-w-lg">
-        <div className="rb-12 mb-12 text-center md:mb-18 lg:mb-20">
+        {/* <div className="rb-12 mb-12 text-center md:mb-18 lg:mb-20">
           <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
             FAQs
           </h2>
           <p className="md:text-md">
             Everything you need to know about Common Ground barbershop.
           </p>
-        </div>
+        </div> */}
         <div className="grid grid-cols-1 gap-x-12 gap-y-10 md:gap-y-12">
           <div>
             <h2 className="mb-3 text-base font-bold md:mb-4 md:text-md">
               What are your hours?
             </h2>
             <p>
-              We're open Tuesday through Saturday, nine in the morning until
-              seven at night. Sundays and Mondays we're closed. Come in early if
+              We are open Tuesday through Saturday, nine in the morning until
+              seven at night. Sundays and Mondays we are closed. Come in early if
               you want to avoid the wait.
             </p>
           </div>
@@ -41,7 +41,7 @@ export function Faq7() {
               Is parking available?
             </h2>
             <p>
-              Street parking is available on the block. We're located near
+              Street parking is available on the block. We are located near
               public transit if that works better for you. The neighborhood has
               plenty of spots most days.
             </p>
@@ -81,3 +81,5 @@ export function Faq7() {
     </section>
   );
 }
+
+
