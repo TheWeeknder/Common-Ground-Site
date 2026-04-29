@@ -6,7 +6,7 @@ import { PageHeader } from "@/faqs/components/PageHeader";
 export default function FaqsPage() {
   return (
     <>
-      <PageHeader title="ABOUT US" subtitle="Our story & team" />
+      <PageHeader title="FAQs" subtitle="Questions & Answers" />
       <Faq7/>
       {/* <Cta31 /> */}
       <Footer />
