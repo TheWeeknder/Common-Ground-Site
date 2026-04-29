@@ -38,21 +38,20 @@ export function PageHeader({ title, subtitle }) {
             <Link href="/services" className="text-sm tracking-widest hover:text-amber-400 transition-colors">SERVICES</Link>
             <Link href="/gallery" className="text-sm tracking-widest hover:text-amber-400 transition-colors">PORTFOLIO</Link>
             <Link href="/faqs" className="text-sm tracking-widest hover:text-amber-400 transition-colors">FAQs</Link>
-            <Link
+            <Link 
               href="/book"
               className="
-                relative top-0
-                bg-[#D4AF37] text-[#1a1206] text-xs sm:text-sm
-                px-7 py-3.5
-                font-bold tracking-[0.12em] rounded-[10px]
-                shadow-[0_4px_0_#8f6e10]
-                hover:bg-[#e0bc45] hover:shadow-[0_6px_0_#8f6e10] hover:-top-0.5
-                active:shadow-[0_1px_0_#8f6e10] active:top-1
-                transition-all duration-[120ms]
-                touch-manipulation
-                w-fit mx-auto sm:mx-0
-              "
-            >
+              relative top-0
+              bg-transparent text-white text-xs
+              px-5 py-2.5
+              font-bold tracking-[0.12em] rounded-full
+              border-2 border-[#ffe590]
+              hover:bg-white/5
+              active:scale-[0.98]
+              transition-all duration-[120ms]
+              touch-manipulation
+              w-fit mx-auto sm:mx-0
+            ">
               BOOK NOW
             </Link>
           </div>
@@ -79,7 +78,7 @@ export function PageHeader({ title, subtitle }) {
             >
               <div className="flex justify-between items-center mb-16">
                 <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-                  <img src="/placeholderlogoforhero.svg" alt="Logo" className="h-10" />
+                  <img src="/logoipsum-274.svg" alt="Logo" className="h-10" />
                 </Link>
                 <button onClick={() => setMobileMenuOpen(false)} className="text-white p-2">
                   <X className="w-8 h-8" />
@@ -89,28 +88,28 @@ export function PageHeader({ title, subtitle }) {
                 {[
                   { href: "/about", label: "ABOUT US" },
                   { href: "/services", label: "SERVICES" },
-                  { href: "/gallery", label: "GALLERY" },
+                  { href: "/gallery", label: "PORTFOLIO" },
                   { href: "/faqs", label: "FAQs" },
                 ].map(({ href, label }, i) => (
-                  <motion.div
-                    key={href}
-                    initial={{ opacity: 0, x: 30 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: i * 0.07 + 0.1 }}
-                  >
-                    <Link
-                      href={href}
-                      className="block text-3xl font-light text-white tracking-widest py-5 border-b border-white/10 hover:text-amber-400 transition-colors"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
+                  <motion.div key={href} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.07 + 0.1 }}>
+                    <Link href={href} className="block text-3xl font-light text-white tracking-widest py-5 border-b border-white/10 hover:text-amber-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
                       {label}
                     </Link>
                   </motion.div>
                 ))}
               </div>
-              <Link
-                href="/book"
-                className="bg-amber-400 text-black text-center py-5 text-md tracking-widest font-semibold hover:bg-amber-300 transition-colors"
+              <Link 
+                href="/book" 
+                className="
+                bg-transparent text-white text-sm
+                py-4 text-center
+                font-bold tracking-[0.12em] rounded-full
+                border-2 border-[#ffe590]
+                hover:bg-white/5
+                active:scale-[0.98]
+                transition-all duration-[120ms]
+                w-full
+                " 
                 onClick={() => setMobileMenuOpen(false)}
               >
                 BOOK NOW

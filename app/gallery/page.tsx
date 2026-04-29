@@ -7,7 +7,7 @@ import { PageHeader } from "@/gallery/components/PageHeader";
 export default function GalleryPage() {
   return (
     <>
-        <PageHeader title="Gallery" subtitle="Browse Through Our Portfolio" />
+        <PageHeader title="Portfolio" subtitle="Browse Through Our Portfolio" />
         <Gallery25 />
         {/* <Gallery4_1 />
         <Gallery24 /> */}

@@ -41,17 +41,17 @@ export function PageHeader({ title, subtitle }) {
             <Link
               href="/book"
               className="
-                relative top-0
-                bg-[#D4AF37] text-[#1a1206] text-xs sm:text-sm
-                px-7 py-3.5
-                font-bold tracking-[0.12em] rounded-[10px]
-                shadow-[0_4px_0_#8f6e10]
-                hover:bg-[#e0bc45] hover:shadow-[0_6px_0_#8f6e10] hover:-top-0.5
-                active:shadow-[0_1px_0_#8f6e10] active:top-1
-                transition-all duration-[120ms]
-                touch-manipulation
-                w-fit mx-auto sm:mx-0
-              "
+              relative top-0
+              bg-transparent text-white text-xs
+              px-5 py-2.5
+              font-bold tracking-[0.12em] rounded-full
+              border-2 border-[#ffe590]
+              hover:bg-white/5
+              active:scale-[0.98]
+              transition-all duration-[120ms]
+              touch-manipulation
+              w-fit mx-auto sm:mx-0
+            "
             >
               BOOK NOW
             </Link>
@@ -89,7 +89,7 @@ export function PageHeader({ title, subtitle }) {
                 {[
                   { href: "/about", label: "ABOUT US" },
                   { href: "/services", label: "SERVICES" },
-                  { href: "/gallery", label: "GALLERY" },
+                  { href: "/gallery", label: "PORTFOLIO" },
                   { href: "/faqs", label: "FAQs" },
                 ].map(({ href, label }, i) => (
                   <motion.div
