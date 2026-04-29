@@ -8,8 +8,8 @@ export default function AboutPage() {
   return (
     <>
       <PageHeader title="ABOUT US" subtitle="Our story & team" />
-      <Layout1 />
       <Header76 />
+      <Layout1 />
       <Footer />
     </>
   );
