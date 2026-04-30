@@ -77,7 +77,7 @@ const Footer4 = ({ className }: Footer25Props) => {
           </div>
 
           {/* 🔥 Grid */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 justify-items-center">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-12 justify-items-center">
             {data.menuItems.map((menu, idx) => (
               <div key={idx} className="text-center">
                 <h3 className="mb-4 text-sm font-medium tracking-wider text-primary uppercase">
