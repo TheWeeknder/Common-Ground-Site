@@ -1,335 +1,138 @@
-"use client";
-
-import { motion } from "framer-motion";
 import React from "react";
 
+import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
-interface Gallery25Props {
+const experiences = [
+  {
+    year: "2019 - PRESENT",
+    role: "SENIOR SOFTWARE ENGINEER",
+    company: "TECHNOLOGY INNOVATIONS CORP",
+  },
+  {
+    year: "2018 - 2020",
+    role: "FULL-STACK DEVELOPER",
+    company: "DIGITAL SOLUTIONS & STARTUP COLLABORATIONS",
+  },
+  {
+    year: "2017 - 2018",
+    role: "FRONTEND DEVELOPER",
+    company: "WEB CRAFT STUDIO",
+  },
+  {
+    year: "2015 - 2016",
+    role: "JUNIOR DEVELOPER",
+    company: "CODE FORGE LABS",
+  },
+  {
+    year: "2014 - 2015",
+    role: "INTERN DEVELOPER",
+    company: "INNOVATION TECH",
+  },
+];
+
+const awards = [
+  {
+    year: "2015",
+    title: "BEST NEWCOMER DEVELOPER",
+    organization: "TECH EXCELLENCE AWARDS",
+  },
+  {
+    year: "2015",
+    title: "INNOVATION IN WEB DEVELOPMENT",
+    organization: "DIGITAL CREATORS UK",
+  },
+  {
+    year: "2016",
+    title: "OUTSTANDING CODE QUALITY",
+    organization: "BRITISH SOFTWARE ASSOCIATION",
+  },
+  {
+    year: "2017",
+    title: "RISING STAR IN TECH",
+    organization: "GLOBAL DEVELOPER AWARDS",
+  },
+  {
+    year: "2018",
+    title: "DEVELOPER OF THE YEAR",
+    organization: "CODE EXCELLENCE AWARDS",
+  },
+  {
+    year: "2019",
+    title: "BEST TECH TEAM LEADER",
+    organization: "UK SOFTWARE GUILD",
+  },
+  {
+    year: "2020",
+    title: "INNOVATION IN SOFTWARE ARCHITECTURE",
+    organization: "DIGITAL INNOVATION AWARDS",
+  },
+  {
+    year: "2021",
+    title: "EMERGING TECH LEADER",
+    organization: "LONDON TECH COUNCIL",
+  },
+  {
+    year: "2022",
+    title: "EXCELLENCE IN FULL-STACK DEVELOPMENT",
+    organization: "DEVELOPER WEEKLY",
+  },
+  {
+    year: "2023",
+    title: "BEST SOFTWARE ENGINEER",
+    organization: "EUROPEAN TECH & MEDIA",
+  },
+];
+
+interface List3Props {
   className?: string;
 }
 
-const Gallery25 = ({ className }: Gallery25Props) => {
-  const column1Images = [
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw1.jpeg",
-      alt: "Gallery Image 1",
-      height: "23rem",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw2.jpeg",
-      alt: "Gallery Image 2",
-      height: "28rem",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw3.jpeg",
-      alt: "Gallery Image 3",
-      height: "12rem",
-    },
-  ];
-
-  const column2Images = [
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw4.jpeg",
-      alt: "Gallery Image 4",
-      height: "13rem",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw5.jpeg",
-      alt: "Gallery Image 5",
-      height: "32rem",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw6.jpeg",
-      alt: "Gallery Image 6",
-      height: "18rem",
-    },
-  ];
-
-  const column3Images = [
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw7.jpeg",
-      alt: "Gallery Image 7",
-      height: "32rem",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw8.jpeg",
-      alt: "Gallery Image 8",
-      height: "32rem",
-    },
-  ];
-
-  const column4Images = [
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw9.jpeg",
-      alt: "Gallery Image 9",
-      height: "13rem",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw10.jpeg",
-      alt: "Gallery Image 10",
-      height: "22.5rem",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw11.jpeg",
-      alt: "Gallery Image 11",
-      height: "22rem",
-    },
-  ];
-
+const Gallery25 = ({ className }: List3Props) => {
   return (
-    <section className={cn("py-32", className)}>
-      <div className="relative container">
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          {/* Column 1 */}
-          <div className="grid gap-4">
-            {column1Images.map((image, index) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0.9,
-                  y: 50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  scale: 1,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-                key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
-                style={{ height: image.height }}
-              >
-                <img
-                  className="h-full w-full rounded-2xl object-cover"
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </motion.div>
-            ))}
+    <section className={cn("py-32 px-[5%]", className)}>
+      <div className="container">
+        <div className="flex flex-col gap-12">
+          {/* <div className="flex flex-col gap-5">
+            <span className="text-sm text-muted-foreground">/ CAREER PATH</span>
+            <h1 className="text-4xl md:text-6xl">
+              BUILDING SOLUTIONS,
+              <br /> SHAPING THE FUTURE
+            </h1>
+          </div> */}
+          <div className="flex flex-col gap-7">
+            <h2 className="text-xl">/ EXPERIENCE</h2>
+            <div>
+              {experiences.map((experience, idx) => (
+                <React.Fragment key={idx}>
+                  <Separator />
+                  <div className="my-2.5 grid gap-2.5 text-sm sm:grid-cols-3">
+                    <p className="text-muted-foreground">{experience.year}</p>
+                    <p>{experience.role}</p>
+                    <p className="text-muted-foreground">
+                      {experience.company}
+                    </p>
+                  </div>
+                </React.Fragment>
+              ))}
+            </div>
           </div>
-
-          {/* Column 2 */}
-          <div className="grid gap-4">
-            {column2Images.map((image, index) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0.9,
-                  y: -50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  scale: 1,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-                key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
-                style={{ height: image.height }}
-              >
-                <img
-                  className="h-full w-full rounded-2xl object-cover"
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Column 3 */}
-          <div className="grid gap-4">
-            {column3Images.map((image, index) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0.9,
-                  y: 50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  scale: 1,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-                key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
-                style={{ height: image.height }}
-              >
-                <img
-                  className="h-full w-full rounded-2xl object-cover"
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Column 4 */}
-          <div className="grid gap-4">
-            {column4Images.map((image, index) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0.9,
-                  y: -50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  scale: 1,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-                key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
-                style={{ height: image.height }}
-              >
-                <img
-                  className="h-full w-full rounded-2xl object-cover"
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </motion.div>
-            ))}
-            <div className="h-17 w-full rounded-2xl bg-muted"></div>
-          </div>
-        </div>
-        <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
-          {/* Column 1 */}
-          <div className="grid gap-4">
-            {column1Images.map((image, index) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0.9,
-                  y: 50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  scale: 1,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-                key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
-                style={{ height: image.height }}
-              >
-                <img
-                  className="h-full w-full rounded-2xl object-cover"
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Column 2 */}
-          <div className="grid gap-4">
-            {column2Images.map((image, index) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0.9,
-                  y: -50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  scale: 1,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-                key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
-                style={{ height: image.height }}
-              >
-                <img
-                  className="h-full w-full rounded-2xl object-cover"
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Column 3 */}
-          <div className="grid gap-4">
-            {column3Images.map((image, index) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0.9,
-                  y: 50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  scale: 1,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-                key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
-                style={{ height: image.height }}
-              >
-                <img
-                  className="h-full w-full rounded-2xl object-cover"
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Column 4 */}
-          <div className="grid gap-4">
-            {column4Images.map((image, index) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0.9,
-                  y: -50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  scale: 1,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-                key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
-                style={{ height: image.height }}
-              >
-                <img
-                  className="h-full w-full rounded-2xl object-cover"
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </motion.div>
-            ))}
-            <div className="h-17 w-full rounded-2xl bg-muted"></div>
+          <div className="flex flex-col gap-7">
+            <h2 className="text-xl">/ ACHIEVEMENTS</h2>
+            <div>
+              {awards.map((award, idx) => (
+                <React.Fragment key={idx}>
+                  <Separator />
+                  <div className="my-2.5 grid gap-2.5 text-sm sm:grid-cols-3">
+                    <p className="text-muted-foreground">{award.year}</p>
+                    <p>{award.title}</p>
+                    <p className="text-muted-foreground">
+                      {award.organization}
+                    </p>
+                  </div>
+                </React.Fragment>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -338,4 +141,6 @@ const Gallery25 = ({ className }: Gallery25Props) => {
 };
 
 export { Gallery25 };
+
+
 

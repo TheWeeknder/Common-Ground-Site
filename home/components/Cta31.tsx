@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
   AnimatePresence,
   motion,
@@ -120,10 +121,12 @@ const Cta31 = ({ className }: Projects12Props) => {
                 className="relative cursor-pointer overflow-hidden rounded-xl"
                 onMouseEnter={() => handleProjectMouseEnter(index)}
               >
-                <img
+                <Image
                   src={project.img}
                   alt={project.title}
-                  className="h-[400px] w-full rounded-lg object-cover transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.05] group-hover:brightness-110"
+                  width={600}
+                  height={500}
+                  className="h-[500px] w-full rounded-lg object-cover transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.05] group-hover:brightness-110"
                 />
 
                 <div className="absolute inset-0 rounded-lg bg-black/0 transition-all duration-500 group-hover:bg-black/10" />
