@@ -10,6 +10,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 const data = {
+  heading: "COMMON GROUND",
   logo: {
     src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
     alt: "blocks for shadcn/ui",
@@ -22,22 +23,21 @@ const data = {
   ctaText: "Schedule a call",
   contact: {
     phone: "+1 (555) 123-4567",
-    email: "hello@artiststudio.com",
-    location: "NYC",
-    timezone: "EST",
+    email: "commongroundbarbershop.com",
+    location: "Directions",
   },
   menuItems: [
     {
-      title: "Portfolio",
+      title: "Navigation",
       links: [
-        { text: "Overview", url: "#" },
-        { text: "Projects", url: "#" },
-        { text: "Pricing", url: "#" },
-        { text: "About", url: "#" },
+        { text: "About us", url: "#" },
+        { text: "Services", url: "#" },
+        { text: "Portfolio", url: "#" },
+        { text: "FAQs", url: "#" },
       ],
     },
     {
-      title: "Social",
+      title: "Socials",
       links: [
         { text: "Twitter", url: "#" },
         { text: "Instagram", url: "#" },
@@ -71,13 +71,9 @@ const Footer4 = ({ className }: Footer25Props) => {
 
           {/* 🔥 Logo row */}
           <div className="mb-10 flex justify-center">
-            <a href="#">
-              <img
-                src="/assets/mitchell-orr-xO8OpsasyZA-unsplash.jpg"
-                alt="Logo"
-                className="h-12 w-auto"
-              />
-            </a>
+            <h1 className="text-center text-6xl font-bold tracking-tight sm:text-7xl md:text-8xl lg:text-10xl xl:text-11xl">
+              {data.heading}
+            </h1>
           </div>
 
           {/* 🔥 Grid */}
@@ -110,16 +106,19 @@ const Footer4 = ({ className }: Footer25Props) => {
                 <li className="text-muted-foreground">{data.contact.phone}</li>
                 <li className="text-muted-foreground">{data.contact.email}</li>
                 <li className="text-muted-foreground">
-                  {data.contact.location} • {data.contact.timezone}
+                  {data.contact.location}
                 </li>
               </ul>
             </div>
           </div>
 
           {/* 🔥 Bottom row */}
-          <div className="text-center mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
-            <p className="text-sm text-muted-foreground">{data.copyright}</p>
-            <div className="flex gap-4">
+          <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-border pt-8 text-center md:flex-row md:justify-between md:text-left">
+            <p className="text-sm text-muted-foreground">
+              {data.copyright}
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-4">
               {data.bottomLinks.map((link, idx) => (
                 <a
                   key={idx}
@@ -131,7 +130,6 @@ const Footer4 = ({ className }: Footer25Props) => {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>
