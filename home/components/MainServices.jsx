@@ -27,11 +27,11 @@ export function MainServices() {
   const hoverState = useRelume();
   return (
     // 1. Changed bg to zinc-950 and added relative/overflow-hidden
-    <section id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-950 overflow-hidden">
+    <section id="relume" className="relative px-[5%] py-12 md:py-20 lg:py-20 bg-zinc-950 overflow-hidden">
       
       {/* --- NEW BACKGROUND ELEMENTS --- */}
       {/* 2. Subtle Background Gradient to pure black */}
-      <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/80 to-black pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#161615] to-[#161615] pointer-events-none" />
       
       {/* 3. The Ambient Glow (Warm Amber) */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[80%] max-w-[800px] h-[400px] bg-gray-700/10 blur-[120px] rounded-full pointer-events-none" />
@@ -54,7 +54,7 @@ export function MainServices() {
             WHAT WE OFFER
           </h2>
           {/* Optional: Add a small decorative gold line for extra "class" */}
-          <div className="mx-auto h-[1px] w-24 bg-gradient-to-r from-transparent via-[#cecece] to-transparent" />
+          {/* <div className="mx-auto h-[1px] w-24 bg-gradient-to-r from-transparent via-[#cecece] to-transparent" /> */}
         </div>
         <div className="flex flex-col justify-between gap-6 md:gap-8 lg:flex-row ">
           
@@ -264,6 +264,25 @@ export function MainServices() {
               </AnimatePresence>
             </div>
           </a>
+        </div>
+        <div className="flex flex-row sm:flex-row gap-6 justify-center pt-12">
+          <button className="
+            relative top-0
+            bg-transparent text-white text-xs sm:text-sm
+            px-8 sm:px-10 sm:py-[18px]
+            font-bold tracking-[0.12em] rounded-full
+            border-2 border-[#efefef]
+            hover:bg-white/5
+            active:scale-[0.98]
+            transition-all duration-[120ms]
+            touch-manipulation min-h-[44px] sm:min-h-[68px]
+            w-fit mx-auto sm:mx-0
+          ">
+            VIEW ALL
+          </button>
+          {/* <button className="text-white text-xs sm:text-sm border-2 border-white px-5 py-3 sm:px-8 sm:py-4 hover:bg-white hover:text-black active:bg-gray-200 transition-all duration-300 tracking-widest touch-manipulation min-h-[44px] sm:min-h-[68px] font-medium w-fit mx-auto sm:mx-0">
+            VIEW SERVICES
+          </button> */}
         </div>
       </div>
     </section>
