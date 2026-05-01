@@ -67,7 +67,7 @@ const Footer4 = ({ className }: Footer25Props) => {
       }}
     >
       <div className="container">
-        <div className="mx-auto max-w-7xl rounded-lg bg-[#302f2c] p-8 shadow-lg md:p-12">
+        <div className="mx-auto max-w-7xl rounded-lg bg-[#2d2d2d] p-8 shadow-lg md:p-12">
 
           {/* 🔥 Logo row */}
           <div className="mb-10 flex justify-center">

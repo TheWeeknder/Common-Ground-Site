@@ -36,7 +36,7 @@ export function Testimonials() {
   const doubled = [...testimonials, ...testimonials]; // duplicate for seamless loop
 
   return (
-    <section id="relume" className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-50">
+    <section id="relume" className="overflow-hidden px-[5%] py-16 md:py-24 lg:py-28 bg-[#efefef]">
       <div className="container">
         <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
           <p className="text-md tracking-widest text-black">TESTIMONIALS</p>
@@ -49,8 +49,8 @@ export function Testimonials() {
       {/* Full-width marquee — intentionally outside container so it bleeds edge to edge */}
       <div className="relative w-full overflow-hidden">
         {/* Fade edges */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-white to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-white to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-6 z-10 bg-gradient-to-r from-[#efefef] to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-6 z-10 bg-gradient-to-l from-[#efefef] to-transparent" />
 
         <div className="flex w-max animate-marquee hover:pause">
           {doubled.map((t, i) => (

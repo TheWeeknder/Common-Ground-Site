@@ -98,7 +98,7 @@ const Cta31 = ({ className }: Projects12Props) => {
   }, []);
 
   return (
-    <section className={cn("py-20 px-[5%] bg-zinc-50", className)}>
+    <section className={cn("py-20 px-[5%] bg-[#efefef]", className)}>
       <div className="container">
         <div className="rb-12 mb-12 text-center md:mb-18 lg:mb-20">
           <div className="w-full max-w-lg mx-auto">

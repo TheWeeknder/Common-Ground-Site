@@ -45,7 +45,7 @@ export const FadingParagraph = (props: FadingParagraphProps) => {
   const words = heading.split(" ");
 
   return (
-    <section id="relume" className="overflow-hidden px-[5%] pb-12 md:pb-20 lg:pb-24 bg-zinc-50">
+    <section id="relume" className="overflow-hidden px-[5%] pb-12 md:pb-20 lg:pb-24 bg-[#efefef]">
       <div className="container max-w-5xl">
         <p className="mb-3 font-semibold md:mb-4">{tagline}</p>
         <h1 ref={headingRef} className="font-geist text-7xl font-bold md:text-9xl lg:text-10xl">

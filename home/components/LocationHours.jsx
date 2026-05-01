@@ -9,7 +9,7 @@ import { RxChevronRight } from "react-icons/rx";
 
 export function LocationHours() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-zinc-50">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 bg-[#efefef]">
       <div className="container">
 
         <div className="rb-12 mb-12 max-w-lg md:mb-18 lg:mb-20">
