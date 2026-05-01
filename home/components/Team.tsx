@@ -20,7 +20,7 @@ interface ServicesSectionProps {
   className?: string;
 }
 
-const Gallery25 = ({ className }: ServicesSectionProps) => {
+const Team = ({ className }: ServicesSectionProps) => {
   // Split services into two columns
   const half = Math.ceil(data.services.length / 2);
   const leftCol  = data.services.slice(0, half);
@@ -33,7 +33,8 @@ const Gallery25 = ({ className }: ServicesSectionProps) => {
         className
       )}
       style={{
-        backgroundImage: "url('/assets/chaps-co-chTK1JJfok0-unsplash.jpg')",
+      backgroundImage:
+      "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/chaps-co-chTK1JJfok0-unsplash.jpg')",
       }}
       aria-label="Services and pricing"
     >
@@ -87,7 +88,4 @@ const Gallery25 = ({ className }: ServicesSectionProps) => {
   );
 };
 
-export { Gallery25 };
-
-
-
+export { Team };

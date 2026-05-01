@@ -60,20 +60,20 @@ interface Footer25Props {
 const Footer4 = ({ className }: Footer25Props) => {
   return (
     <section
-      className={cn("bg-cover bg-center bg-no-repeat py-32 px-[5%]", className)}
+      className={cn("bg-cover bg-center bg-no-repeat py-20 px-[5%]", className)}
       style={{
         backgroundImage:
           "url('/assets/chaps-co-chTK1JJfok0-unsplash.jpg')",
       }}
     >
       <div className="container">
-        <div className="mx-auto max-w-7xl rounded-lg bg-[#2d2d2d] p-8 shadow-lg md:p-12">
+        <div className="mx-auto max-w-7xl rounded-md bg-[#2d2d2d] p-8 shadow-lg md:p-12">
 
           {/* 🔥 Logo row */}
           <div className="mb-10 flex justify-center">
-            <h1 className="text-center text-6xl font-bold tracking-tight text-white sm:text-7xl md:text-8xl lg:text-10xl xl:text-11xl">
+            <h2 className="text-center text-6xl font-bold tracking-tight text-white sm:text-7xl md:text-8xl lg:text-10xl xl:text-11xl">
               {data.heading}
-            </h1>
+            </h2>
           </div>
 
           {/* 🔥 Grid */}

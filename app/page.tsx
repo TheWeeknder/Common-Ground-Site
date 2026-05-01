@@ -11,7 +11,7 @@ import { Loader } from "@/home/components/Loader";
 import { FadingParagraph } from "@/home/components/FadingParagraph";
 import CurvedLoop from '@/home/components/CurvedLoop';
 import CurvedLoop2 from '@/home/components/CurvedLoop2';
-import StatementBanner from '@/home/components/StatementBanner';
+import { StatementBanner } from '@/home/components/StatementBanner';
 
 
 export default function Page() {
@@ -39,11 +39,11 @@ export default function Page() {
       /> */}
       <Carousel />
       <FadingParagraph />
-      {/* <StatementBanner /> */}
       <MainServices />
       <BookingSection />
       {/* <Team /> */}
       <Cta31 />
+      <StatementBanner />
       <Testimonials />
       <LocationHours /> 
       <Footer />
