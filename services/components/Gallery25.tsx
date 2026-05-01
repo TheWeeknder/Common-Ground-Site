@@ -34,7 +34,7 @@ const Gallery25 = ({ className }: ServicesSectionProps) => {
       )}
       style={{
       backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/chaps-co-chTK1JJfok0-unsplash.jpg')",
+      "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), ",
       }}
       aria-label="Services and pricing"
     >
@@ -42,24 +42,24 @@ const Gallery25 = ({ className }: ServicesSectionProps) => {
         <div className="mx-auto max-w-6xl rounded-md bg-white p-12 shadow-lg md:p-20">
 
           {/* Heading */}
-          <h2 className="mb-4 font-serif text-3xl italic text-gray-900">
+          <h2 className="mb-4 font-serif text-7xl italic text-gray-900">
             {data.heading}
           </h2>
 
-          <hr className="mb-8 border-gray-200" />
+          <hr className="mb-10 border-gray-200" />
 
           {/* Two-column service grid */}
           <div className="grid grid-cols-1 gap-x-12 md:grid-cols-2 md:divide-y-0">
 
             {/* Left column */}
-            <ul className="space-y-5 pt-8 md:pt-0">
+            <ul className="space-y-9 pt-8 md:pt-0">
               {leftCol.map((service, idx) => (
                 <li key={idx} className="flex items-center gap-2">
-                  <span className="text-xs font-semibold uppercase tracking-widest text-gray-800 whitespace-nowrap">
+                  <span className="text-sm font-semibold uppercase tracking-widest text-gray-800 whitespace-nowrap">
                     {service.name}
                   </span>
                   <span className="flex-1 border-b border-dotted border-gray-300 mb-[3px]" />
-                  <span className="text-xs font-semibold text-gray-800 whitespace-nowrap">
+                  <span className="text-sm font-semibold text-gray-800 whitespace-nowrap">
                     {service.price}
                   </span>
                 </li>
@@ -67,14 +67,14 @@ const Gallery25 = ({ className }: ServicesSectionProps) => {
             </ul>
 
             {/* Right column */}
-            <ul className="space-y-5 pt-4 md:pt-0">
+            <ul className="space-y-9 pt-8 md:pt-0">
               {rightCol.map((service, idx) => (
                 <li key={idx} className="flex items-center gap-2">
-                  <span className="text-xs font-semibold uppercase tracking-widest text-gray-800 whitespace-nowrap">
+                  <span className="text-sm font-semibold uppercase tracking-widest text-gray-800 whitespace-nowrap">
                     {service.name}
                   </span>
                   <span className="flex-1 border-b border-dotted border-gray-300 mb-[3px]" />
-                  <span className="text-xs font-semibold text-gray-800 whitespace-nowrap">
+                  <span className="text-sm font-semibold text-gray-800 whitespace-nowrap">
                     {service.price}
                   </span>
                 </li>
