@@ -33,7 +33,8 @@ const Gallery25 = ({ className }: ServicesSectionProps) => {
         className
       )}
       style={{
-        backgroundImage: "url('/assets/chaps-co-chTK1JJfok0-unsplash.jpg')",
+      backgroundImage:
+      "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/chaps-co-chTK1JJfok0-unsplash.jpg')",
       }}
       aria-label="Services and pricing"
     >
