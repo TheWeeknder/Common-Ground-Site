@@ -8,9 +8,9 @@ export default function GalleryPage() {
   return (
     <>
         <PageHeader title="Portfolio" subtitle="Browse Through Our Portfolio" />
-        <Gallery25 />
-        {/* <Gallery4_1 />
-        <Gallery24 /> */}
+        {/* <Gallery25 /> */}
+        {/* <Gallery4_1 /> */}
+        <Gallery24 />
         <Footer4 />
     </>
   );
