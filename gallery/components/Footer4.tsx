@@ -67,11 +67,11 @@ const Footer4 = ({ className }: Footer25Props) => {
       }}
     >
       <div className="container">
-        <div className="mx-auto max-w-7xl rounded-lg bg-background p-8 shadow-lg md:p-12">
+        <div className="mx-auto max-w-7xl rounded-lg bg-[#302f2c] p-8 shadow-lg md:p-12">
 
           {/* 🔥 Logo row */}
           <div className="mb-10 flex justify-center">
-            <h1 className="text-center text-6xl font-bold tracking-tight sm:text-7xl md:text-8xl lg:text-10xl xl:text-11xl">
+            <h1 className="text-center text-6xl font-bold tracking-tight text-white sm:text-7xl md:text-8xl lg:text-10xl xl:text-11xl">
               {data.heading}
             </h1>
           </div>
@@ -80,7 +80,7 @@ const Footer4 = ({ className }: Footer25Props) => {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-12 justify-items-center">
             {data.menuItems.map((menu, idx) => (
               <div key={idx} className="text-center">
-                <h3 className="mb-4 text-sm font-medium tracking-wider text-primary uppercase">
+                <h3 className="mb-4 text-md font-medium tracking-wider text-white uppercase">
                   {menu.title}
                 </h3>
                 <ul className="space-y-3">
@@ -88,24 +88,24 @@ const Footer4 = ({ className }: Footer25Props) => {
                     <li key={index}>
                       <a
                         href={link.url}
-                        className="border-b border-transparent text-muted-foreground transition-all duration-300 ease-in-out hover:border-primary hover:text-primary"
+                        className="border-b border-transparent text-white/70 transition-all duration-300 ease-in-out hover:border-white hover:text-white"
                       >
                         {link.text}
                       </a>
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div>  
             ))}
 
             <div className="text-center">
-              <h3 className="mb-4 text-sm font-medium tracking-wider text-primary uppercase">
+              <h3 className="mb-4 text-md font-medium tracking-wider text-white uppercase">
                 Contact
               </h3>
               <ul className="space-y-3">
-                <li className="text-muted-foreground">{data.contact.phone}</li>
-                <li className="text-muted-foreground">{data.contact.email}</li>
-                <li className="text-muted-foreground">
+                <li className="text-white/70">{data.contact.phone}</li>
+                <li className="text-white/70">{data.contact.email}</li>
+                <li className="text-white/70">
                   {data.contact.location}
                 </li>
               </ul>
@@ -113,8 +113,8 @@ const Footer4 = ({ className }: Footer25Props) => {
           </div>
 
           {/* 🔥 Bottom row */}
-          <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-border pt-8 text-center md:flex-row md:justify-between md:text-left">
-            <p className="text-sm text-muted-foreground">
+          <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-white/20 pt-8 text-center md:flex-row md:justify-between md:text-left">
+            <p className="text-sm text-white/70">
               {data.copyright}
             </p>
 
@@ -123,7 +123,7 @@ const Footer4 = ({ className }: Footer25Props) => {
                 <a
                   key={idx}
                   href={link.url}
-                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                  className="text-sm text-white/70 transition-colors hover:text-white"
                 >
                   {link.text}
                 </a>
