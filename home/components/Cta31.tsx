@@ -177,7 +177,7 @@ const Cta31 = ({ className }: Projects12Props) => {
                   <div className="absolute inset-0 rounded-xl border border-white/10 bg-black/95 shadow-2xl shadow-black/30 backdrop-blur-md" />
 
                   <div className="relative flex items-center gap-3 px-3 py-3 text-sm font-medium whitespace-nowrap text-white">
-                    <span className="text-base">Explore</span>
+                    <span className="text-base">BOOK</span>
                     <div className="flex h-6 w-6 items-center justify-center rounded-full border border-white/30 bg-white/10">
                       <motion.span
                         animate={{ x: [0, 2, 0] }}

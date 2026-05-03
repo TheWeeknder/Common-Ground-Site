@@ -156,7 +156,7 @@ export function Hero() {
               touch-manipulation min-h-[44px] sm:min-h-[68px]
               w-fit mx-auto sm:mx-0
             ">
-              BOOK APPOINTMENT
+              COMING SOON
             </button>
             {/* <button className="text-white text-xs sm:text-sm border-2 border-white px-5 py-3 sm:px-8 sm:py-4 hover:bg-white hover:text-black active:bg-gray-200 transition-all duration-300 tracking-widest touch-manipulation min-h-[44px] sm:min-h-[68px] font-medium w-fit mx-auto sm:mx-0">
               VIEW SERVICES
