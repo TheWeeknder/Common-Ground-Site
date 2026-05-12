@@ -41,12 +41,12 @@ export function MainServices() {
       <div className="container relative z-10">
         <div className="mx-auto mb-12 w-full max-w-2xl text-center md:mb-18 lg:mb-20">
           {/* Tagline: Muted, spaced out, and elegant */}
-          <p className="text-sm font-semibold tracking-[0.3em] text-white uppercase mb-3 ">
+          <p className="text-sm font-semibold tracking-[0.3em] text-white uppercase mb-2 ">
             MAIN SERVICES
           </p>
           {/* Headline: Gold Metallic Gradient */}
           <h2 
-            style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} 
+            // style={{ fontFamily: 'Georgia, "Times New Roman", serif' }} 
             className="rb-5 mb-5 text-6xl font-bold md:mb-6 md:text-8xl lg:text-9xl 
                       bg-gradient-to-b from-[#ffffff] via-[#ffffff] to-[#ffffff] 
                       bg-clip-text text-transparent"

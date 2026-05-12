@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 import React, { useState, useRef } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

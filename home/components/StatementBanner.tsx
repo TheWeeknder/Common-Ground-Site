@@ -40,7 +40,7 @@ const StatementBanner = ({ className }: Hero75Props) => {
             touch-manipulation min-h-[44px] sm:min-h-[68px]
             w-fit mx-auto sm:mx-0
           ">
-            BOOK APPOINTMENT
+            COMING SOON
           </button>
         </div>
       </div>
