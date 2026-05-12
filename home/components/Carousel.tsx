@@ -41,7 +41,7 @@ const Carousel = ({ className }: Hero234Props) => {
             key={rowIndex}
             className="flex gap-4 will-change-transform"
             animate={{
-              x: rowIndex === 1 ? [-1920, 0] : [0, -1920],
+              x: rowIndex === 1 ? ["-33.333%", "0%"] : ["0%", "-33.333%"],
             }}
             transition={{
               duration: 30,
@@ -50,22 +50,24 @@ const Carousel = ({ className }: Hero234Props) => {
             }}
           >
             {[...row, ...row, ...row].map((image, imageIndex) => (
-              <motion.div
+              <div
                 key={`${rowIndex}-${imageIndex}`}
-                className="relative flex-shrink-0 overflow-hidden rounded-lg"
+                className="relative flex-shrink-0 overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105"
                 style={{
                   width: rowIndex === 1 ? "280px" : "240px",
                   height: rowIndex === 1 ? "350px" : "300px",
                 }}
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
               >
                 <img
                   src={image}
                   alt={`Gallery image ${imageIndex + 1}`}
                   className="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width={rowIndex === 1 ? 280 : 240}
+                  height={rowIndex === 1 ? 350 : 300}
                 />
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         ))}
