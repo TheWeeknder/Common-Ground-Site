@@ -21,13 +21,17 @@ export function Hero() {
     <div ref={heroRef} className="relative min-h-screen overflow-hidden">
       {/* Background Image with Overlay */}
       <motion.div
-        style={{ y: bgY }}
-        className="absolute inset-0 z-0 scale-110"
+        className="absolute inset-0 z-0"
+        style={{ scale: 1.1 }}
       >
-        <img
+        <Image
           src="/assets/chaps-co-chTK1JJfok0-unsplash.jpg"
           alt="Barber cutting hair"
-          className="w-full h-full object-cover"
+          fill
+          priority                // preloads as high-priority, fixes LCP
+          quality={80}            // 80 is visually lossless, ~30% smaller file
+          className="object-cover"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90" />
       </motion.div>
@@ -37,11 +41,7 @@ export function Hero() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link href="/">
-            <img
-              src="/placeholderlogoforhero.svg"
-              alt="Logo"
-              className="h-10"
-            />
+            <Image src="/placeholderlogoforhero.svg" alt="Logo" width={60} height={20} priority />
           </Link>
 
           {/* Desktop Nav */}
@@ -90,7 +90,7 @@ export function Hero() {
             >
               <div className="flex justify-between items-center mb-16">
                 <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-                  <img src="/logoipsum-274.svg" alt="Logo" className="h-10" />
+                  <Image src="/logoipsum-274.svg" alt="Logo" width={120} height={40} />
                 </Link>
                 <button onClick={() => setMobileMenuOpen(false)} className="text-white p-2">
                   <X className="w-8 h-8" />
