@@ -35,7 +35,8 @@ const Carousel = ({ className }: Hero234Props) => {
         className,
       )}
     >
-      <div className="absolute inset-0 flex flex-col justify-center gap-4">
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
+        <div className="flex flex-col gap-4 overflow-hidden" style={{ height: "720px" }}>
         {galleryImages.map((row, rowIndex) => (
           <motion.div
             key={rowIndex}
@@ -71,6 +72,7 @@ const Carousel = ({ className }: Hero234Props) => {
             ))}
           </motion.div>
         ))}
+        </div>
       </div>
 
       {/* Left side masks */}

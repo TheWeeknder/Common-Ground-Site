@@ -4,6 +4,7 @@ import { Button } from "@relume_io/relume-ui";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { RxChevronRight } from "react-icons/rx";
+import Image from "next/image";
 
 const useRelume = () => {
   const [hoveredFeatureIdx, setHoveredFeatureIdx] = useState(null);
