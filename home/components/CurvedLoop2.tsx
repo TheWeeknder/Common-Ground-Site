@@ -1,46 +1,146 @@
-import { ChevronRight } from "lucide-react";
-
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { ShoppingBag } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
-interface Hero75Props {
+type MediaType = {
+  src: string;
+  alt: string;
+};
+
+type Product = {
+  image: string;
+  name: string;
+  href: string;
+};
+
+type HeroData = {
+  title?: string;
+  cta?: {
+    label: string;
+    href: string;
+  };
+  product?: Product;
+  image?: MediaType;
+  video?: MediaType;
+}[];
+
+type ProductCardProps = Product;
+
+interface EcommerceHero2Props {
   className?: string;
+  heroData: HeroData;
 }
 
-const CurvedLoop2 = ({ className }: Hero75Props) => {
+const HERO_DATA: HeroData = [
+  {
+    image: {
+      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/clothes/pexels-cottonbro-7494671.jpg",
+      alt: "Relaxed hoodie lifestyle shot",
+    },
+    title: "Everyday Comfort, Elevated Style",
+    cta: {
+      label: "Shop Hoodies",
+      href: "#",
+    },
+  },
+  {
+    video: {
+      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/3888261-hd_720_1366_50fps.mp4",
+      alt: "Model wearing modern coat in motion",
+    },
+    product: {
+      image:
+        "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/clothes/pexels-cottonbro-7494681.jpg",
+      name: "Modern Tailored Coat",
+      href: "#",
+    },
+  },
+];
+
+const CurvedLoop2 = ({
+  className,
+  heroData = HERO_DATA,
+}: EcommerceHero2Props) => {
   return (
-    <section className={cn("dark flex h-svh max-h-[650px]", className)}>
-      <img
-        src="/assets/chaps-co-chTK1JJfok0-unsplash.jpg"
-        alt=""
-        className="hidden w-1/2 object-cover lg:block"
-      />
-      <div className="flex w-full items-center justify-center bg-gradient-to-b from-[#2d2d2d] to-[#232320] lg:w-1/2">
-        <div className="container my-10 flex w-[500px] flex-col gap-10 px-[5%]">
-          <h1 className="text-4xl text-white">
-            The Chair{" "}
-            <span className="bg-linear-to-tr from-foreground to-muted bg-clip-text text-white">
-              VIP
-            </span>
-          </h1>
-          <div>
-            <h2 className="text-4xl text-white lg:text-6xl">
-              Skip the Wait. Book Like a Regular.
-            </h2>
-            <p className="mt-2.5 text-white lg:text-xl">
-              Lock in your spot before anyone else, get priority booking, and
-              never sit in the waiting room again.
-            </p>
-            <Button className="mt-10 flex h-fit items-center gap-2.5 rounded-xl px-5 py-4 font-bold text-white">
-              <span>Book your cut</span>
-              <ChevronRight className="size-5!" />
-            </Button>
+    <header className={cn("py-32", className)}>
+      <div className="h-dvh grid-cols-2 md:grid md:max-h-160 xl:max-h-200">
+        {heroData.map(({ image, video, title, cta, product }, index) => (
+          <div key={index} className="aspect-[0.7] md:aspect-auto">
+            <div className="relative flex size-full flex-col justify-end p-6 after:absolute after:inset-0 after:size-full after:bg-black/20">
+              {image && (
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="absolute inset-0 block size-full object-cover object-center"
+                />
+              )}
+              {video && (
+                <video
+                  src={video.src}
+                  loop
+                  muted
+                  autoPlay
+                  className="absolute inset-0 block size-full object-cover object-center"
+                />
+              )}
+              <div className="relative z-10 space-y-6">
+                {title && (
+                  <h1 className="max-w-78 text-5xl tracking-tighter text-balance text-white">
+                    {title}
+                  </h1>
+                )}
+                {cta && (
+                  <Button asChild variant="outline" size="lg">
+                    <a href={cta.href}>{cta.label}</a>
+                  </Button>
+                )}
+                {product && <ProductCard {...product} />}
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
-    
-    </section>
+    </header>
+  );
+};
+
+const ProductCard = ({ image, name, href }: ProductCardProps) => {
+
+  return (
+    <Card className="group max-w-86 flex-row gap-0 gap-4 rounded-none border-none p-0">
+      <CardHeader className="block basis-22.5 gap-0 px-0">
+        <div className="min-w-18">
+          <AspectRatio className="overflow-hidden">
+            <img
+              src={image}
+              alt={name}
+              className="block size-full origin-center object-cover object-center transition-transform duration-500 group-hover:scale-110"
+            />
+          </AspectRatio>
+        </div>
+      </CardHeader>
+      <CardContent className="flex-1 px-0 py-3 pr-4">
+        <div className="flex h-full items-center gap-3">
+          <div className="flex-1 space-y-2">
+            <CardTitle className="line-clamp-1 text-base leading-tight font-medium">
+              <a href={href}>{name}</a>
+            </CardTitle>
+          </div>
+          <Button
+            asChild
+            size="icon-sm"
+            variant="ghost"
+            className="shrink-0 self-center rounded-full"
+          >
+            <a href={href}>
+              <ShoppingBag />
+            </a>
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
   );
 };
 

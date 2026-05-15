@@ -12,6 +12,9 @@ const galleryImages = [
     "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw4.jpeg",
     "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw5.jpeg",
     "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw6.jpeg",
+    "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw6.jpeg",
+    "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw6.jpeg",
+    "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw6.jpeg",
   ],
   [
     "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw7.jpeg",
@@ -19,6 +22,9 @@ const galleryImages = [
     "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw9.jpeg",
     "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw10.jpeg",
     "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw11.jpeg",
+    "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw12.jpeg",
+    "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw12.jpeg",
+    "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw12.jpeg",
     "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw12.jpeg",
   ],
 ];
@@ -71,6 +77,7 @@ const Carousel = ({ className }: Hero234Props) => {
               </div>
             ))}
           </motion.div>
+        
         ))}
         </div>
       </div>

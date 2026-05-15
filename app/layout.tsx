@@ -1,10 +1,11 @@
-import "./globals.css";
+import './globals.css';
 import type { Metadata, Viewport } from "next";
 import { Oswald, Geist, Geist_Mono } from "next/font/google";
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: '#000000',
 };
 
 // Headline font (masculine, statement)
