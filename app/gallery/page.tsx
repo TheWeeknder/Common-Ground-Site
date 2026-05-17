@@ -1,4 +1,4 @@
-import { Footer4 } from "@/gallery/components/Footer4";
+import  Footer  from "@/home/components/Footer";
 import { Gallery4_1 } from "@/gallery/components/Gallery4_1";
 import { Gallery25 } from "@/gallery/components/Gallery25";
 import { Gallery24 } from "@/gallery/components/Gallery24";
@@ -11,7 +11,7 @@ export default function GalleryPage() {
         {/* <Gallery25 /> */}
         {/* <Gallery4_1 /> */}
         <Gallery24 />
-        <Footer4 />
+        <Footer />
     </>
   );
 }

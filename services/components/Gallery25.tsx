@@ -22,19 +22,19 @@ interface Service {
 const services: Service[] = [
   {
     id: 1,
-    title: "Custom Color",
+    title: "Fadeaways",
     description: "Tailored hair coloring services to match your unique style and personality.",
     image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 2,
-    title: "Hair Cut & Styling",
+    title: "Beard & Shavings",
     description: "Expert cuts and professional styling for a polished, modern look.",
     image: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 3,
-    title: "Extensions",
+    title: "Facial & Skin Care",
     description: "Premium hair extensions for added length, volume, and versatility.",
     image: "https://images.unsplash.com/photo-1620331311520-246422fd82f9?q=80&w=800&auto=format&fit=crop",
   },
@@ -62,7 +62,7 @@ const navLinks = [
  */
 export default function Gallery25() {
   return (
-    <section className="relative w-full bg-[#1a1a1a] py-24 px-6 md:px-12 lg:px-20 overflow-hidden text-white selection:bg-white selection:text-black">
+    <section className="relative w-full bg-black py-24 px-6 md:px-12 lg:px-20 overflow-hidden text-white selection:bg-white selection:text-black">
       {/* Background Watermark Logo "WJ" */}
       <div className="absolute left-[-5%] top-[20%] md:top-[15%] opacity-[0.07] pointer-events-none select-none z-0">
         <span className="text-[15rem] md:text-[15rem] font-serif leading-none tracking-tighter">
@@ -84,10 +84,10 @@ export default function Gallery25() {
             <br />
             Curated For You
           </h2>
-          <p className="max-w-2xl mx-auto text-sm md:text-base font-sans font-light leading-relaxed opacity-70 tracking-widest px-4">
+          {/* <p className="max-w-2xl mx-auto text-sm md:text-base font-sans font-light leading-relaxed opacity-70 tracking-widest px-4">
             As an Oribe-exclusive salon, we proudly offer their high-performance products to ensure your hair
             not only looks fabulous but feels nourished and healthy, every step of the way.
-          </p>
+          </p> */}
         </motion.div>
 
         {/* Services Grid & Navigation Overlay */}

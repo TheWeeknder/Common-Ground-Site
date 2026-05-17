@@ -1,56 +1,76 @@
-import { ChevronRight } from "lucide-react";
+"use client";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
-interface Hero75Props {
-  className?: string;
-}
-
-const StatementBanner = ({ className }: Hero75Props) => {
+/**
+ * ExploreWorkSection Component
+ * A pixel-faithful recreation of the "Explore Our Work" section.
+ * 
+ * Features:
+ * - Next.js 14 App Router compatible
+ * - Tailwind CSS for all styling
+ * - Framer Motion for entrance animations
+ * - Mobile-first responsive design (stacks on mobile, side-by-side on desktop)
+ * - Semantic HTML
+ */
+export default function StatementBanner() {
   return (
-    <section className={cn("dark flex h-svh max-h-[650px]", className)}>
-      <div className="flex w-full items-center justify-center bg-gradient-to-b from-[#2d2d2d] to-[#232320] lg:w-1/2">
-        <div className="container my-10 flex w-[500px] flex-col gap-10 px-[5%]">
-          <h1 className="text-4xl text-white">
-            The Chair{" "}
-            <span className="bg-linear-to-tr from-foreground to-muted bg-clip-text text-white">
-              VIP
-            </span>
-          </h1>
-          <div>
-            <h2 className="text-4xl text-white lg:text-6xl">
-              Skip the Wait. Book Like a Regular.
+    <section className="w-full bg-black text-white overflow-hidden selection:bg-white selection:text-black">
+      <div className="flex flex-col md:flex-row min-h-[600px] lg:min-h-[800px]">
+        
+        {/* Left Side: Image Section */}
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          className="relative w-full md:w-1/2 h-[400px] md:h-auto overflow-hidden"
+        >
+          <Image
+            src="/assets/chaps-co-chTK1JJfok0-unsplash.jpg"
+            alt="Explore Our Work"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-1000 ease-out"
+            priority
+          />
+          {/* Subtle overlay to match the high-contrast aesthetic */}
+          <div className="absolute inset-0 bg-black/10" />
+        </motion.div>
+
+        {/* Right Side: Content Section */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-8 md:p-16 lg:p-24 bg-black">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="max-w-md text-center md:text-left"
+          >
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light tracking-[0.15em] uppercase leading-[1.1] mb-8">
+              Explore
+              <br />
+              Our Work
             </h2>
-            <p className="mt-2.5 text-white lg:text-xl">
-              Lock in your spot before anyone else, get priority booking, and
-              never sit in the waiting room again.
+            
+            <p className="text-sm md:text-base font-sans font-light leading-relaxed opacity-80 tracking-widest mb-12">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
             </p>
-          </div>
-          <button className="
-            relative top-0
-            bg-transparent text-white text-xs sm:text-sm
-            px-8 py-4 sm:px-10 sm:py-[18px]
-            font-bold tracking-[0.12em] rounded-full
-            border-2 border-[#ffe590]
-            hover:bg-white/5
-            active:scale-[0.98]
-            transition-all duration-[120ms]
-            touch-manipulation min-h-[44px] sm:min-h-[68px]
-            w-fit mx-auto sm:mx-0
-          ">
-            COMING SOON
-          </button>
+
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <button className="w-full md:w-auto border border-white px-12 py-4 text-[10px] tracking-[0.4em] uppercase hover:bg-white hover:text-black transition-all duration-500 ease-in-out">
+                Learn More
+              </button>
+            </motion.div>
+          </motion.div>
         </div>
+
       </div>
-      <img
-        src="/assets/chaps-co-chTK1JJfok0-unsplash.jpg"
-        alt=""
-        className="hidden w-1/2 object-cover lg:block"
-      />
     </section>
   );
-};
-
-export { StatementBanner };
+}

@@ -37,6 +37,7 @@ export default function Footer() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20"
         >
+          
           {/* Main Location Heading */}
           <div className="lg:col-span-1">
             <h2 className="text-2xl md:text-3xl font-serif font-light tracking-widest uppercase leading-tight mb-8">
