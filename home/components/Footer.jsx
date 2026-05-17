@@ -1,65 +1,129 @@
 "use client";
 
 import React from "react";
-import {
-  BiLogoFacebookCircle,
-  BiLogoInstagram,
-  BiLogoLinkedinSquare,
-  BiLogoYoutube,
-} from "react-icons/bi";
-import { FaXTwitter } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { Instagram, Facebook } from "lucide-react";
 
-export function Footer() {
+/**
+ * Footer Component
+ * A pixel-faithful recreation of the salon footer.
+ * 
+ * Features:
+ * - Next.js 14 App Router compatible
+ * - Tailwind CSS for all styling
+ * - Framer Motion for entrance animations
+ * - Mobile-first responsive design
+ * - Semantic HTML (footer, nav, address, etc.)
+ */
+export default function Footer() {
+  const navLinks = [
+    { name: "HOME", href: "#" },
+    { name: "ABOUT", href: "#" },
+    { name: "SERVICES", href: "#" },
+    { name: "POLICIES", href: "#" },
+    { name: "PORTFOLIO", href: "#" },
+    { name: "FAQS", href: "#" },
+    { name: "BOOK NOW", href: "#" },
+  ];
+
   return (
-    <footer id="relume" className="px-[5%] py-12 md:py-18 lg:py-20 bg-[#111010]">
-      <div className="container">
-        <div className="grid grid-cols-1 items-center justify-center justify-items-center gap-x-[4vw] gap-y-12 pb-12 md:pb-18 lg:grid-cols-[0.25fr_1fr_0.25fr] lg:justify-between lg:gap-y-4 lg:pb-20">
-          <a href="#" className="lg:justify-self-start">
-            <img
-              src="/placeholderlogoforhero.svg"
-              alt="Logo image"
-              className="inline-block"
-            />
-          </a>
-          <ul className="grid grid-flow-row grid-cols-1 items-start justify-center justify-items-center gap-6 md:grid-flow-col md:grid-cols-[max-content] md:justify-center md:justify-items-start">
-            <li className="font-semibold text-white">
-              <a href="#">BOOK NOW</a>
-            </li>
-            <li className="font-semibold text-white">
-              <a href="#">ABOUT US</a>
-            </li>
-            <li className="font-semibold text-white">
-              <a href="#">SERVICES</a>
-            </li>
-            <li className="font-semibold text-white">
-              <a href="#">GALLERY</a>
-            </li>
-          </ul>
-          <div className="flex items-start justify-start justify-items-center gap-x-3 lg:justify-self-end text-white">
-            <a href="#"><BiLogoFacebookCircle className="size-6" /></a>
-            <a href="#"><BiLogoInstagram className="size-6" /></a>
-            <a href="#"><FaXTwitter className="size-6 p-0.5" /></a>
-            <a href="#"><BiLogoLinkedinSquare className="size-6" /></a>
-            <a href="#"><BiLogoYoutube className="size-6" /></a>
-          </div>
-        </div>
-        <div className="h-px w-full bg-white/20" />
-        <div className="flex flex-col-reverse items-center justify-center justify-items-center pb-4 pt-6 text-sm md:flex-row md:gap-x-6 md:pb-0 md:pt-8">
-          <ul className="grid grid-flow-row grid-cols-[max-content] items-center justify-center justify-items-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
-            <p className="mt-8 md:mt-0 text-white">© 2026 Common Ground Barbershop. All rights reserved.</p>
-            <p className="mt-8 md:mt-0 text-white">
-              Website by{" "}
-              <a
-                href="https://www.linkedin.com/in/jpmiranda103/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-blue-400"
-              >
-                JP Miranda
+    <footer className="bg-black text-white py-16 px-6 md:px-12 lg:px-20 font-sans selection:bg-white selection:text-black">
+      <div className="max-w-[1250px] mx-auto">
+        {/* Top Section: Location, Contact, Hours */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20"
+        >
+          {/* Main Location Heading */}
+          <div className="lg:col-span-1">
+            <h2 className="text-2xl md:text-3xl font-serif font-light tracking-widest uppercase leading-tight mb-8">
+              Located in the heart of
+              <br />
+              Edmonton, AB
+            </h2>
+            <div className="flex gap-6">
+              <a href="#" className="hover:opacity-60 transition-opacity" aria-label="Instagram">
+                <Instagram size={20} strokeWidth={1.5} />
               </a>
-            </p>
-          </ul>
-        </div>
+              <a href="#" className="hover:opacity-60 transition-opacity" aria-label="Facebook">
+                <Facebook size={20} strokeWidth={1.5} />
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-[19px] tracking-[0.1em] uppercase mb-6">Contact</h3>
+            <div className="space-y-2 text-md font-light">
+              <p>(123) 456-7891</p>
+              <p>
+                <a href="mailto:hello@wilderjamessalon.com" className="hover:underline underline-offset-4">
+                  commongroundbarbershop.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          {/* Location Details */}
+          <div>
+            <h3 className="text-[19px] tracking-[0.1em] uppercase mb-6">Location</h3>
+            <address className="not-italic space-y-2 text-md font-light">
+              <p>6767 Something Some Rd</p>
+              <p>Suite 123</p>
+              <p>Edmonton, AB 12345</p>
+            </address>
+          </div>
+
+          {/* Salon Hours */}
+          <div>
+            <h3 className="text-[19px] tracking-[0.1em] uppercase mb-6">Shop Hours</h3>
+            <div className="space-y-2 text-md font-light">
+              <p>Monday to Friday: 9-530</p>
+              <p>Saturdays: 10-530</p>
+              <p>Closed Sundays</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Navigation Links Section */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="border-t border-white/10 pt-12 pb-8"
+        >
+          <nav className="flex flex-wrap justify-between items-center gap-x-8 gap-y-6">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-[14px] md:text-md tracking-[0.1em] font-light hover:opacity-60 transition-opacity uppercase"
+              >
+                {link.name}
+              </a>
+            ))}
+          </nav>
+        </motion.div>
+
+        {/* Bottom Credits */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="mt-12"
+        >
+          <p className="text-[9px] tracking-[0.2em] uppercase font-light">
+            Brand & Website by{" "}
+            <a href="#" className="underline underline-offset-4 hover:opacity-100 transition-opacity text-blue-400">
+              JP.Miranda
+            </a>
+          </p>
+        </motion.div>
       </div>
     </footer>
   );
