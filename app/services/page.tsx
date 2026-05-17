@@ -1,6 +1,6 @@
 import { Footer4 } from "@/gallery/components/Footer4";
 import { PageHeader } from "@/services/components/PageHeader";
-import { Gallery25 } from "@/services/components/Gallery25";
+import Gallery25 from "@/services/components/Gallery25";
 // ... other services components
 
 export default function ServicesPage() {
