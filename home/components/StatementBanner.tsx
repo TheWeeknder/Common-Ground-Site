@@ -30,13 +30,13 @@ export default function StatementBanner() {
             transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-md text-center md:text-left"
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light tracking-[0.15em] uppercase leading-[1.1] mb-8">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-light tracking-[0.15em] uppercase leading-[1.0] mb-8">
               Explore
               <br />
               Our Work
             </h2>
             
-            <p className="text-sm md:text-base font-sans font-light leading-relaxed opacity-80 tracking-widest mb-12">
+            <p className="text-nd md:text-base font-sans font-light leading-relaxed opacity-80 tracking-widest mb-12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
             </p>
 
@@ -44,7 +44,7 @@ export default function StatementBanner() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <button className="w-full md:w-auto border border-white px-12 py-4 text-[10px] tracking-[0.4em] uppercase hover:bg-white hover:text-black transition-all duration-500 ease-in-out">
+              <button className="w-full md:w-auto border border-white px-12 py-4 text-[14px] tracking-[0.4em] uppercase hover:bg-white hover:text-black transition-all duration-500 ease-in-out">
                 Learn More
               </button>
             </motion.div>
