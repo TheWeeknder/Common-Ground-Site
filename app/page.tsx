@@ -11,7 +11,7 @@ import  Footer  from "@/home/components/Footer";
 import { Loader } from "@/home/components/Loader";
 import { FadingParagraph } from "@/home/components/FadingParagraph";
 import CurvedLoop from '@/home/components/CurvedLoop';
-import { CurvedLoop2 } from '@/home/components/CurvedLoop2';
+import  ExploreWorkSectionInverted from '@/home/components/ExploreWorkSectionInverted';
 import  StatementBanner from '@/home/components/StatementBanner';
 import Gallery25 from "@/services/components/Gallery25";
 
@@ -31,14 +31,14 @@ export default function Page() {
         textColor="white"
       /> */}
       <Carousel />
-      <FadingParagraph />
+      <StatementBanner />
+      <ExploreWorkSectionInverted />
+      {/* <FadingParagraph /> */}
       <Gallery25 />
       {/* <MainServices /> */}
       {/* <Team /> */}
       <Cta31 />
-      <StatementBanner />
       <Testimonials />
-      {/* <CurvedLoop2 /> */}
       <BookingSection />
       <LocationHours /> 
       <Footer />

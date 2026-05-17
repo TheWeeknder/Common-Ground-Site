@@ -102,8 +102,8 @@ const Cta31 = ({ className }: Projects12Props) => {
       <div className="container">
         <div className="rb-12 mb-12 text-center md:mb-18 lg:mb-20">
           <div className="w-full max-w-lg mx-auto">
-            <p className="text-md tracking-widest text-black">BEHIND THE CUTS</p>
-            <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-black ">
+            <p className="text-md tracking-widest text-black font-serif">BEHIND THE CUTS</p>
+            <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-black font-serif">
               MEET THE TEAM
             </h2>
           </div>

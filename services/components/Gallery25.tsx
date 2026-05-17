@@ -24,19 +24,19 @@ const services: Service[] = [
     id: 1,
     title: "Fadeaways",
     description: "Tailored hair coloring services to match your unique style and personality.",
-    image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop",
+    image: "/assets/mitchell-orr-xO8OpsasyZA-unsplash.jpg",
   },
   {
     id: 2,
     title: "Beard & Shavings",
     description: "Expert cuts and professional styling for a polished, modern look.",
-    image: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop",
+    image: "/assets/cesar-badilla-miranda-IPShxkEC064-unsplash.jpg",
   },
   {
     id: 3,
     title: "Facial & Skin Care",
     description: "Premium hair extensions for added length, volume, and versatility.",
-    image: "https://images.unsplash.com/photo-1620331311520-246422fd82f9?q=80&w=800&auto=format&fit=crop",
+    image: "/assets/jonathan-cooper-Nh-A851W2ro-unsplash.jpg",
   },
 ];
 
@@ -79,11 +79,14 @@ export default function Gallery25() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="text-center mb-20 md:mb-28"
         >
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif font-light tracking-[0.0em] mb-10 uppercase leading-[1.1]">
-            Luxury Hair Services,
-            <br />
-            Curated For You
-          </h2>
+        <div className="rb-12 mb-12 text-center md:mb-18 lg:mb-20">
+          <div className="w-full max-w-lg mx-auto">
+            <p className="text-md tracking-widest text-white uppercase font-serif">Main Services</p>
+            <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-white uppercase font-serif">
+              What We Do
+            </h2>
+          </div>
+        </div>
           {/* <p className="max-w-2xl mx-auto text-sm md:text-base font-sans font-light leading-relaxed opacity-70 tracking-widest px-4">
             As an Oribe-exclusive salon, we proudly offer their high-performance products to ensure your hair
             not only looks fabulous but feels nourished and healthy, every step of the way.
