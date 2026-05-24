@@ -26,7 +26,7 @@ export function Loader() {
       }`}
     >
       <img
-        src="/placeholderlogoforloader.svg"
+        src="/black_svg_commonground_logo.svg"
         alt="PLACE LOGO HERE"
         className="w-36 animate-fade-in"
       />

@@ -3,7 +3,7 @@ import { Carousel } from "@/home/components/Carousel";
 import { Testimonials } from "@/home/components/Testimonials";
 import { MainServices } from "@/home/components/MainServices";
 import { Team } from "@/home/components/Team";
-import { Cta31 } from "@/home/components/Cta31";
+import  TeamSection from "@/home/components/TeamSection";
 import { BookingSection } from "@/home/components/BookingSection"; 
 import { LocationHours } from "@/home/components/LocationHours";
 import { Footer4 } from "@/gallery/components/Footer4";
@@ -37,8 +37,8 @@ export default function Page() {
       <Gallery25 />
       {/* <MainServices /> */}
       {/* <Team /> */}
-      <Cta31 />
-      <Testimonials />
+      <TeamSection />
+      {/* <Testimonials /> */}
       <BookingSection />
       <LocationHours /> 
       <Footer />

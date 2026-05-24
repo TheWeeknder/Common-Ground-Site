@@ -41,9 +41,9 @@ export default function Footer() {
           {/* Main Location Heading */}
           <div className="lg:col-span-1">
             <h2 className="text-2xl md:text-3xl font-serif font-light tracking-widest uppercase leading-tight mb-8">
-              common
+              Located at the heart of
               <br />
-              ground (logo here)
+              Edmonton, AB
             </h2>
             <div className="flex gap-6">
               <a href="#" className="hover:opacity-60 transition-opacity" aria-label="Instagram">
