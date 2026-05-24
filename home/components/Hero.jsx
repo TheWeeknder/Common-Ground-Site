@@ -41,7 +41,7 @@ export function Hero() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link href="/">
-            <Image src="/placeholderlogoforhero.svg" alt="Logo" width={60} height={20} priority />
+            <Image src="/white_svg_commonground_logo_no_bg.png" alt="Logo" width={70} height={30} priority />
           </Link>
 
           {/* Desktop Nav */}
