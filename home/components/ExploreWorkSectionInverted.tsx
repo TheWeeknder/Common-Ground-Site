@@ -19,7 +19,7 @@ import Image from "next/image";
 export default function ExploreWorkSectionInverted() {
   return (
     <section className="w-full bg-[#212121] text-white overflow-hidden selection:bg-[#212121] selection:text-black">
-      <div className="flex flex-col md:flex-row min-h-[500px] lg:min-h-[700px]">
+      <div className="flex flex-col md:flex-row min-h-[400px] lg:min-h-[600px]">
         
         {/* Right Side: Image Section (Hidden on Mobile) */}
         <motion.div 
@@ -30,11 +30,11 @@ export default function ExploreWorkSectionInverted() {
           className="hidden md:block relative md:w-1/2 h-auto overflow-hidden"
         >
           <Image
-            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop"
+            src="/assets/chaps-co-BX8OTlmHOaI-unsplash.jpg"
             alt="Explore Our Work"
             fill
             sizes="50vw"
-            className="object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-1000 ease-out"
+            className="object-cover brightness-75 hover:scale-105 transition-transform duration-1000 ease-out"
             priority
           />
           {/* Subtle overlay */}
@@ -50,22 +50,22 @@ export default function ExploreWorkSectionInverted() {
             transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-md text-center md:text-left"
           >
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-light tracking-[0.15em] uppercase leading-[1.0] mb-8">
-              Explore
+            <h2 className="text-6xl md:text-7xl lg:text-8xl font-serif font-light tracking-[0.05em] uppercase leading-[1.0] mb-8">
+              from the
               <br />
-              Our Work
+              ground up
             </h2>
             
-            <p className="text-sm md:text-base font-sans font-light leading-relaxed opacity-80 tracking-widest mb-12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
+            <p className="text-nd md:text-base font-sans font-light leading-relaxed tracking-widest mb-12">
+              It started with a vision to create more than just a place to get a haircut. We stripped this space down to the studs, pouring late nights and hard work into every detail. From custom-built stations to the perfect lighting, we designed and built a true sanctuary for modern grooming.
             </p>
 
             <motion.div
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <button className="w-full md:w-auto border border-white px-12 py-4 text-[14px] tracking-[0.4em] uppercase hover:bg-white hover:text-black transition-all duration-500 ease-in-out">
-                Learn More
+              <button className="w-full md:w-auto border border-white px-12 py-4 text-[15px] tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-all duration-500 ease-in-out font-semibold">
+                about us
               </button>
             </motion.div>
           </motion.div>
