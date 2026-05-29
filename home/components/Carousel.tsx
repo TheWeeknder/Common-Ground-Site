@@ -70,8 +70,8 @@ const Carousel = ({ className }: CarouselProps) => {
                     "relative flex-shrink-0 overflow-hidden rounded-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-xl",
                     // vw-based sizing — scales with viewport at every breakpoint
                     rowIndex === 1
-                      ? "w-[42vw] h-[54vw] sm:w-[28vw] sm:h-[36vw] md:w-[22vw] md:h-[28vw] lg:w-[18vw] lg:h-[24vw]"
-                      : "w-[36vw] h-[48vw] sm:w-[24vw] sm:h-[32vw] md:w-[18vw] md:h-[24vw] lg:w-[15vw] lg:h-[20vw]"
+                      ? "w-[42vw] h-[54vw] sm:w-[28vw] sm:h-[36vw] md:w-[42vw] md:h-[58vw] lg:w-[48vw] lg:h-[54vw] xl:w-[20vw] xl:h-[25vw]"
+                      : "w-[36vw] h-[48vw] sm:w-[24vw] sm:h-[32vw] md:w-[42vw] md:h-[58vw] lg:w-[48vw] lg:h-[54vw] xl:w-[20vw] xl:h-[25vw]"
                   )}
                 >
                   <img
@@ -89,8 +89,8 @@ const Carousel = ({ className }: CarouselProps) => {
       </div>
 
       {/* Edge Gradients */}
-      <div className="absolute top-0 left-0 z-10 h-full w-20 md:w-40 bg-gradient-to-r from-[#efefef] via-[#efefef]/80 to-transparent pointer-events-none" />
-      <div className="absolute top-0 right-0 z-10 h-full w-20 md:w-40 bg-gradient-to-l from-[#efefef] via-[#efefef]/80 to-transparent pointer-events-none" />
+      {/* <div className="absolute top-0 left-0 z-10 h-full w-20 md:w-40 bg-gradient-to-r from-[#efefef] via-[#efefef]/80 to-transparent pointer-events-none" />
+      <div className="absolute top-0 right-0 z-10 h-full w-20 md:w-40 bg-gradient-to-l from-[#efefef] via-[#efefef]/80 to-transparent pointer-events-none" /> */}
     </section>
   );
 };
