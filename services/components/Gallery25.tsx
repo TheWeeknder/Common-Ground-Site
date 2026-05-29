@@ -185,8 +185,8 @@ export default function Gallery25() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="mt-20 md:mt-28 text-center"
         >
-          <button className="group relative overflow-hidden bg-white text-black px-12 py-5 text-[10px] tracking-[0.4em] uppercase transition-all duration-300 hover:bg-neutral-100 active:scale-95">
-            <span className="relative z-10">View All Services</span>
+          <button className="w-full md:w-auto border border-white px-12 py-4 text-[15px] tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-all duration-500 ease-in-out font-semibold">
+          Viw All Services
           </button>
         </motion.div>
       </div>

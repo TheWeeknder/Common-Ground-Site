@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
  */
 export default function LocationHoursSection() {
   return (
-    <section className="relative w-full h-[60vh] md:h-[50vh] overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[40vh] bg-black overflow-hidden">
       
       {/* Section Title Overlay */}
       {/* <div className="absolute top-12 left-6 md:top-20 md:left-12 lg:left-20 z-20 pointer-events-none">
@@ -45,7 +45,7 @@ export default function LocationHoursSection() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="Salon Location Map"
-          className=" hover:opacity-100 transition-opacity duration-500"
+          className=" opacity-80 hover:opacity-100 transition-opacity duration-500"
         ></iframe>
       </div>
 
