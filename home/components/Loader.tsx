@@ -26,7 +26,7 @@ export function Loader() {
       }`}
     >
       <img
-        src="/black_svg_commonground_logo.svg"
+        src="/black_svg_commonground_logo-removebg-preview.png"
         alt="PLACE LOGO HERE"
         className="w-36 animate-fade-in"
       />
