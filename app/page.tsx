@@ -5,14 +5,14 @@ import { MainServices } from "@/home/components/MainServices";
 import { Team } from "@/home/components/Team";
 import  TeamSection from "@/home/components/TeamSection";
 import { BookingSection } from "@/home/components/BookingSection"; 
-import { LocationHours } from "@/home/components/LocationHours";
+import  LocationHoursSection  from "@/home/components/LocationHoursSection";
 import { Footer4 } from "@/gallery/components/Footer4";
 import  Footer  from "@/home/components/Footer";
 import { Loader } from "@/home/components/Loader";
 import { FadingParagraph } from "@/home/components/FadingParagraph";
 import CurvedLoop from '@/home/components/CurvedLoop';
 import  ExploreWorkSectionInverted from '@/home/components/ExploreWorkSectionInverted';
-import  StatementBanner from '@/home/components/StatementBanner';
+import  ExploreWorkSection from '@/home/components/ExploreWorkSection';
 import Gallery25 from "@/services/components/Gallery25";
 
 
@@ -31,16 +31,16 @@ export default function Page() {
         textColor="white"
       /> */}
       <Carousel />
-      <StatementBanner />
+      <ExploreWorkSection />
       <ExploreWorkSectionInverted />
       {/* <FadingParagraph /> */}
+      <TeamSection />
       <Gallery25 />
       {/* <MainServices /> */}
       {/* <Team /> */}
-      <TeamSection />
       {/* <Testimonials /> */}
-      <BookingSection />
-      <LocationHours /> 
+      {/* <BookingSection /> */}
+      <LocationHoursSection /> 
       <Footer />
     </>
   );
