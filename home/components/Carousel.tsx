@@ -57,24 +57,21 @@ const Carousel = ({ className }: CarouselProps) => {
                 x: rowIndex === 1 ? ["-50%", "0%"] : ["0%", "-50%"],
               }}
               transition={{
-                duration: 40, // Slightly slower for a more premium feel
+                duration: 40,
                 repeat: Infinity,
                 ease: "linear",
               }}
-              style={{
-                width: "max-content", // Ensures the container fits all cloned items
-              }}
+              style={{ width: "max-content" }}
             >
-              {/* Triple the images to ensure no gaps during infinite scroll on large screens */}
               {[...row, ...row, ...row].map((image, imageIndex) => (
                 <div
                   key={`${rowIndex}-${imageIndex}`}
                   className={cn(
                     "relative flex-shrink-0 overflow-hidden rounded-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-xl",
-                    // Responsive sizing for cards
-                    rowIndex === 1 
-                      ? "w-[200px] h-[260px] md:w-[280px] md:h-[350px]" 
-                      : "w-[180px] h-[240px] md:w-[240px] md:h-[300px]"
+                    // vw-based sizing — scales with viewport at every breakpoint
+                    rowIndex === 1
+                      ? "w-[42vw] h-[54vw] sm:w-[28vw] sm:h-[36vw] md:w-[22vw] md:h-[28vw] lg:w-[18vw] lg:h-[24vw]"
+                      : "w-[36vw] h-[48vw] sm:w-[24vw] sm:h-[32vw] md:w-[18vw] md:h-[24vw] lg:w-[15vw] lg:h-[20vw]"
                   )}
                 >
                   <img
@@ -83,7 +80,6 @@ const Carousel = ({ className }: CarouselProps) => {
                     className="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                     loading="lazy"
                   />
-                  {/* Subtle overlay for depth */}
                   <div className="absolute inset-0 bg-black/5 pointer-events-none" />
                 </div>
               ))}
@@ -92,26 +88,9 @@ const Carousel = ({ className }: CarouselProps) => {
         </div>
       </div>
 
-      {/* Edge Gradients (Masks) - Responsive width */}
+      {/* Edge Gradients */}
       <div className="absolute top-0 left-0 z-10 h-full w-20 md:w-40 bg-gradient-to-r from-[#efefef] via-[#efefef]/80 to-transparent pointer-events-none" />
       <div className="absolute top-0 right-0 z-10 h-full w-20 md:w-40 bg-gradient-to-l from-[#efefef] via-[#efefef]/80 to-transparent pointer-events-none" />
-
-      {/* Optional: Content Overlay (Uncomment if needed) */}
-      {/* 
-      <div className="relative z-20 flex min-h-screen items-center justify-center px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="text-center"
-        >
-          <h2 className="text-4xl md:text-7xl font-serif uppercase tracking-tighter text-black/90">
-            Our Portfolio
-          </h2>
-        </motion.div>
-      </div> 
-      */}
     </section>
   );
 };
