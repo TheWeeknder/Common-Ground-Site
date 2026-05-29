@@ -28,7 +28,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-black text-white py-16 px-6 md:px-12 lg:px-20 font-sans selection:bg-white selection:text-black">
-      <div className="max-w-[1250px] mx-auto">
+      <div className="max-w-[1300px] mx-auto">
         {/* Top Section: Location, Contact, Hours */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -40,24 +40,24 @@ export default function Footer() {
           
           {/* Main Location Heading */}
           <div className="lg:col-span-1">
-            <h2 className="text-2xl md:text-3xl font-serif font-light tracking-widest uppercase leading-tight mb-8">
+            <h2 className="text-4xl md:text-5xl font-serif font-light tracking-widest uppercase leading-tight mb-8">
               Located at the heart of
               <br />
               Edmonton, AB
             </h2>
             <div className="flex gap-6">
               <a href="#" className="hover:opacity-60 transition-opacity" aria-label="Instagram">
-                <Instagram size={20} strokeWidth={1.5} />
+                <Instagram size={30} strokeWidth={1.5} />
               </a>
               <a href="#" className="hover:opacity-60 transition-opacity" aria-label="Facebook">
-                <Facebook size={20} strokeWidth={1.5} />
+                <Facebook size={30} strokeWidth={1.5} />
               </a>
             </div>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-[19px] tracking-[0.1em] uppercase mb-6">Contact</h3>
+            <h3 className="text-[21px] tracking-[0.1em] uppercase mb-6 font-semibold">Contact</h3>
             <div className="space-y-2 text-md font-light">
               <p>(123) 456-7891</p>
               <p>
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Location Details */}
           <div>
-            <h3 className="text-[19px] tracking-[0.1em] uppercase mb-6">Location</h3>
+            <h3 className="text-[21px] tracking-[0.1em] uppercase mb-6 font-semibold">Location</h3>
             <address className="not-italic space-y-2 text-md font-light">
               <p>6767 Something Some Rd</p>
               <p>Suite 123</p>
@@ -80,7 +80,7 @@ export default function Footer() {
 
           {/* Salon Hours */}
           <div>
-            <h3 className="text-[19px] tracking-[0.1em] uppercase mb-6">Shop Hours</h3>
+            <h3 className="text-[21px] tracking-[0.1em] uppercase mb-6 font-semibold">Shop Hours</h3>
             <div className="space-y-2 text-md font-light">
               <p>Monday to Friday: 9-530</p>
               <p>Saturdays: 10-530</p>
@@ -95,7 +95,7 @@ export default function Footer() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="border-t border-white/10 pt-12 pb-8"
+          className="border-t border-white/20 pt-12 pb-8"
         >
           <nav className="flex flex-wrap justify-between items-center gap-x-8 gap-y-6">
             {navLinks.map((link) => (
