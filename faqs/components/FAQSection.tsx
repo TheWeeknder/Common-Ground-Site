@@ -58,7 +58,7 @@ export default function FAQSection() {
       <div className="max-w-4xl mx-auto">
         
         {/* Section Heading */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -70,7 +70,7 @@ export default function FAQSection() {
             <br />
             Questions
           </h2>
-        </motion.div>
+        </motion.div> */}
 
         {/* FAQ Accordion */}
         <div className="border-t border-white/10">
