@@ -57,7 +57,7 @@ export function Hero() {
               bg-transparent text-white text-xs
               px-5 py-2.5
               font-bold tracking-[0.12em] rounded-full
-              border-2 border-[#ffe590]
+              border-2 border-[#ffffff]
               hover:bg-white/5
               active:scale-[0.98]
               transition-all duration-[120ms]
@@ -150,7 +150,7 @@ export function Hero() {
               bg-transparent text-white text-xs sm:text-sm
               px-8 py-4 sm:px-10 sm:py-[18px]
               font-bold tracking-[0.12em] rounded-full
-              border-2 border-[#ffe590]
+              border-2 border-[#ffffff]
               hover:bg-white/5
               active:scale-[0.98]
               transition-all duration-[120ms]
@@ -169,7 +169,7 @@ export function Hero() {
       {/* Scroll Indicator */}
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white">
         <span className="text-xs tracking-widest text-gray-300">SCROLL</span>
-        <div className="w-px h-18 bg-gradient-to-b from-[#D4AF37] to-transparent" />
+        <div className="w-px h-18 bg-gradient-to-b from-[#ffffff] to-transparent" />
       </div>
     </div>
   );
