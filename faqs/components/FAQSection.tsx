@@ -82,7 +82,7 @@ export default function FAQSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className={`border-b border-white/10 transition-colors duration-500 ${
-                openIndex === index ? "bg-white/[0.02]" : "hover:bg-white/[0.01]"
+                openIndex === index ? "bg-white/[0.01]" : "hover:bg-white/[0.03]"
               }`}
             >
               <button
@@ -112,7 +112,7 @@ export default function FAQSection() {
                     className="overflow-hidden"
                   >
                     <div className="pb-10 pr-12">
-                      <p className="text-sm md:text-base font-sans font-light leading-relaxed tracking-widest text-white/60 max-w-2xl">
+                      <p className="text-md font-sans font-light leading-relaxed text-white max-w-2xl">
                         {item.answer}
                       </p>
                     </div>
@@ -124,17 +124,17 @@ export default function FAQSection() {
         </div>
 
         {/* Bottom Footer Note */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-20 text-center"
         >
-          <p className="text-[10px] tracking-[0.5em] uppercase opacity-30">
+          <p className="text-md tracking-[0.2em] uppercase">
             Still have questions? Contact us directly.
           </p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
