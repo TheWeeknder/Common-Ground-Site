@@ -46,10 +46,10 @@ export default function Footer() {
               Edmonton, AB
             </h2>
             <div className="flex gap-6">
-              <a href="#" className="hover:opacity-60 transition-opacity" aria-label="Instagram">
+              <a href="https://www.instagram.com/_thelocalbarber/" className="hover:opacity-60 transition-opacity" aria-label="Instagram">
                 <Instagram size={30} strokeWidth={1.5} />
               </a>
-              <a href="#" className="hover:opacity-60 transition-opacity" aria-label="Facebook">
+              <a href="https://www.instagram.com/_thelocalbarber/" className="hover:opacity-60 transition-opacity" aria-label="Facebook">
                 <Facebook size={30} strokeWidth={1.5} />
               </a>
             </div>
