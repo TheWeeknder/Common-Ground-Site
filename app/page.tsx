@@ -1,6 +1,5 @@
 import { Hero } from "@/home/components/Hero";
 import { Carousel } from "@/home/components/Carousel";
-import  Testimonials from "@/home/components/Testimonials";
 import { MainServices } from "@/home/components/MainServices";
 import { Team } from "@/home/components/Team";
 import  TeamSection from "@/home/components/TeamSection";
