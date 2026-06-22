@@ -7,7 +7,7 @@ export default function ServicesPage() {
   return (
     <>
       <PageHeader title="SERVICES" subtitle="What we are known for" />
-      <Gallery25 />
+      {/* <Gallery25 /> */}
       <Footer />
     </>
   );
