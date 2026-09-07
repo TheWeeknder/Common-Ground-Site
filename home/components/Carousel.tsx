@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 /**
- * Refined Carousel Component
+ * Refactored Carousel Component
  * 
- * Fixes & Improvements:
- * 1. Responsive Sizing: Replaced fixed pixel heights/widths with responsive Tailwind classes.
- * 2. Image Optimization: Swapped <img> for a more robust structure (or Next.js Image if preferred).
- * 3. Animation Consistency: Ensured the infinite loop is seamless across all screen sizes.
- * 4. Mobile Friendliness: Adjusted card sizes and gaps for smaller viewports.
- * 5. Code Cleanup: Removed duplicate images in the array and handled the looping programmatically.
+ * Improvements:
+ * 1. Consistent Aspect Ratio: All images use aspect-[4/5] — no distortion across breakpoints
+ * 2. Smooth Responsive Scaling: Width scales fluidly with clamp() instead of discrete breakpoints
+ * 3. Simplified Markup: Removed duplicate vw-based height declarations; aspect ratio handles it
+ * 4. Unified Row Sizing: Both rows use the same sizing logic for visual consistency
+ * 5. Better Performance: Cleaner Tailwind classes, fewer recalculations at each breakpoint
  */
 
 const galleryImages = [
@@ -47,48 +47,45 @@ const Carousel = ({ className }: CarouselProps) => {
       )}
     >
       {/* Background Scrolling Gallery */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 md:gap-6">
-        <div className="flex flex-col gap-4 md:gap-6 overflow-hidden w-full">
-          {galleryImages.map((row, rowIndex) => (
-            <motion.div
-              key={rowIndex}
-              className="flex gap-4 md:gap-6 will-change-transform"
-              animate={{
-                x: rowIndex === 1 ? ["-50%", "0%"] : ["0%", "-50%"],
-              }}
-              transition={{
-                duration: 40,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-              style={{ width: "max-content" }}
-            >
-              {[...row, ...row, ...row].map((image, imageIndex) => (
-                <div
-                  key={`${rowIndex}-${imageIndex}`}
-                  className={cn(
-                    "relative flex-shrink-0 overflow-hidden rounded-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-xl",
-                    // vw-based sizing — scales with viewport at every breakpoint
-                    rowIndex === 1
-                      ? "w-[42vw] h-[54vw] sm:w-[28vw] sm:h-[36vw] md:w-[42vw] md:h-[58vw] lg:w-[48vw] lg:h-[54vw] xl:w-[20vw] xl:h-[25vw]"
-                      : "w-[36vw] h-[48vw] sm:w-[24vw] sm:h-[32vw] md:w-[42vw] md:h-[58vw] lg:w-[48vw] lg:h-[54vw] xl:w-[20vw] xl:h-[25vw]"
-                  )}
-                >
-                  <img
-                    src={image}
-                    alt={`Gallery image ${imageIndex + 1}`}
-                    className="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-black/5 pointer-events-none" />
-                </div>
-              ))}
-            </motion.div>
-          ))}
-        </div>
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 py-8 md:gap-6 lg:gap-8">
+        {galleryImages.map((row, rowIndex) => (
+          <motion.div
+            key={rowIndex}
+            className="flex gap-4 md:gap-6 lg:gap-8 will-change-transform overflow-hidden"
+            animate={{
+              x: rowIndex === 1 ? ["-50%", "0%"] : ["0%", "-50%"],
+            }}
+            transition={{
+              duration: 40,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+            style={{ width: "max-content" }}
+          >
+            {[...row, ...row, ...row].map((image, imageIndex) => (
+              <div
+                key={`${rowIndex}-${imageIndex}`}
+                className={cn(
+                  "relative flex-shrink-0 overflow-hidden rounded-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-xl",
+                  // Consistent aspect ratio (4:5 portrait) with smooth responsive width scaling
+                  // clamp(min, preferred, max) ensures smooth scaling from mobile to desktop
+                  "w-[clamp(30vw, 12rem, 32vw)] aspect-[4/5]"
+                )}
+              >
+                <img
+                  src={image}
+                  alt={`Gallery image ${imageIndex + 1}`}
+                  className="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black/5 pointer-events-none" />
+              </div>
+            ))}
+          </motion.div>
+        ))}
       </div>
 
-      {/* Edge Gradients */}
+      {/* Edge Gradients (optional — uncomment if needed) */}
       {/* <div className="absolute top-0 left-0 z-10 h-full w-20 md:w-40 bg-gradient-to-r from-[#efefef] via-[#efefef]/80 to-transparent pointer-events-none" />
       <div className="absolute top-0 right-0 z-10 h-full w-20 md:w-40 bg-gradient-to-l from-[#efefef] via-[#efefef]/80 to-transparent pointer-events-none" /> */}
     </section>
