@@ -73,11 +73,11 @@ const Carousel = ({ className }: CarouselProps) => {
                 )}
               >
                 <img
-                  src={image}
-                  alt={`Gallery image ${imageIndex + 1}`}
-                  className="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                  // loading="lazy"
-                />
+                src={image}
+                alt=""  // decorative image
+                loading="lazy"  // uncommented for performance
+                className="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              />
                 <div className="absolute inset-0 bg-black/5 pointer-events-none" />
               </div>
             ))}
