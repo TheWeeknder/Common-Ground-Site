@@ -39,13 +39,16 @@ export function PageHeader({ title, subtitle }) {
             <Link href="/gallery" className="text-sm tracking-widest hover:text-amber-400 transition-colors">PORTFOLIO</Link>
             <Link href="/faqs" className="text-sm tracking-widest hover:text-amber-400 transition-colors">FAQs</Link>
             <Link 
-              href="/book"
+              href="https://booking.barber-os.com/59"
+              target="_blank"
+              rel="noopener noreferrer"
+              
               className="
               relative top-0
               bg-transparent text-white text-xs
               px-5 py-2.5
               font-bold tracking-[0.12em] rounded-full
-              border-2 border-[#ffe590]
+              border-2 border-[#ffffff]
               hover:bg-white/5
               active:scale-[0.98]
               transition-all duration-[120ms]
@@ -98,22 +101,22 @@ export function PageHeader({ title, subtitle }) {
                   </motion.div>
                 ))}
               </div>
-              <Link 
-                href="/book" 
-                className="
-                bg-transparent text-white text-sm
-                py-4 text-center
-                font-bold tracking-[0.12em] rounded-full
-                border-2 border-[#ffe590]
-                hover:bg-white/5
-                active:scale-[0.98]
-                transition-all duration-[120ms]
-                w-full
-                " 
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                BOOK NOW
-              </Link>
+            <Link 
+              href="https://booking.barber-os.com/59" 
+              className="
+              bg-transparent text-white text-sm
+              py-4 text-center
+              font-bold tracking-[0.12em] rounded-full
+              border-2 border-[#ffe590]
+              hover:bg-white/5
+              active:scale-[0.98]
+              transition-all duration-[120ms]
+              w-full
+              " 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              BOOK NOW
+            </Link>
             </motion.div>
           )}
         </AnimatePresence>
