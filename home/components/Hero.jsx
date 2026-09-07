@@ -51,7 +51,8 @@ export function Hero() {
             <Link href="/gallery" className="text-sm tracking-widest hover:text-amber-400 transition-colors">PORTFOLIO</Link>
             <Link href="/faqs" className="text-sm tracking-widest hover:text-amber-400 transition-colors">FAQs</Link>
             <Link 
-              href="/book"
+              href="https://booking.barber-os.com/59"
+              
               className="
               relative top-0
               bg-transparent text-white text-xs
