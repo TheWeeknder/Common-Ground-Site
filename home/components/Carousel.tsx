@@ -51,7 +51,7 @@ const Carousel = ({ className }: CarouselProps) => {
         {galleryImages.map((row, rowIndex) => (
           <motion.div
             key={rowIndex}
-            className="flex gap-4 md:gap-6 lg:gap-8 will-change-transform overflow-hidden"
+            className="flex w-max gap-4 will-change-transform md:gap-6 lg:gap-8"
             animate={{
               x: rowIndex === 1 ? ["-50%", "0%"] : ["0%", "-50%"],
             }}
@@ -62,7 +62,7 @@ const Carousel = ({ className }: CarouselProps) => {
             }}
             style={{ width: "max-content" }}
           >
-            {[...row, ...row, ...row].map((image, imageIndex) => (
+            {[...row, ...row].map((image, imageIndex) => (
               <div
                 key={`${rowIndex}-${imageIndex}`}
                 className={cn(
