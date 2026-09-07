@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 /**
  * ExploreWorkSectionInverted Component
@@ -64,9 +65,11 @@ export default function ExploreWorkSectionInverted() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <button className="w-full md:w-auto border border-white px-12 py-4 text-[15px] tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-all duration-500 ease-in-out font-semibold">
+              <Link 
+              href="/about"
+              className="w-full md:w-auto border border-white px-12 py-4 text-[15px] tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-all duration-500 ease-in-out font-semibold">
                 about us
-              </button>
+              </Link>
             </motion.div>
           </motion.div>
         </div>

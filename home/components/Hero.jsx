@@ -112,7 +112,7 @@ export function Hero() {
                 ))}
               </div>
               <Link 
-                href="/book" 
+                href="https://booking.barber-os.com/59" 
                 className="
                 bg-transparent text-white text-sm
                 py-4 text-center
@@ -146,20 +146,24 @@ export function Hero() {
           </p> */}
           
           <div className="flex flex-row sm:flex-row gap-6 justify-center">
-            <button className="
-              relative top-0
-              bg-transparent text-white text-xs sm:text-sm
-              px-8 py-4 sm:px-10 sm:py-[18px]
-              font-bold tracking-[0.12em] rounded-full
-              border-2 border-[#ffffff]
-              hover:bg-white/5
-              active:scale-[0.98]
-              transition-all duration-[120ms]
-              touch-manipulation min-h-[44px] sm:min-h-[68px]
-              w-fit mx-auto sm:mx-0
-            ">
+            <Link
+              href="https://www.instagram.com/_commongroundbarbershop?igsi=d3ptcXE5eWZqdmVt"
+              className="
+                relative top-0
+                bg-transparent text-white text-xs sm:text-sm
+                px-8 py-4 sm:px-10 sm:py-[18px]
+                font-bold tracking-[0.12em] rounded-full
+                border-2 border-[#ffffff]
+                hover:bg-white/5
+                active:scale-[0.98]
+                transition-all duration-[120ms]
+                touch-manipulation min-h-[44px] sm:min-h-[68px]
+                w-fit mx-auto sm:mx-0
+                inline-flex items-center justify-center
+              "
+            >
               COMING SOON
-            </button>
+            </Link>
             {/* <button className="text-white text-xs sm:text-sm border-2 border-white px-5 py-3 sm:px-8 sm:py-4 hover:bg-white hover:text-black active:bg-gray-200 transition-all duration-300 tracking-widest touch-manipulation min-h-[44px] sm:min-h-[68px] font-medium w-fit mx-auto sm:mx-0">
               VIEW SERVICES
             </button> */}
