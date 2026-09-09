@@ -17,13 +17,13 @@ import { Instagram, Facebook } from "lucide-react";
  */
 export default function Footer() {
   const navLinks = [
-    { name: "HOME", href: "#" },
-    { name: "ABOUT", href: "#" },
-    { name: "SERVICES", href: "#" },
+    { name: "HOME", href: "/" },
+    { name: "ABOUT", href: "/about" },
+    { name: "SERVICES", href: "/services" },
     { name: "POLICIES", href: "#" },
-    { name: "PORTFOLIO", href: "#" },
-    { name: "FAQS", href: "#" },
-    { name: "BOOK NOW", href: "#" },
+    { name: "PORTFOLIO", href: "/gallery" },
+    { name: "FAQS", href: "faqs" },
+    { name: "BOOK NOW", href: "https://www.instagram.com/_commongroundbarbershop?igsi=d3ptcXE5eWZqdmVt" },
   ];
 
   return (

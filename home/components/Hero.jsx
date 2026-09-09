@@ -162,7 +162,7 @@ export function Hero() {
                 inline-flex items-center justify-center
               "
             >
-              COMING SOON
+              INSTAGRAM
             </Link>
             {/* <button className="text-white text-xs sm:text-sm border-2 border-white px-5 py-3 sm:px-8 sm:py-4 hover:bg-white hover:text-black active:bg-gray-200 transition-all duration-300 tracking-widest touch-manipulation min-h-[44px] sm:min-h-[68px] font-medium w-fit mx-auto sm:mx-0">
               VIEW SERVICES
@@ -173,7 +173,7 @@ export function Hero() {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white">
-        <span className="text-xs tracking-widest text-gray-300">SCROLL</span>
+        <span className="text-xs tracking-widest text-gray-300">COMING SOON</span>
         <div className="w-px h-18 bg-gradient-to-b from-[#ffffff] to-transparent" />
       </div>
     </div>

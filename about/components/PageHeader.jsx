@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export function PageHeader({ title, subtitle }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,16 +21,12 @@ export function PageHeader({ title, subtitle }) {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90" />
       </div>
       
-      {/* Navigation */}
+    {/* Navigation */}
       <nav className="absolute top-0 left-0 right-0 z-30 px-6 md:px-12 py-8">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link href="/">
-            <img
-              src="/placeholderlogoforhero.svg"
-              alt="Logo"
-              className="h-10"
-            />
+            <Image src="/white_svg_commonground_logo_no_bg.png" alt="Logo" width={70} height={30} priority />
           </Link>
 
           {/* Desktop Nav */}
@@ -40,8 +37,6 @@ export function PageHeader({ title, subtitle }) {
             <Link href="/faqs" className="text-sm tracking-widest hover:text-amber-400 transition-colors">FAQs</Link>
             <Link 
               href="https://booking.barber-os.com/59"
-              target="_blank"
-              rel="noopener noreferrer"
               
               className="
               relative top-0
@@ -81,7 +76,7 @@ export function PageHeader({ title, subtitle }) {
             >
               <div className="flex justify-between items-center mb-16">
                 <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-                  <img src="/logoipsum-274.svg" alt="Logo" className="h-10" />
+                  <Image src="/logoipsum-274.svg" alt="Logo" width={120} height={40} />
                 </Link>
                 <button onClick={() => setMobileMenuOpen(false)} className="text-white p-2">
                   <X className="w-8 h-8" />
@@ -101,22 +96,22 @@ export function PageHeader({ title, subtitle }) {
                   </motion.div>
                 ))}
               </div>
-            <Link 
-              href="https://booking.barber-os.com/59" 
-              className="
-              bg-transparent text-white text-sm
-              py-4 text-center
-              font-bold tracking-[0.12em] rounded-full
-              border-2 border-[#ffe590]
-              hover:bg-white/5
-              active:scale-[0.98]
-              transition-all duration-[120ms]
-              w-full
-              " 
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              BOOK NOW
-            </Link>
+              <Link 
+                href="https://booking.barber-os.com/59" 
+                className="
+                bg-transparent text-white text-sm
+                py-4 text-center
+                font-bold tracking-[0.12em] rounded-full
+                border-2 border-[#ffe590]
+                hover:bg-white/5
+                active:scale-[0.98]
+                transition-all duration-[120ms]
+                w-full
+                " 
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                BOOK NOW
+              </Link>
             </motion.div>
           )}
         </AnimatePresence>
