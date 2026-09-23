@@ -26,9 +26,9 @@ export function Loader() {
       }`}
     >
       <img
-        src="/black_svg_commonground_logo-removebg-preview.png"
-        alt="PLACE LOGO HERE"
-        className="w-36 animate-fade-in"
+        src="/CommonGroundFontBlack.png"
+        alt="Common Ground BarberShop"
+        className="w-38 animate-fade-in"
       />
     </div>
   );
