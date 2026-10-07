@@ -76,7 +76,7 @@ export function PageHeader({ title, subtitle }) {
             >
               <div className="flex justify-between items-center mb-16">
                 <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-                  <Image src="/logoipsum-274.svg" alt="Logo" width={120} height={40} />
+                  <Image src="/white_svg_commonground_logo_no_bg.png" alt="Logo" width={120} height={40} />
                 </Link>
                 <button onClick={() => setMobileMenuOpen(false)} className="text-white p-2">
                   <X className="w-8 h-8" />

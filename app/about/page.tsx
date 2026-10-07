@@ -1,7 +1,7 @@
 import { Layout1 } from "@/about/components/Layout1";
 import  Footer  from "@/home/components/Footer";
 import { Header76 } from "@/about/components/Header76";
-import { PageHeader } from "@/gallery/components/PageHeader";
+import { PageHeader } from "@/about/components/PageHeader";
 // ... import other about components
 
 export default function AboutPage() {

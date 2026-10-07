@@ -2,7 +2,7 @@ import  Footer  from "@/home/components/Footer";
 import { Gallery4_1 } from "@/gallery/components/Gallery4_1";
 import { Gallery25 } from "@/gallery/components/Gallery25";
 import { Gallery24 } from "@/gallery/components/Gallery24";
-import { PageHeader } from "@/gallery/components/PageHeader";
+import { PageHeader } from "@/about/components/PageHeader";
 
 export default function GalleryPage() {
   return (
