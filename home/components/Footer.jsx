@@ -119,7 +119,7 @@ export default function Footer() {
           className="mt-12"
         >
           <p className="text-[9px] tracking-[0.2em] uppercase font-light">
-            Brand & Website by{" "}
+            Website by{" "}
             <a href="#" className="underline underline-offset-4 hover:opacity-100 transition-opacity text-blue-400">
               JP.Miranda
             </a>
