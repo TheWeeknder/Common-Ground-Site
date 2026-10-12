@@ -56,21 +56,6 @@ export default function FAQSection() {
   return (
     <section className="w-full bg-[#0a0a0a] text-white py-24 px-6 md:px-12 lg:px-20 selection:bg-white selection:text-black overflow-hidden">
       <div className="max-w-4xl mx-auto">
-        
-        {/* Section Heading */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20 text-center "
-        >
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tighter uppercase leading-none">
-            Frequently Asked
-            <br />
-            Questions
-          </h2>
-        </motion.div> */}
 
         {/* FAQ Accordion */}
         <div className="border-t border-white/10">
