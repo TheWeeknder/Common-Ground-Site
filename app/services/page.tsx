@@ -1,13 +1,23 @@
-import  Footer  from "@/home/components/Footer";
+import Footer from "@/home/components/Footer";
 import { PageHeader } from "@/about/components/PageHeader";
-import Gallery25 from "@/services/components/Gallery25";
-// ... other services components
+import ServiceCategory from "@/services/components/ServiceCategory";
+import { serviceCategories } from "@/services/components/servicesData";
 
 export default function ServicesPage() {
   return (
     <>
       <PageHeader title="SERVICES" subtitle="What we are known for" />
-      {/* <Gallery25 /> */}
+
+      <main className="services-page">
+        {serviceCategories.map((category) => (
+          <ServiceCategory
+            key={category.title}
+            title={category.title}
+            services={category.services}
+          />
+        ))}
+      </main>
+
       <Footer />
     </>
   );

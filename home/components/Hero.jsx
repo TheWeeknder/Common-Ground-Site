@@ -52,7 +52,7 @@ export function Hero() {
             <Link href="/faqs" className="text-sm tracking-widest hover:text-amber-400 transition-colors">FAQs</Link>
             <Link 
               href="https://booking.barber-os.com/59"
-              
+              target="_blank"
               className="
               relative top-0
               bg-transparent text-white text-xs

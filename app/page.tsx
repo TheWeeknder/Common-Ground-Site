@@ -12,7 +12,7 @@ import { FadingParagraph } from "@/home/components/FadingParagraph";
 import CurvedLoop from '@/home/components/CurvedLoop';
 import  ExploreWorkSectionInverted from '@/home/components/ExploreWorkSectionInverted';
 import  ExploreWorkSection from '@/home/components/ExploreWorkSection';
-import Gallery25 from "@/services/components/Gallery25";
+import Gallery25 from "@/services/components/ServiceCategory";
 
 
 export default function Page() {

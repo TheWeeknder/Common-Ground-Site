@@ -10,3 +10,113 @@ body {
 .hover\:pause:hover {
   animation-play-state: paused;
 }
+
+
+
+
+.services-section {
+  padding: clamp(3.5rem, 8vw, 6.5rem) 1.25rem;
+  background: #fff;
+  color: #1c2945;
+}
+
+.services-container {
+  width: min(100%, 1340px);
+  margin: 0 auto;
+}
+
+.services-heading {
+  margin: 0 0 clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(2.5rem, 5vw, 4.5rem);
+  row-gap: clamp(2rem, 5vw, 4rem);
+}
+
+.service {
+  min-width: 0;
+}
+
+.service-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.service-name {
+  flex: 0 1 auto;
+  margin: 0;
+  color: #e85b36;
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.service-leader {
+  flex: 1 1 auto;
+  min-width: 0.75rem;
+  border-bottom: 1px dotted #687080;
+  transform: translateY(-0.2rem);
+}
+
+.service-price {
+  flex: 0 0 auto;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.service-detail {
+  margin: 0.35rem 0 0;
+  font-size: 0.98rem;
+  font-weight: 650;
+}
+
+.service-description {
+  margin: 0.55rem 0 0;
+  color: #384255;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 700px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .services-heading {
+    margin-bottom: 2.25rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .service-title-row {
+    gap: 0.5rem;
+  }
+
+  .service-name {
+    font-size: 1rem;
+  }
+
+  .service-price {
+    font-size: 1rem;
+  }
+}
+
+.services-page {
+  width: min(100% - 2rem, 1340px);
+  margin: 0 auto;
+  padding: 4rem 0 6rem;
+}
+
+.service-category + .service-category {
+  margin-top: 4rem;
+}
