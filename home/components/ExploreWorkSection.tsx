@@ -37,7 +37,7 @@ export default function StatementBanner() {
               common ground
             </h2>
             
-            <p className="text-nd md:text-base font-sans font-light leading-relaxed tracking-widest mb-12">
+            <p className="text-md md:text-base font-sans font-light leading-relaxed tracking-widest mb-12">
               Experience the art of traditional barbering combined with contemporary styling. We pride ourselves on exceptional service, attention to detail, and creating a comfortable, welcoming environment where you can unwind while getting a fresh look.
             </p>
 

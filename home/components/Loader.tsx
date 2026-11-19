@@ -8,7 +8,7 @@ export function Loader() {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    const liftTimer = setTimeout(() => setLift(true), 700);
+    const liftTimer = setTimeout(() => setLift(true), 300);
     const hideTimer = setTimeout(() => setHidden(true), 1700);
 
     return () => {
@@ -21,14 +21,14 @@ export function Loader() {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-neutral-white transition-transform duration-1000 ease-in-out ${
+      className={`fixed inset-0 z-[60] flex items-center justify-center bg-neutral-white transition-transform duration-1000 ease-in-out ${
         lift ? "-translate-y-full" : "translate-y-0"
       }`}
     >
       <img
         src="/CommonGroundFontBlack.png"
         alt="Common Ground BarberShop"
-        className="w-38 animate-fade-in"
+        className="w-[15.5rem] animate-fade-in"
       />
     </div>
   );

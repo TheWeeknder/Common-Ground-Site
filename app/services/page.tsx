@@ -1,5 +1,5 @@
 import Footer from "@/home/components/Footer";
-import { PageHeader } from "@/about/components/PageHeader";
+import { PageHeader } from "@/components/PageHeader";
 import ServiceCategory from "@/services/components/ServiceCategory";
 import { serviceCategories } from "@/services/components/servicesData";
 

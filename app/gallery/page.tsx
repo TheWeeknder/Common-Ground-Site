@@ -1,17 +1,13 @@
-import  Footer  from "@/home/components/Footer";
-import { Gallery4_1 } from "@/gallery/components/Gallery4_1";
-import { Gallery25 } from "@/gallery/components/Gallery25";
+import Footer from "@/home/components/Footer";
 import { Gallery24 } from "@/gallery/components/Gallery24";
-import { PageHeader } from "@/about/components/PageHeader";
+import { PageHeader } from "@/components/PageHeader";
 
 export default function GalleryPage() {
   return (
     <>
-        <PageHeader title="Portfolio" subtitle="Browse Through Our Portfolio" />
-        {/* <Gallery25 /> */}
-        {/* <Gallery4_1 /> */}
-        <Gallery24 />
-        <Footer />
+      <PageHeader title="Portfolio" subtitle="Browse Through Our Portfolio" />
+      <Gallery24 />
+      <Footer />
     </>
   );
 }

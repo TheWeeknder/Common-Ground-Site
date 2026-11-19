@@ -57,7 +57,7 @@ export default function ExploreWorkSectionInverted() {
               ground up
             </h2>
             
-            <p className="text-nd md:text-base font-sans font-light leading-relaxed tracking-widest mb-12">
+            <p className="text-md md:text-base font-sans font-light leading-relaxed tracking-widest mb-12">
               It started with a vision to create more than just a place to get a haircut. We stripped this space down to the studs, pouring late nights and hard work into every detail. From custom-built stations to the perfect lighting, we designed and built a true sanctuary for modern grooming.
             </p>
 

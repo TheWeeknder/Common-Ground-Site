@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata, Viewport } from "next";
 import { Oswald, Geist, Geist_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -49,6 +50,7 @@ export default function RootLayout({
         `}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );

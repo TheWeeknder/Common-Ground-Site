@@ -1,15 +1,10 @@
-import { Layout1 } from "@/about/components/Layout1";
-import  Footer  from "@/home/components/Footer";
-import { Header76 } from "@/about/components/Header76";
-import { PageHeader } from "@/about/components/PageHeader";
-// ... import other about components
+import Footer from "@/home/components/Footer";
+import { PageHeader } from "@/components/PageHeader";
 
 export default function AboutPage() {
   return (
     <>
       <PageHeader title="ABOUT US" subtitle="Our story & team" />
-      {/* <Header76 />
-      <Layout1 /> */}
       <Footer />
     </>
   );

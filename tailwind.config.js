@@ -8,7 +8,7 @@ module.exports = {
     "./services/**/*.{js,ts,jsx,tsx}",
     "./gallery/**/*.{js,ts,jsx,tsx}",
     "./faqs/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@relume_io/relume-ui/dist/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   presets: [require("@relume_io/relume-tailwind")],
   theme: {
@@ -21,11 +21,16 @@ module.exports = {
       },
       animation: {
         marquee: "marquee 30s linear infinite",
+        "fade-in": "fade-in 0.6s ease-out both",
       },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
     },

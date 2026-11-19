@@ -2,7 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram } from "lucide-react";
+import { BOOKING_URL, INSTAGRAM_URL } from "@/lib/site";
 
 /**
  * Footer Component
@@ -22,8 +23,8 @@ export default function Footer() {
     { name: "SERVICES", href: "/services" },
     { name: "POLICIES", href: "#" },
     { name: "PORTFOLIO", href: "/gallery" },
-    { name: "FAQS", href: "faqs" },
-    { name: "BOOK NOW", href: "https://www.instagram.com/_commongroundbarbershop?igsi=d3ptcXE5eWZqdmVt" },
+    { name: "FAQS", href: "/faqs" },
+    { name: "BOOK NOW", href: BOOKING_URL },
   ];
 
   return (
@@ -46,11 +47,8 @@ export default function Footer() {
               Edmonton, AB
             </h2>
             <div className="flex gap-6">
-              <a href="https://www.instagram.com/_commongroundbarbershop?igsi=d3ptcXE5eWZqdmVt" className="hover:opacity-60 transition-opacity" aria-label="Instagram">
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity" aria-label="Instagram">
                 <Instagram size={30} strokeWidth={1.5} />
-              </a>
-              <a href="https://www.instagram.com/_commongroundbarbershop?igsi=d3ptcXE5eWZqdmVt" className="hover:opacity-60 transition-opacity" aria-label="Facebook">
-                <Facebook size={30} strokeWidth={1.5} />
               </a>
             </div>
           </div>
@@ -60,11 +58,8 @@ export default function Footer() {
             <h3 className="text-[21px] tracking-[0.1em] uppercase mb-6 font-semibold">Contact</h3>
             <div className="space-y-2 text-md font-light">
               <p>(123) 456-7891</p>
-              <p>
-                <a href="mailto:hello@wilderjamessalon.com" className="hover:underline underline-offset-4">
-                  commongroundbarbershop.com
-                </a>
-              </p>
+              {/* TODO: replace with the shop's real email (old link pointed at a template address) */}
+              <p>commongroundbarbershop.com</p>
             </div>
           </div>
 
