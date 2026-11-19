@@ -14,7 +14,7 @@ export function Loader() {
   const textRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
-    const liftTimer = setTimeout(() => setLift(true), 300);
+    const liftTimer = setTimeout(() => setLift(true), 550);
     const hideTimer = setTimeout(() => setHidden(true), 1700);
 
     return () => {
