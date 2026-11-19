@@ -18,6 +18,7 @@ module.exports = {
         body: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
         accent: ['var(--font-geist-mono)'],
         geist: ['var(--font-geist-sans)'],
+        titling: ['var(--font-castoro-titling)', 'serif'],
       },
       animation: {
         marquee: "marquee 30s linear infinite",

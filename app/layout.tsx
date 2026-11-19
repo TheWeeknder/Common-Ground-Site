@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata, Viewport } from "next";
-import { Oswald, Geist, Geist_Mono } from "next/font/google";
+import { Oswald, Geist, Geist_Mono, Castoro_Titling } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const viewport: Viewport = {
@@ -14,6 +14,13 @@ const oswald = Oswald({
   subsets: ["latin"],
   weight: ["600", "700"],
   variable: "--font-oswald",
+});
+
+// Hero title font (only ships in weight 400)
+const castoroTitling = Castoro_Titling({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-castoro-titling",
 });
 
 // Body / section font (clean, flexible)
@@ -46,6 +53,7 @@ export default function RootLayout({
           ${oswald.variable}
           ${geistSans.variable}
           ${geistMono.variable}
+          ${castoroTitling.variable}
           antialiased
         `}
       >
