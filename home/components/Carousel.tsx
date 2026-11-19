@@ -4,16 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-/**
- * Refined Carousel Component
- * 
- * Fixes & Improvements:
- * 1. Responsive Sizing: Replaced fixed pixel heights/widths with responsive Tailwind classes.
- * 2. Image Optimization: Swapped <img> for a more robust structure (or Next.js Image if preferred).
- * 3. Animation Consistency: Ensured the infinite loop is seamless across all screen sizes.
- * 4. Mobile Friendliness: Adjusted card sizes and gaps for smaller viewports.
- * 5. Code Cleanup: Removed duplicate images in the array and handled the looping programmatically.
- */
+// Two rows of images scrolling in opposite directions, sized by row height so both rows always fit.
 
 const galleryImages = [
   [
@@ -38,59 +29,53 @@ interface CarouselProps {
   className?: string;
 }
 
+// Row height = (section height - vertical padding - gap between rows) / 2.
+// Mobile: (600px - 2*16px - 16px) / 2 = 276px. md+: (100svh - 2*24px - 24px) / 2.
+const CARD_SIZE = "h-[276px] md:h-[calc(50svh-36px)] aspect-[4/5]";
+
 const Carousel = ({ className }: CarouselProps) => {
   return (
     <section
       className={cn(
-        "relative min-h-[600px] md:min-h-screen overflow-hidden bg-[#efefef] py-12 md:py-0",
+        "relative h-[600px] md:h-[100svh] overflow-hidden bg-[#efefef]",
         className
       )}
     >
-      {/* Background Scrolling Gallery */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 md:gap-6">
-        <div className="flex flex-col gap-4 md:gap-6 overflow-hidden w-full">
-          {galleryImages.map((row, rowIndex) => (
-            <motion.div
-              key={rowIndex}
-              className="flex gap-4 md:gap-6 will-change-transform"
-              animate={{
-                x: rowIndex === 1 ? ["-50%", "0%"] : ["0%", "-50%"],
-              }}
-              transition={{
-                duration: 40,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-              style={{ width: "max-content" }}
-            >
-              {[...row, ...row, ...row].map((image, imageIndex) => (
-                <div
-                  key={`${rowIndex}-${imageIndex}`}
-                  className={cn(
-                    "relative flex-shrink-0 overflow-hidden rounded-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-xl",
-                    // vw-based sizing — scales with viewport at every breakpoint
-                    rowIndex === 1
-                      ? "w-[42vw] h-[54vw] sm:w-[28vw] sm:h-[36vw] md:w-[42vw] md:h-[58vw] lg:w-[48vw] lg:h-[54vw] xl:w-[20vw] xl:h-[25vw]"
-                      : "w-[36vw] h-[48vw] sm:w-[24vw] sm:h-[32vw] md:w-[42vw] md:h-[58vw] lg:w-[48vw] lg:h-[54vw] xl:w-[20vw] xl:h-[25vw]"
-                  )}
-                >
-                  <img
-                    src={image}
-                    alt={`Gallery image ${imageIndex + 1}`}
-                    className="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-black/5 pointer-events-none" />
-                </div>
-              ))}
-            </motion.div>
-          ))}
-        </div>
+      <div className="absolute inset-0 flex flex-col justify-center gap-4 md:gap-6 py-4 md:py-6">
+        {galleryImages.map((row, rowIndex) => (
+          <motion.div
+            key={rowIndex}
+            className="flex w-max will-change-transform"
+            animate={{
+              // Three copies of the row; shifting by one copy (1/3) loops seamlessly.
+              x: rowIndex === 1 ? ["-33.333%", "0%"] : ["0%", "-33.333%"],
+            }}
+            transition={{
+              duration: 27,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          >
+            {[...row, ...row, ...row].map((image, imageIndex) => (
+              <div
+                key={`${rowIndex}-${imageIndex}`}
+                className={cn(
+                  "relative shrink-0 mr-4 md:mr-6 overflow-hidden rounded-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-xl",
+                  CARD_SIZE
+                )}
+              >
+                <img
+                  src={image}
+                  alt={`Gallery image ${(imageIndex % row.length) + 1}`}
+                  className="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black/5 pointer-events-none" />
+              </div>
+            ))}
+          </motion.div>
+        ))}
       </div>
-
-      {/* Edge Gradients */}
-      {/* <div className="absolute top-0 left-0 z-10 h-full w-20 md:w-40 bg-gradient-to-r from-[#efefef] via-[#efefef]/80 to-transparent pointer-events-none" />
-      <div className="absolute top-0 right-0 z-10 h-full w-20 md:w-40 bg-gradient-to-l from-[#efefef] via-[#efefef]/80 to-transparent pointer-events-none" /> */}
     </section>
   );
 };
