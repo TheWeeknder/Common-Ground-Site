@@ -8,7 +8,7 @@ import { INSTAGRAM_URL } from "@/lib/site";
 
 export function Hero() {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-[85svh] overflow-hidden">
       {/* Background Image with Overlay */}
       <motion.div
         className="absolute inset-0 z-0"
@@ -29,7 +29,7 @@ export function Hero() {
       <SiteNav />
 
       {/* Hero Content */}
-      <div className="relative z-20 min-h-screen flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
+      <div className="relative z-20 min-h-[85svh] flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
         <div className="max-w-3xl">
           <h1 className="font-titling font-medium text-center lg:text-center text-5xl sm:text-7xl md:text-8xl lg:text-[4.2rem] xl:text-[6.5rem] mb-1 leading-[1.0] text-white">
             COMMON GROUND
