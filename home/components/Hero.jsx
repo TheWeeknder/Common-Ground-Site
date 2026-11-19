@@ -31,7 +31,7 @@ export function Hero() {
       {/* Hero Content */}
       <div className="relative z-20 min-h-[85svh] flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <h1 className="font-titling font-medium text-center lg:text-center text-5xl sm:text-7xl md:text-8xl lg:text-[4.2rem] xl:text-[6.5rem] mb-1 leading-[1.0] text-white">
+          <h1 className="font-titling font-medium text-center lg:text-center text-4xl sm:text-7xl md:text-8xl lg:text-[4.2rem] xl:text-[6.5rem] leading-[1.0] text-white">
             COMMON GROUND
           </h1>
           <p className="font-titling font-normal text-center lg:text-center text-lg sm:text-2xl md:text-3xl lg:text-[1.2rem] xl:text-[2.5rem] mb-8 sm:mb-10 md:mb-12 leading-[1.0] text-white">
@@ -68,10 +68,10 @@ export function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white">
+      {/* <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white">
         <span className="text-xs tracking-widest text-gray-300">COMING SOON</span>
         <div className="w-px h-18 bg-gradient-to-b from-[#ffffff] to-transparent" />
-      </div>
+      </div> */}
     </div>
   );
 }
