@@ -15,7 +15,7 @@ export function Hero() {
         style={{ scale: 1.1 }}
       >
         <Image
-          src="/assets/chaps-co-chTK1JJfok0-unsplash.jpg"
+          src="/assets/white_background_image.jpg"
           alt="Barber cutting hair"
           fill
           priority                // preloads as high-priority, fixes LCP
@@ -23,7 +23,9 @@ export function Hero() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/60" />
+        {/* White wash so the black logo stands out; raise/lower /30 to taste */}
+        <div className="absolute inset-0" />
       </motion.div>
 
       <SiteNav />
@@ -31,22 +33,24 @@ export function Hero() {
       {/* Hero Content */}
       <div className="relative z-20 min-h-[85svh] flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <h1 className="mb-8 sm:mb-10 md:mb-12">
-            {/* Width scales with the viewport but is capped: never wider than
-                80vw (phones), 32rem (desktop), or 90svh (short/landscape
-                screens, so the logo never crowds the button off-screen). */}
+          <h1 className="mb-2 sm:mb-3">
+            {/* Width scales with the viewport (85vw on phones) but is capped
+                at 40rem so it doesn't get oversized on large screens. */}
             <Image
-              src="/final_commonground_logo.png"
-              alt="Common Ground Barbershop"
-              width={1635}
-              height={962}
+              src="/final_commonground_logo_textonly.png"
+              alt="Common Ground"
+              width={1479}
+              height={141}
               priority
-              sizes="(min-width: 640px) 32rem, 80vw"
-              style={{ width: "min(80vw, 32rem, 90svh)" }}
-              className="mx-auto h-auto  select-none"
+              sizes="(min-width: 768px) 60rem, 85vw"
+              style={{ width: "min(85vw, 60rem)" }}
+              className="mx-auto h-auto select-none"
               draggable={false}
             />
           </h1>
+          <p className="font-titling font-normal text-center lg:text-center text-lg sm:text-2xl md:text-5xl lg:text-[1.2rem] xl:text-[2.5rem] mb-8 sm:mb-10 md:mb-12 leading-[1.0] text-white">
+            BARBERSHOP
+          </p>
           {/* <p className="text-center lg:text-left text-base sm:text-lg md:text-2xl text-gray-300 mb-12 max-w-2xl leading-relaxed">
             Experience the art of traditional barbering with contemporary precision. Where craftsmanship meets luxury.
           </p> */}
