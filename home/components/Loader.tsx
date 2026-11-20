@@ -1,10 +1,11 @@
 // home/components/Loader.tsx
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-// Width the old wordmark's letters filled (15.5rem image, ~88% of it is ink).
-const TARGET_WIDTH = "13.6rem";
+// Fixed logo width so the loader looks identical on every screen size.
+// 16rem (256px) still fits comfortably on the narrowest phones (320px).
+const LOGO_WIDTH = "16rem";
 
 // Module-level flag: survives client-side navigation between pages, but resets
 // on a fresh load / refresh. So the loader only plays once per visit.
@@ -14,9 +15,8 @@ export function Loader() {
   const [lift, setLift] = useState(false);
   const [skip] = useState(hasPlayed); // captured once on mount
   const [hidden, setHidden] = useState(skip);
-  const [fontSize, setFontSize] = useState<string | null>(null);
-  const boxRef = useRef<HTMLDivElement>(null);
-  const textRef = useRef<HTMLHeadingElement>(null);
+  const [loaded, setLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     if (skip) return;
@@ -30,29 +30,16 @@ export function Loader() {
     };
   }, [skip]);
 
-  // Scale the title so its rendered width matches TARGET_WIDTH exactly,
-  // measured after the Castoro Titling font has loaded.
-  useLayoutEffect(() => {
+  // Fade the logo in once it's decoded. decode() resolves even if the image
+  // already loaded from cache before React hydrated.
+  useEffect(() => {
     let cancelled = false;
-    const text = textRef.current;
-    if (!text) return;
-    const fit = () => {
-      const box = boxRef.current;
-      if (!box || cancelled) return;
-      text.style.fontSize = "60px";
-      const measured = text.scrollWidth;
-      text.style.fontSize = "";
-      if (measured > 0) setFontSize(`${(100 * box.clientWidth) / measured}px`);
-    };
-    // Explicitly load this element's font face. `document.fonts.ready` alone
-    // resolves immediately when nothing is downloading yet (e.g. client-side
-    // navigation back from a page that doesn't use the font), which would
-    // measure the fallback font and size the text wrong.
-    const { fontWeight, fontFamily } = getComputedStyle(text);
-    document.fonts
-      .load(`${fontWeight} 60px ${fontFamily}`, "COMMON GROUND")
+    imgRef.current
+      ?.decode()
       .catch(() => undefined)
-      .then(fit);
+      .then(() => {
+        if (!cancelled) setLoaded(true);
+      });
     return () => {
       cancelled = true;
     };
@@ -66,18 +53,19 @@ export function Loader() {
         lift ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div ref={boxRef} style={{ width: TARGET_WIDTH }} className="flex justify-center">
-        <h1
-          ref={textRef}
-          aria-label="Common Ground Barbershop"
-          style={fontSize ? { fontSize } : undefined}
-          className={`font-titling font-semibold whitespace-nowrap leading-none text-black ${
-            fontSize ? "animate-fade-in" : "opacity-0"
-          }`}
-        >
-          COMMON GROUND
-        </h1>
-      </div>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        ref={imgRef}
+        src="/final_commonground_logo_notext.png"
+        alt="Common Ground Barbershop"
+        width={1635}
+        height={806}
+        fetchPriority="high"
+        decoding="async"
+        style={{ width: LOGO_WIDTH }}
+        className={`h-auto max-w-none select-none ${loaded ? "animate-fade-in" : "opacity-0"}`}
+        draggable={false}
+      />
     </div>
   );
 }
