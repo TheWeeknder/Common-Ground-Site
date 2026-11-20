@@ -11,4 +11,7 @@ export const NAV_LINKS = [
   { href: "/faqs", label: "FAQs" },
 ];
 
-export const LOGO_SRC = "/white_svg_commonground_logo_no_bg.png";
+// Cropped to the monogram (no transparent padding) so sizing is predictable.
+export const LOGO_SRC = "/final_commonground_logo_notext_cropped.png";
+export const LOGO_WIDTH = 863;
+export const LOGO_HEIGHT = 733;

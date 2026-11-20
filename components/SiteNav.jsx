@@ -5,7 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { BOOKING_URL, LOGO_SRC, NAV_LINKS } from "@/lib/site";
+import { BOOKING_URL, LOGO_HEIGHT, LOGO_SRC, LOGO_WIDTH, NAV_LINKS } from "@/lib/site";
 
 export function SiteNav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,7 +16,16 @@ export function SiteNav() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
-          <Image src={LOGO_SRC} alt="Common Ground logo" width={70} height={30} priority />
+          {/* Fixed height (40px) on every screen size; width follows the logo's shape. */}
+          <Image
+            src={LOGO_SRC}
+            alt="Common Ground logo"
+            width={LOGO_WIDTH}
+            height={LOGO_HEIGHT}
+            priority
+            sizes="48px"
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -69,7 +78,14 @@ export function SiteNav() {
           >
             <div className="flex justify-between items-center mb-16">
               <Link href="/" onClick={closeMenu}>
-                <Image src={LOGO_SRC} alt="Common Ground logo" width={100} height={40} />
+                <Image
+                  src={LOGO_SRC}
+                  alt="Common Ground logo"
+                  width={LOGO_WIDTH}
+                  height={LOGO_HEIGHT}
+                  sizes="72px"
+                  className="h-[3.75rem] w-auto"
+                />
               </Link>
               <button onClick={closeMenu} className="text-white p-2" aria-label="Close menu">
                 <X className="w-8 h-8" />

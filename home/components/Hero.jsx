@@ -23,7 +23,7 @@ export function Hero() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
         {/* White wash so the black logo stands out; raise/lower /30 to taste */}
         <div className="absolute inset-0" />
       </motion.div>
