@@ -64,7 +64,7 @@ export function Hero() {
                 px-8 py-4 sm:px-10 sm:py-[18px]
                 font-bold tracking-[0.12em] rounded-full
                 border-2 border-[#ffffff]
-                backdrop-blur-sm
+                backdrop-blur-[2px]
                 hover:bg-white/5
                 active:scale-[0.98]
                 transition-all duration-[120ms]

@@ -101,7 +101,7 @@ export function SiteNav() {
                 >
                   <Link
                     href={href}
-                    className="block text-3xl font-light text-white tracking-widest py-5 border-b border-white/10 hover:text-amber-400 transition-colors"
+                    className="block text-3xl font-light text-white/90 tracking-widest py-5 border-b border-white/10 hover:text-white hover:border-white/40 hover:pl-2 focus-visible:outline-none focus-visible:text-white focus-visible:border-white/40 transition-all duration-200"
                     onClick={closeMenu}
                   >
                     {label}
@@ -117,10 +117,11 @@ export function SiteNav() {
                 bg-transparent text-white text-sm
                 py-4 text-center
                 font-bold tracking-[0.12em] rounded-full
-                border-2 border-[#ffe590]
-                hover:bg-white/5
+                border-2 border-white
+                hover:bg-white hover:text-black
+                focus-visible:outline-none focus-visible:bg-white focus-visible:text-black
                 active:scale-[0.98]
-                transition-all duration-[120ms]
+                transition-all duration-200
                 w-full
               "
               onClick={closeMenu}
